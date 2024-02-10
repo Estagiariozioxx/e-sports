@@ -1,0 +1,24 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+
+.c-history{
+    padding: 60px 0px;
+    background-color:#0E1D2F;
+
+    .history{
+        &-title{
+            color:#fff;
+            font-size: 64px;
+            font-weight: 700;
+            padding-bottom: 16px;
+        }
+        &-describe{
+            color:#fff;
+            font-size: 16px;
+            font-weight: 450;
+        }
+        
+    }
+}

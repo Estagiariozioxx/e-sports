@@ -1,0 +1,87 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.c-top{
+    background-color: #323131;
+    padding: 60px 0px;
+
+    .box-title{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+            font-weight: 300;
+            color: $color-text;
+        }
+    }
+    .top-title{
+        color: $color-text;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -1px;
+
+        &_continue{
+            color: $color-text-secundary;
+            
+        }
+    }
+    .box-text{
+        @include md{
+            width: 400px;
+            margin-bottom: 0px;
+        }
+        margin-bottom: 16px;
+        p{
+            font-weight: 300;
+            color: $color-text;
+            text-align: center;
+        }
+    }
+    .card-top{
+        height: 380px;
+        margin: 0px;
+        width: 300px;
+        border: 1px solid #797979;
+        border-radius: 5px;
+        background-color: #181716;
+        position: relative;
+        overflow:hidden ;
+        border-spacing: 12px;
+
+        @include md{
+            height: 400px;
+            width: 350px;
+            margin: 0px 32px 0px 0px ;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
+
+    .vote-top{
+        background-color: #DCB16D;
+        border: 1px solid #DCB16D;
+        color: #000;
+        height: 40px;
+        width: 180px;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        letter-spacing: -1px;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+}

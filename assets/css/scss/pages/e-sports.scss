@@ -1,0 +1,48 @@
+
+//sass --watch assets/css/scss/pages/e-sports.scss:assets/css/e-sports.min.css
+
+$vitrine-blue: #192C53;
+$vitrine-gray: #747474;
+$color-text:#FFF;
+$color-text-secundary:#DEA95C;
+$color-primary:#000;
+$color-secundary:#DEA95C;
+
+//@import "../_lib/progressive.css";
+
+@import "../components/reset-tray";
+
+
+@import "../fonts/gotham-book";
+@import "../fonts/gotham-medium";
+@import "../fonts/gotham-bold";
+@import "../fonts/gotham-black";
+@import "../fonts/sporty";
+
+@import "../components/variables";
+
+/* @import "e-sport/designsystem"; */
+@import "e-sports/home";
+@import "e-sports/history";
+@import "e-sports/shirt_year";
+@import "e-sports/top";
+@import "e-sports/vitrine";
+@import "e-sports/ranking";
+@import "e-sports/modal";
+
+@import "../fonts/icons-font";
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.container{
+    padding: 0px 20px;
+    @include md{
+         width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;   
+    }
+
+}

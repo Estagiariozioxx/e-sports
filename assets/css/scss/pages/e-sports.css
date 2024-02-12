@@ -1101,14 +1101,14 @@ p {
 }
 
 .c-basketball {
-  background-color: #972d2d;
-  padding: 60px 60px 60px 60px;
+  background-color: #0E1D2F;
+  padding: 60px 0px;
 }
 .c-basketball .basketball-title {
   font-weight: 800;
   font-size: 72px;
   line-height: 2rem;
-  color: #002d62;
+  color: #8f0228;
   padding-bottom: 56px;
 }
 .c-basketball .basketball-describe {
@@ -1116,7 +1116,6 @@ p {
   padding: 0px 8px;
   font-weight: 450;
   font-size: 16px;
-  text-align: justify;
 }
 .c-basketball .basketball-anchor {
   font-size: 14px;
@@ -1251,7 +1250,8 @@ p {
 }
 .c-shirt .shirt-card img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   position: relative;
   top: -50%;
@@ -1332,7 +1332,8 @@ p {
 .c-shirt .shirt-fav .star {
   width: 20px;
   height: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0px;
   transform: translateY(0);
 }
@@ -1340,7 +1341,8 @@ p {
   display: none;
   width: 20px;
   height: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0px;
   transform: translateY(0);
 }
@@ -1427,7 +1429,8 @@ p {
 .c-top .card-top img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   transform: translateY(-50%);
   top: 50%;
@@ -1815,7 +1818,8 @@ p {
 }
 .c-modal-shirt .modal-body .modal-img, .c-modal-vote .modal-body .modal-img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
 .c-modal-shirt .modal-body .modal-title, .c-modal-vote .modal-body .modal-title {
@@ -2411,6 +2415,4 @@ p {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-/*# sourceMappingURL=e-sports.min.css.map */
+}/*# sourceMappingURL=e-sports.css.map */

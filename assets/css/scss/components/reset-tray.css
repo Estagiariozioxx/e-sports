@@ -191,9 +191,9 @@ html .botao-lancamento {
 }
 @media (max-width: 767px) {
   html .botao-destaque,
-html .botao-frete,
-html .botao-indisponivel,
-html .botao-lancamento {
+  html .botao-frete,
+  html .botao-indisponivel,
+  html .botao-lancamento {
     margin: 5px 0;
     width: 100%;
   }

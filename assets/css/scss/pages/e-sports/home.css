@@ -1,0 +1,33 @@
+p {
+  margin-bottom: 0px;
+}
+
+.c-home {
+  background-color: #0E1D2F;
+  padding: 60px 0px;
+}
+.c-home .home-top-title {
+  font-size: 56px;
+  color: #fff;
+}
+.c-home .home-title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 2rem;
+  color: #8f0228;
+  padding-bottom: 56px;
+}
+.c-home .home-describe {
+  color: #fff;
+  padding: 0px 8px;
+  font-weight: 450;
+  font-size: 16px;
+}
+.c-home .home-anchor {
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 0px 8px;
+}/*# sourceMappingURL=home.css.map */

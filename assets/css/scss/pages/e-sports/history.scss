@@ -6,6 +6,9 @@
 .c-history{
     padding: 60px 0px;
     background-color:#0E1D2F;
+    background-image: url('../../../../../imgtest/historia/Frame\ 7.png');
+    background-size: cover; /* Para cobrir toda a área do elemento */
+            background-position: center; /* Para centralizar a imagem */
 
     .history{
         &-title{
@@ -13,6 +16,7 @@
             font-size: 64px;
             font-weight: 700;
             padding-bottom: 16px;
+            margin-bottom: 64px;
         }
         &-describe{
             color:#fff;
@@ -20,7 +24,7 @@
             font-weight: 450;
         }
         &-box_img{
-            margin:4px 8px 8px 8px;
+            margin:64px 32px 64px;
             padding:4px 8px 8px 8px;
         }
         

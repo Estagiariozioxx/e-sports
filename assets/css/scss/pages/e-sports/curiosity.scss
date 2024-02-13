@@ -1,0 +1,45 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+p{
+    margin-bottom: 0px;
+}
+.c-curiosity{
+    padding: 60px 0px;
+
+    .curiosity{
+        &-color{
+            background-color: #540017;
+            border-radius: 8px;
+        }
+        &-title{
+            font-weight: 800;
+            font-size:36px;
+            line-height: 2rem;
+            color: #ffff;
+            padding-top: 56px;
+            padding-bottom: 56px;
+        }
+        &-home{
+            padding-bottom: 64px;
+            padding-left: 64px;
+            padding-right: 64px;
+            
+
+        }
+
+        &-describe{
+            color:#ffff;
+            font-weight: 450;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+    }
+        
+}
+
+
+
+

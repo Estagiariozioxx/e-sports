@@ -1079,12 +1079,16 @@ p {
 .c-history {
   padding: 60px 0px;
   background-color: #0E1D2F;
+  background-image: url("../../../../../imgtest/historia/Frame 7.png");
+  background-size: cover; /* Para cobrir toda a área do elemento */
+  background-position: center; /* Para centralizar a imagem */
 }
 .c-history .history-title {
   color: #fff;
   font-size: 64px;
   font-weight: 700;
   padding-bottom: 16px;
+  margin-bottom: 64px;
 }
 .c-history .history-describe {
   color: #fff;
@@ -1092,7 +1096,7 @@ p {
   font-weight: 450;
 }
 .c-history .history-box_img {
-  margin: 4px 8px 8px 8px;
+  margin: 64px 32px 64px;
   padding: 4px 8px 8px 8px;
 }
 
@@ -1101,8 +1105,8 @@ p {
 }
 
 .c-basketball {
-  background-color: #972d2d;
-  padding: 60px 60px 60px 60px;
+  padding: 86px 86px 0px 86px;
+  background-image: url("../../../../../imgtest/basketball/fundo-basketball.png");
 }
 .c-basketball .basketball-title {
   font-weight: 800;
@@ -1110,9 +1114,10 @@ p {
   line-height: 2rem;
   color: #002d62;
   padding-bottom: 56px;
+  font-family: "NostromoRegular-Heavy", sans-serif;
 }
 .c-basketball .basketball-describe {
-  color: #fff;
+  color: black;
   padding: 0px 8px;
   font-weight: 450;
   font-size: 16px;
@@ -1125,6 +1130,62 @@ p {
   padding: 4px 8px;
   border-radius: 8px;
   margin: 0px 8px;
+}
+
+.c-teams-basketball .teams-basketball-color {
+  background-color: #EAEAEA;
+  border-radius: 8px;
+}
+.c-teams-basketball .teams-basketball-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+  /* Estilo da barra de rolagem */
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
+}
+.c-teams-basketball .teams-basketball-name {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.c-curiosity {
+  padding: 60px 0px;
+}
+.c-curiosity .curiosity-color {
+  background-color: #540017;
+  border-radius: 8px;
+}
+.c-curiosity .curiosity-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 2rem;
+  color: white;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.c-curiosity .curiosity-home {
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.c-curiosity .curiosity-describe {
+  color: white;
+  font-weight: 450;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .c-shirt {

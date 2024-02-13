@@ -6,8 +6,9 @@ p{
     margin-bottom: 0px;
 }
 .c-basketball{
-    background-color: #972d2d;
-    padding: 60px 60px 60px 60px;
+    padding: 86px 86px 0px 86px;
+    background-image: url('../../../../../imgtest/basketball/fundo-basketball.png');
+
 
     .basketball{
         &-title{
@@ -16,10 +17,14 @@ p{
             line-height: 2rem;
             color: #002d62;
             padding-bottom:56px;
+            font-family: 'NostromoRegular-Heavy', sans-serif;
+        }
+        &-box_img{
+            
         }
 
         &-describe{
-            color:#fff;
+            color:black;
             padding: 0px 8px;
             font-weight: 450;
             font-size: 16px;
@@ -37,3 +42,44 @@ p{
     }
         
 }
+
+.c-teams-basketball{
+   // background-color: #c90707;
+   .teams-basketball{
+    &-color {
+        background-color: #EAEAEA;
+        border-radius: 8px;
+    }
+    &-describe{
+        text-align: justify;
+        overflow-y: auto;
+        max-height: 200px;
+        padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+        //background-color: #FCA701;
+         /* Estilo da barra de rolagem */
+         &::-webkit-scrollbar {
+            width: 8px; /* largura da barra de rolagem */
+            background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+            border-radius: 4px; /* borda arredondada  */
+        }
+
+    }
+    &-name{
+        font-size: 24px;
+        font-family: sans-serif;
+    }
+
+   }
+
+
+
+
+
+
+}
+

@@ -374,6 +374,7 @@
       }
     }
   );
+ 
 
   vitrine.html("");
 
@@ -895,4 +896,5 @@
 
     return false;
   });
+  
 })(jQuery);

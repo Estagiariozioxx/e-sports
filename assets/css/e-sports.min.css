@@ -1026,6 +1026,10 @@ html .botao-lancamento:hover {
   font-style: normal;
 }
 @font-face {
+  font-family: "Nostromo heavy";
+  src: url("fonts/nostromo/nostromoregularheavy.otf") format("opentype");
+}
+@font-face {
   font-family: Sporty;
   font-weight: 300;
   src: url("fonts/sporty/SportyPro-Light.otf") format("opentype");
@@ -1058,6 +1062,7 @@ p {
   font-weight: 800;
   font-size: 72px;
   line-height: 2rem;
+  font-family: "nostromo";
   color: #8f0228;
   padding-bottom: 56px;
 }

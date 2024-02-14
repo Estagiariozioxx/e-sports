@@ -1,23 +1,56 @@
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }
-
+//media para computador
 
 .c-history{
     padding: 60px 0px;
     background-color:#0E1D2F;
+    background-image: url('../../../../../imgtest/historia/Frame\ 7.png');
+    background-size: cover; /* Para cobrir toda a área do elemento */
+    background-position: center; /* Para centralizar a imagem */
 
     .history{
         &-title{
             color:#fff;
-            font-size: 64px;
+            font-family: Nostromo;
+            font-size: 56px;
             font-weight: 700;
-            padding-bottom: 16px;
+            padding-bottom: 32px;
+
+            @include md{
+                font-size: 64px;
+            }
         }
+
         &-describe{
             color:#fff;
             font-size: 16px;
+            line-height: 1.5rem;
             font-weight: 450;
+            margin-top: 32px;
+
+            @include md{
+                display: none;
+                margin: 0px;
+            }
+        }
+
+        &-box_img{
+            width: 96px;
+            height: 96px;
+            margin: 64px 16px;
+
+            @include md{
+                width: 120px;
+                height: 120px;
+                margin: 64px 16px 0px 16px;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
         }
         
     }

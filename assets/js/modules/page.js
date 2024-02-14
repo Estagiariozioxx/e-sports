@@ -2,7 +2,71 @@
   var containerinstruction = $(".instruction__slick");
   var containerstep = $(".slick__step");
   var containertop = $(".slick__top");
+  var containerslick =$(".center");
+  var containerslicknav =$(".center__nav");
 
+  containerslick.slick({
+    autoplay: false,
+    autoplaySpeed: 4000,
+    asNavFor:'.center__nav',
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  })
+  containerslicknav.slick({
+      centerMode: true,
+      asNavFor: '.center',
+      slidesToShow:5,
+      arrows: true,
+      dots: false,
+      focusOnSelect: true,
+  prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+  nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              arrows: true,
+              centerMode: true,
+              slidesToShow: 1,
+      prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
+           nextArrow: '<button class="slick-next slick-arrow" type="button"><img class="icon-arrow-right" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_direita.svg">'
+          }
+      }]
+  });
+
+/*   containerBolas.slick({
+    autoplay: false,
+    asNavFor: '.bola__nav',
+    autoplaySpeed: 4000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+        }
+    }]
+}); */
+
+
+  
   containerinstruction.slick({
     autoplay: false,
     autoplaySpeed: 4000,
@@ -374,6 +438,7 @@
       }
     }
   );
+ 
 
   vitrine.html("");
 
@@ -895,4 +960,5 @@
 
     return false;
   });
+  
 })(jQuery);

@@ -1026,8 +1026,9 @@ html .botao-lancamento:hover {
   font-style: normal;
 }
 @font-face {
-  font-family: "Nostromo heavy";
-  src: url("fonts/nostromo/nostromoregularheavy.otf") format("opentype");
+  font-family: Nostromo;
+  font-weight: normal;
+  src: url("../../../css/fonts/nostromo/NostromoRegularHeavy.otf?v4") format("opentype");
 }
 @font-face {
   font-family: Sporty;
@@ -1080,21 +1081,214 @@ p {
   border-radius: 8px;
   margin: 0px 8px;
 }
+.c-home .home-box-img {
+  background-size: cover;
+  width: 33%;
+  height: 390px;
+  background-position: center;
+}
+.c-home .home-box-img_basquete {
+  background-image: url("../../../../../imgtest/home/basquete.png");
+}
+@media (min-width: 1200px) {
+  .c-home .home-box-img_basquete {
+    background-image: url("../../../../../imgtest/basquete-offwhite.png");
+  }
+}
+.c-home .home-box-img_basquete:hover {
+  background-image: url("../../../../../imgtest/home/basquete.png");
+}
+.c-home .home-box-img_baseball {
+  background-image: url("../../../../../imgtest/home/baseball.png");
+}
+@media (min-width: 1200px) {
+  .c-home .home-box-img_baseball {
+    background-image: url("../../../../../imgtest/baseball-offwhite.png");
+  }
+}
+.c-home .home-box-img_baseball:hover {
+  background-image: url("../../../../../imgtest/home/baseball.png");
+}
+.c-home .home-box-img_futebol {
+  background-image: url("../../../../../imgtest/home/futebol-americano.png");
+}
+@media (min-width: 1200px) {
+  .c-home .home-box-img_futebol {
+    background-image: url("../../../../../imgtest/futebol-americano-offwhite.png");
+  }
+}
+.c-home .home-box-img_futebol:hover {
+  background-image: url("../../../../../imgtest/home/futebol-americano.png");
+}
 
 .c-history {
   padding: 60px 0px;
   background-color: #0E1D2F;
+  background-image: url("../../../../../imgtest/historia/Frame 7.png");
+  background-size: cover; /* Para cobrir toda a área do elemento */
+  background-position: center; /* Para centralizar a imagem */
 }
 .c-history .history-title {
   color: #fff;
-  font-size: 64px;
+  font-family: Nostromo;
+  font-size: 56px;
   font-weight: 700;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  .c-history .history-title {
+    font-size: 64px;
+  }
 }
 .c-history .history-describe {
   color: #fff;
   font-size: 16px;
+  line-height: 1.5rem;
   font-weight: 450;
+  margin-top: 32px;
+}
+@media (min-width: 1200px) {
+  .c-history .history-describe {
+    display: none;
+    margin: 0px;
+  }
+}
+.c-history .history-box_img {
+  width: 96px;
+  height: 96px;
+  margin: 64px 16px;
+}
+@media (min-width: 1200px) {
+  .c-history .history-box_img {
+    width: 120px;
+    height: 120px;
+    margin: 64px 16px 0px 16px;
+  }
+}
+.c-history .history-box_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.c-basketball {
+  padding: 60px 0px;
+  background-image: url("../../../../../imgtest/basketball/fundo-basketball.png");
+  background-position: left top;
+  background-size: cover;
+}
+.c-basketball .basketball-title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 2rem;
+  color: #002d62;
+  font-family: "NostromoRegular-Heavy", sans-serif;
+}
+.c-basketball .basketball-box_img .basketball-img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .c-basketball .basketball-box_img .basketball-img {
+    width: 100%;
+  }
+}
+.c-basketball .basketball-describe {
+  color: black;
+  padding: 0px 8px;
+  font-weight: 450;
+  font-size: 16px;
+  text-align: justify;
+}
+.c-basketball .basketball-anchor {
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 0px 8px;
+}
+
+.slick-next, .slick-prev {
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgb(122, 139, 165);
+  color: #fff;
+}
+.slick-next i, .slick-prev i {
+  font-size: 30px;
+}
+
+.slick-next {
+  margin-left: 10px;
+}
+
+.slick-prev {
+  margin-right: 10px;
+}
+
+.c-teams-basketball .teams-basketball-color {
+  background-color: #EAEAEA;
+  border-radius: 8px;
+}
+.c-teams-basketball .teams-basketball-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+  /* Estilo da barra de rolagem */
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
+}
+.c-teams-basketball .teams-basketball-name {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.c-curiosity {
+  padding: 60px 0px;
+}
+.c-curiosity .curiosity-color {
+  background-color: #540017;
+  border-radius: 8px;
+}
+.c-curiosity .curiosity-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 2rem;
+  color: white;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.c-curiosity .curiosity-home {
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.c-curiosity .curiosity-describe {
+  color: white;
+  font-weight: 450;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .c-shirt {

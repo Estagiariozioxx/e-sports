@@ -39,6 +39,47 @@ p{
             border-radius:8px; 
             margin:0px 8px;
         }
+        &-box-img{
+            background-size: cover;
+            width: 33%;
+            height: 390px;
+            background-position: center;
+
+            &_basquete{
+                background-image: url('../../../../../imgtest/home/basquete.png');
+
+                @include md{
+                    background-image: url('../../../../../imgtest/basquete-offwhite.png');
+                }
+                
+                &:hover{
+                    background-image: url('../../../../../imgtest/home/basquete.png');
+                }
+            }
+            &_baseball{
+                background-image: url('../../../../../imgtest/home/baseball.png');
+
+                @include md{
+                    background-image: url('../../../../../imgtest/baseball-offwhite.png');
+
+                }
+
+                &:hover{
+                    background-image: url('../../../../../imgtest/home/baseball.png');
+                }
+            }
+            &_futebol{
+                background-image: url('../../../../../imgtest/home/futebol-americano.png');
+                
+                @include md{
+                    background-image: url('../../../../../imgtest/futebol-americano-offwhite.png');
+                }
+
+                &:hover{
+                    background-image: url('../../../../../imgtest/home/futebol-americano.png');
+                }
+            }
+        }
     }
         
 }

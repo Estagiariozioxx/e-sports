@@ -1,0 +1,49 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+p{
+    margin-bottom: 0px;
+}
+.c-baisebol-curiosity{
+    padding: 60px 0px;
+
+    .baisebol-curiosity{
+        &-color{
+            background-color: #540017;
+            border-radius: 8px;
+        }
+        &-title{
+            font-weight: 800;
+            font-size:36px;
+            line-height: 2rem;
+            color:#fff;
+            padding-top: 56px;
+            padding-bottom: 56px;
+        }
+        &-home{
+
+            
+
+        }
+        &-img{
+            width: 100%;
+            background-size: cover;
+        }
+
+        &-describe{
+            color:#fff;
+            font-weight: 450;
+            font-size: 16px;
+            line-height: 1.5rem;
+            text-align: left;
+        }
+
+
+    }
+        
+}
+
+
+
+

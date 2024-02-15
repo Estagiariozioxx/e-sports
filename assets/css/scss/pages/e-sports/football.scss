@@ -5,36 +5,39 @@
 p{
     margin-bottom: 0px;
 }
-.c-basketball{
+.c-football{
     padding: 60px 0px;
-    background-image: url('../../../../../imgtest/basketball/fundo-basketball.png');
-    background-position: left top;
+    background-color:#0e1d2f ;
+    background-image: url('../../../../../imgtest/football/football-fundo.png');
     background-size: cover;
 
 
-    .basketball{
+    .football{
         &-title{
             font-weight: 800;
-            font-size:72px;
+            font-size:65px;
             line-height: 2rem;
-            color: #002d62;
+            color: #fff;
             font-family: 'NostromoRegular-Heavy', sans-serif;
+            padding-top: 36px;
+            margin-bottom: 86px;
         }
         &-box_img{
-            .basketball-img{
+            .football-img{
                 width: 100%;
                 @include md{
-                    width: 100%;
+                    width: 130%;
                 }
             }
         }
 
         &-describe{
-            color:black;
+            color:#fff;
             padding: 0px 8px;
             font-weight: 450;
             font-size: 16px;
-            text-align: justify;
+            text-align: left;
+            padding-left: 80px;
         }
 
         &-anchor{
@@ -73,18 +76,34 @@ p{
 
 }
 
-.c-teams-basketball{
+.c-teams-football{
+    margin-top: 27px;
    // background-color: #c90707;
-   .teams-basketball{
+   .teams-football{
+    &-title{
+        font-weight: 800;
+        font-size:32px;
+        line-height: 2rem;
+        color: #fff;
+        font-family: 'NostromoRegular-Heavy', sans-serif;
+        padding-top: 36px;
+
+    }
     &-color {
-        background-color: rgba(234, 234, 234, 0.5);
+        background-color: rgba(31, 45, 62, 0.5); /* 0.5 é a opacidade */
         border-radius: 8px;
+    }
+    &-img{
+        width: 272px;
+        height: 272px;
+
     }
     &-describe{
         text-align: justify;
         overflow-y: auto;
         max-height: 200px;
-        padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+        padding-right: 16px;
+        color: #fff; /* ajuste a altura máxima conforme necessário */
         //background-color: #FCA701;
          /* Estilo da barra de rolagem */
          &::-webkit-scrollbar {

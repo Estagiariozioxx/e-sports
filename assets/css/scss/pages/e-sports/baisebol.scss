@@ -5,26 +5,28 @@
 p{
     margin-bottom: 0px;
 }
-.c-basketball{
+.c-baisebol{
     padding: 60px 0px;
-    background-image: url('../../../../../imgtest/basketball/fundo-basketball.png');
+    background-image: url('../../../../../imgtest/baisebol/Baseball-fundo.png');
     background-position: left top;
     background-size: cover;
 
 
-    .basketball{
+    .baisebol{
         &-title{
             font-weight: 800;
-            font-size:72px;
+            font-size:65px;
             line-height: 2rem;
             color: #002d62;
             font-family: 'NostromoRegular-Heavy', sans-serif;
+            padding-top: 36px;
+            margin-bottom: 86px;
         }
         &-box_img{
-            .basketball-img{
+            .baisebol-img{
                 width: 100%;
                 @include md{
-                    width: 100%;
+                    width: 130%;
                 }
             }
         }
@@ -34,7 +36,9 @@ p{
             padding: 0px 8px;
             font-weight: 450;
             font-size: 16px;
-            text-align: justify;
+            line-height: 1.5rem;
+            text-align: left;
+            padding-left: 80px;
         }
 
         &-anchor{
@@ -73,18 +77,34 @@ p{
 
 }
 
-.c-teams-basketball{
+.c-teams-baisebol{
+    margin-top: 27px;
    // background-color: #c90707;
-   .teams-basketball{
+   .teams-baisebol{
+    &-title{
+        font-weight: 800;
+        font-size:32px;
+        line-height: 2rem;
+        color: #fff;
+        font-family: 'NostromoRegular-Heavy', sans-serif;
+        padding-top: 36px;
+
+    }
     &-color {
         background-color: rgba(234, 234, 234, 0.5);
         border-radius: 8px;
+    }
+    &-img{
+        width: 272px;
+        height: 272px;
+
     }
     &-describe{
         text-align: justify;
         overflow-y: auto;
         max-height: 200px;
-        padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+        padding-right: 16px;
+        color: #fff; /* ajuste a altura máxima conforme necessário */
         //background-color: #FCA701;
          /* Estilo da barra de rolagem */
          &::-webkit-scrollbar {

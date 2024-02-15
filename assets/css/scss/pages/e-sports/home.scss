@@ -48,9 +48,11 @@ p{
 
             &_basquete{
                 background-image: url('../../../../../imgtest/home/basquete.png');
+                transform: translateY(66px);
 
                 @include md{
                     background-image: url('../../../../../imgtest/basquete-offwhite.png');
+                    z-index: 1;
                 }
                 
                 &:hover{
@@ -62,6 +64,8 @@ p{
 
                 @include md{
                     background-image: url('../../../../../imgtest/baseball-offwhite.png');
+                    z-index: 2; /* Defina a profundidade desejada */
+                    transform: translateY(-10px);
 
                 }
 
@@ -74,6 +78,8 @@ p{
                 
                 @include md{
                     background-image: url('../../../../../imgtest/futebol-americano-offwhite.png');
+                    z-index: 3; /* Defina a profundidade desejada */
+                    transform: translateY(20px);
                 }
 
                 &:hover{

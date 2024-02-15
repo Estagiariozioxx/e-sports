@@ -1099,10 +1099,12 @@ p {
 }
 .c-home .home-box-img_basquete {
   background-image: url("../../../../../imgtest/home/basquete.png");
+  transform: translateY(66px);
 }
 @media (min-width: 1200px) {
   .c-home .home-box-img_basquete {
     background-image: url("../../../../../imgtest/basquete-offwhite.png");
+    z-index: 1;
   }
 }
 .c-home .home-box-img_basquete:hover {
@@ -1114,6 +1116,8 @@ p {
 @media (min-width: 1200px) {
   .c-home .home-box-img_baseball {
     background-image: url("../../../../../imgtest/baseball-offwhite.png");
+    z-index: 2; /* Defina a profundidade desejada */
+    transform: translateY(-10px);
   }
 }
 .c-home .home-box-img_baseball:hover {
@@ -1125,6 +1129,8 @@ p {
 @media (min-width: 1200px) {
   .c-home .home-box-img_futebol {
     background-image: url("../../../../../imgtest/futebol-americano-offwhite.png");
+    z-index: 3; /* Defina a profundidade desejada */
+    transform: translateY(20px);
   }
 }
 .c-home .home-box-img_futebol:hover {
@@ -1250,6 +1256,22 @@ p {
   background-position: center bottom;
   background-size: cover;
 }
+.c-teams-basketball .teams-basketball-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px;
+  /* Estilo da barra de rolagem */
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-teams-basketball .teams-basketball-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
+}
 .c-teams-basketball .teams-basketball-color {
   padding: 60px 30px;
   background-color: rgba(234, 234, 234, 0.5);
@@ -1331,6 +1353,7 @@ p {
   color: white;
   padding-top: 56px;
   padding-bottom: 56px;
+  font-family: "Nostromo";
 }
 .c-curiosity .curiosity-home {
   padding-bottom: 64px;
@@ -1362,17 +1385,54 @@ p {
   color: black;
   padding-top: 56px;
   padding-bottom: 56px;
+  font-family: "Nostromo";
+}
+.c-football-curiosity .football-curiosity-home {
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 .c-football-curiosity .football-curiosity-img {
   width: 100%;
-  background-size: cover;
 }
 .c-football-curiosity .football-curiosity-describe {
-  color: black;
+  color: #000000;
+  font-weight: 450;
+  line-height: 1.5rem;
+  font-size: 16px;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.c-curiosity {
+  padding: 60px 0px;
+}
+.c-curiosity .curiosity-color {
+  background-color: #540017;
+  border-radius: 8px;
+}
+.c-curiosity .curiosity-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 2rem;
+  color: white;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  font-family: "Nostromo";
+}
+.c-curiosity .curiosity-home {
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.c-curiosity .curiosity-describe {
+  color: white;
   font-weight: 450;
   font-size: 16px;
-  line-height: 1.5rem;
-  text-align: left;
+  text-align: justify;
 }
 
 p {
@@ -1460,9 +1520,47 @@ p {
   background-color: rgba(31, 45, 62, 0.5); /* 0.5 é a opacidade */
   border-radius: 8px;
 }
+.c-teams-football .teams-football-box_img {
+  width: 135px;
+  height: 135px;
+  background-image: url("../../../../../imgtest/quadrado.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-teams-football .teams-football-division {
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+  font-family: "gotham";
+  padding-bottom: 32px;
+}
+.c-teams-football .teams-football-name {
+  font-size: 24px;
+  font-family: "gotham";
+}
+.c-teams-football .teams-football-win {
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  color: #fff;
+  font-family: "gotham";
+}
+.c-teams-football .teams-football-win-nf {
+  font-weight: 450;
+}
+.c-teams-football .teams-football-win-number {
+  line-height: 2rem;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+}
 .c-teams-football .teams-football-img {
-  width: 272px;
-  height: 272px;
+  width: 240px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 240px;
 }
 .c-teams-football .teams-football-describe {
   text-align: justify;
@@ -1474,11 +1572,11 @@ p {
 }
 .c-teams-football .teams-football-describe::-webkit-scrollbar {
   width: 8px; /* largura da barra de rolagem */
-  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  background-color: #503230; /* cor de fundo da barra de rolagem */
   border-radius: 4px;
 }
 .c-teams-football .teams-football-describe::-webkit-scrollbar-thumb {
-  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  background-color: #E74501; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
 .c-teams-football .teams-football-name {
@@ -1504,16 +1602,21 @@ p {
   color: #fff;
   padding-top: 56px;
   padding-bottom: 56px;
+  font-family: "Nostromo";
+}
+.c-baisebol-curiosity .baisebol-curiosity-home {
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 .c-baisebol-curiosity .baisebol-curiosity-img {
   width: 100%;
   background-size: cover;
 }
 .c-baisebol-curiosity .baisebol-curiosity-describe {
-  color: #fff;
+  color: white;
   font-weight: 450;
   font-size: 16px;
-  line-height: 1.5rem;
   text-align: left;
 }
 
@@ -1532,7 +1635,7 @@ p {
   font-size: 65px;
   line-height: 2rem;
   color: #002d62;
-  font-family: "NostromoRegular-Heavy", sans-serif;
+  font-family: "nostromo";
   padding-top: 36px;
   margin-bottom: 86px;
 }
@@ -1552,6 +1655,17 @@ p {
   line-height: 1.5rem;
   text-align: left;
   padding-left: 80px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.c-baisebol .baisebol-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #Eac1b3; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-baisebol .baisebol-describe::-webkit-scrollbar-thumb {
+  background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
 }
 .c-baisebol .baisebol-anchor {
   font-size: 14px;
@@ -1593,33 +1707,73 @@ p {
   font-weight: 800;
   font-size: 32px;
   line-height: 2rem;
-  color: #fff;
-  font-family: "NostromoRegular-Heavy", sans-serif;
+  color: black;
+  font-family: "nostromo";
   padding-top: 36px;
 }
 .c-teams-baisebol .teams-baisebol-color {
   background-color: rgba(234, 234, 234, 0.5);
   border-radius: 8px;
 }
+.c-teams-baisebol .teams-baisebol-box_img {
+  width: 135px;
+  height: 135px;
+  background-image: url("../../../../../imgtest/quadrado.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-teams-baisebol .teams-baisebol-division {
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+  font-family: "gotham";
+  margin-bottom: 0px;
+}
+.c-teams-baisebol .teams-baisebol-division-sp {
+  padding-bottom: 16px;
+  font-family: "gotham";
+}
+.c-teams-baisebol .teams-baisebol-name {
+  font-size: 24px;
+  font-family: "gotham";
+}
+.c-teams-baisebol .teams-baisebol-win {
+  font-size: 18px;
+  font-weight: 450;
+  padding-bottom: 8px;
+}
+.c-teams-baisebol .teams-baisebol-win-nf {
+  font-weight: 450;
+}
+.c-teams-baisebol .teams-baisebol-win-number {
+  line-height: 2rem;
+  color: #540017;
+  font-weight: 800;
+  font-size: 40px;
+}
 .c-teams-baisebol .teams-baisebol-img {
-  width: 272px;
-  height: 272px;
+  width: 240px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 240px;
 }
 .c-teams-baisebol .teams-baisebol-describe {
   text-align: justify;
   overflow-y: auto;
   max-height: 200px;
   padding-right: 16px;
-  color: #fff; /* ajuste a altura máxima conforme necessário */
+  color: black; /* ajuste a altura máxima conforme necessário */
   /* Estilo da barra de rolagem */
 }
 .c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar {
   width: 8px; /* largura da barra de rolagem */
-  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  background-color: #Eac1b3; /* cor de fundo da barra de rolagem */
   border-radius: 4px;
 }
 .c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar-thumb {
-  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
 .c-teams-baisebol .teams-baisebol-name {

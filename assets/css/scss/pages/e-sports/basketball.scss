@@ -45,6 +45,7 @@ p{
             border-radius:8px; 
             margin:0px 8px;
         }
+
     }
         
 }
@@ -74,9 +75,18 @@ p{
 }
 
 .c-teams-basketball{
-   // background-color: #c90707;
+ 
+    padding-bottom: 60px; //funciona igual um relogio padding: 0px 0px 0px 0px sentido horario !!
+
+    background-image: url('../../../../../imgtest/basketball/fundo-basketball22.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+
    .teams-basketball{
     &-color {
+        padding: 60px 0px;
         background-color: rgba(234, 234, 234, 0.5);
         border-radius: 8px;
     }
@@ -98,6 +108,13 @@ p{
             border-radius: 4px; /* borda arredondada  */
         }
 
+    }
+    &-box_img{
+        width: 135px;
+        height: 135px;
+        background-image: url('../../../../../imgtest/quadrado.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     &-name{
         font-size: 24px;

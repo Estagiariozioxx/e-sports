@@ -6,10 +6,14 @@ p{
     margin-bottom: 0px;
 }
 .c-football{
+
+    //envolver em 3 partess
     padding: 60px 0px;
     background-color:#0e1d2f ;
     background-image: url('../../../../../imgtest/football/football-fundo.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 
 
     .football{
@@ -32,6 +36,8 @@ p{
         }
 
         &-describe{
+
+            //colocar scroll
             color:#fff;
             padding: 0px 8px;
             font-weight: 450;

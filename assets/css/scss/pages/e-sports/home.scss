@@ -12,16 +12,17 @@ p{
 
     .home{
         &-top-title{
-            font-size:56px;
+            font-size:32px;
             color:#fff;
+            font-family: 'nostromo-outline';
         }
         &-title{
             font-weight: 800;
-            font-size:72px;
+            font-size:56px;
             line-height: 2rem;
-            font-family: 'nostromo';
+            font-family:"Nostromo";
             color: #8f0228;
-            padding-bottom:56px;
+            padding-bottom:32px;
         }
 
         &-describe{

@@ -1028,8 +1028,14 @@ html .botao-lancamento:hover {
 @font-face {
   font-family: Nostromo;
   font-weight: normal;
-  src: url("../../../css/fonts/nostromo/NostromoRegularHeavy.otf?v4") format("opentype");
+  src: url("fonts/nostromo/heavy.otf") format("opentype");
 }
+@font-face {
+  font-family: nostromo-outline;
+  font-weight: normal;
+  src: url("fonts/nostromo/nostromooutlineheavy.otf?v3") format("opentype");
+}
+/** PAGE PALMEIRAS **/
 @font-face {
   font-family: Sporty;
   font-weight: 300;
@@ -1045,8 +1051,11 @@ html .botao-lancamento:hover {
   font-weight: bold;
   src: url("fonts/sporty/SportyPro-Bold.otf") format("opentype");
 }
-/** PAGE PALMEIRAS **/
-/* @import "e-sport/designsystem"; */
+@font-face {
+  font-family: "Nostromo";
+  font-weight: normal;
+  src: url("fonts/nostromo/heavy.otf") format("opentype");
+}
 p {
   margin-bottom: 0px;
 }
@@ -1056,16 +1065,17 @@ p {
   padding: 60px 0px;
 }
 .c-home .home-top-title {
-  font-size: 56px;
+  font-size: 32px;
   color: #fff;
+  font-family: "nostromo-outline";
 }
 .c-home .home-title {
   font-weight: 800;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 2rem;
-  font-family: "nostromo";
+  font-family: "Nostromo";
   color: #8f0228;
-  padding-bottom: 56px;
+  padding-bottom: 32px;
 }
 .c-home .home-describe {
   color: #fff;
@@ -1122,7 +1132,7 @@ p {
 }
 
 .c-history {
-  padding: 60px 0px;
+  padding: 80px 0px 60px 0px;
   background-color: #0E1D2F;
   background-image: url("../../../../../imgtest/historia/Frame 7.png");
   background-size: cover; /* Para cobrir toda a área do elemento */
@@ -1131,13 +1141,13 @@ p {
 .c-history .history-title {
   color: #fff;
   font-family: Nostromo;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   padding-bottom: 32px;
 }
 @media (min-width: 1200px) {
   .c-history .history-title {
-    font-size: 64px;
+    font-size: 48px;
   }
 }
 .c-history .history-describe {
@@ -1181,10 +1191,9 @@ p {
 }
 .c-basketball .basketball-title {
   font-weight: 800;
-  font-size: 72px;
-  line-height: 2rem;
+  font-size: 48px;
   color: #002d62;
-  font-family: "NostromoRegular-Heavy", sans-serif;
+  font-family: "Nostromo";
 }
 .c-basketball .basketball-box_img .basketball-img {
   width: 100%;
@@ -1242,15 +1251,19 @@ p {
   background-size: cover;
 }
 .c-teams-basketball .teams-basketball-color {
-  padding: 60px 0px;
+  padding: 60px 30px;
   background-color: rgba(234, 234, 234, 0.5);
   border-radius: 8px;
+}
+.c-teams-basketball .teams-basketball-title {
+  font-size: 32px;
+  font-family: "Nostromo";
 }
 .c-teams-basketball .teams-basketball-describe {
   text-align: justify;
   overflow-y: auto;
   max-height: 200px;
-  padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+  padding-right: 16px;
   /* Estilo da barra de rolagem */
 }
 .c-teams-basketball .teams-basketball-describe::-webkit-scrollbar {
@@ -1262,6 +1275,14 @@ p {
   background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
+.c-teams-basketball .teams-basketball-img {
+  width: 240px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 240px;
+}
 .c-teams-basketball .teams-basketball-box_img {
   width: 135px;
   height: 135px;
@@ -1269,9 +1290,27 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.c-teams-basketball .teams-basketball-division {
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+  font-family: "gotham";
+  padding-bottom: 32px;
+}
 .c-teams-basketball .teams-basketball-name {
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "gotham";
+}
+.c-teams-basketball .teams-basketball-win {
+  font-size: 18px;
+  font-weight: 450;
+  padding-bottom: 8px;
+}
+.c-teams-basketball .teams-basketball-win-number {
+  line-height: 2rem;
+  color: #540017;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 p {

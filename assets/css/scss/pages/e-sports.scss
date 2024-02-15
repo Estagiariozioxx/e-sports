@@ -13,40 +13,20 @@ $color-secundary:#DEA95C;
 @import "../components/reset-tray";
 
 
+  
 @import "../fonts/gotham-book";
 @import "../fonts/gotham-medium";
 @import "../fonts/gotham-bold";
 @import "../fonts/gotham-black";
-@import "../fonts/nostromo";
-@import "../fonts/sporty";
+@import "../fonts/nostromo"; 
+@import "../fonts/nostromo-outline"; 
+
 @import "../components/variables";
-
-/* @import "e-sport/designsystem"; */
-
-// o que fazer agora?
-//1- excluir os css e css.map, deixar somente o e-sports.min.css e e-sports.min.css.map
-//2- instalar a font (está no trello), segue o formato desse import @import "../fonts/sporty";
-//3- auto save no código , pq auto save? p não ter que ficar usando ctrl s, ele ja salva automatico (ok)
-//uma perg
-// deleto todos os css.map e css? se vc fez alguma alteração nos css, ao invés do scss tem que repassar elas p o min.scss 
-//4- adicionar quebra de linha (tem um quebra de linhas automatico que n sai a config (ok)
-//5- trocar as fonts para as desenhadas no figma (tenta ir configurando)
-//6- fazer a sessão de historia toda (ela é bem de boa, ja começamos ela)
-//7- importar as imagens p o filezilla da fut, como? vou te mostrar cdn fut>futfanatics nacional > páginas personalizadas>
-// tem que criar a pasta daquela lp, por exemplo essa e-sports (ok, pasta criada, suba os arquivos de imagem,todos do figma que são necessários, até o background que fizemos, suba em pastas tipo /e-sports/home)
-//8- documentação slick e documentação da tray realizar a leitura  https://kenwheeler.github.io/slick/ https://partners.tray.com.br/v/themes/homologacao/requerimentos/documentacao-e-suporte
-//9- insira as imagens na home
-
-//acabou k
-
-//kkkkkkk pouca coisa, graças a deus
-//kkkkkkkkkkkk e ainda nem começamos tudooo na terça se tiver de boas, pegamos umas 3/4hrs de noite//TO ONLINEZASSOOOOOOOOOO!!!!!!!!!!!!!!!!! fechou kkkk beleza, eu vou entrar em uma reunião agora e hoje vou fazer esssas coisas que me passou, qualquer duvida eu te chamo (garanto que vao surgir)kkkkkkkkkk tudo beeem, lembra de nao fechar o terminal ein pq ele ta rodando o sass. entendi, toda vez que eu abrir o codigo tenho que rodar aquele comando ne?
-//siiim, no terminal do git bash, que é o q estamos usando OKK falo thauuuu, muito obrigadooo <33333  
 
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }
-
+@import "../fonts/sporty";
 @import "e-sports/home";
 @import "e-sports/history";
 @import "e-sports/basketball";

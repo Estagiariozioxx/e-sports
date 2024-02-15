@@ -15,10 +15,9 @@ p{
     .basketball{
         &-title{
             font-weight: 800;
-            font-size:72px;
-            line-height: 2rem;
+            font-size:48px;
             color: #002d62;
-            font-family: 'NostromoRegular-Heavy', sans-serif;
+            font-family: 'Nostromo';
         }
         &-box_img{
             .basketball-img{
@@ -75,9 +74,7 @@ p{
 }
 
 .c-teams-basketball{
- 
-    padding-bottom: 60px; //funciona igual um relogio padding: 0px 0px 0px 0px sentido horario !!
-
+    padding-bottom: 60px; 
     background-image: url('../../../../../imgtest/basketball/fundo-basketball22.png');
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -86,15 +83,19 @@ p{
 
    .teams-basketball{
     &-color {
-        padding: 60px 0px;
+        padding: 60px 30px;
         background-color: rgba(234, 234, 234, 0.5);
         border-radius: 8px;
+    }
+    &-title{
+        font-size: 32px;
+        font-family: 'Nostromo';
     }
     &-describe{
         text-align: justify;
         overflow-y: auto;
         max-height: 200px;
-        padding-right: 16px; /* ajuste a altura máxima conforme necessário */
+        padding-right: 16px; 
         //background-color: #FCA701;
          /* Estilo da barra de rolagem */
          &::-webkit-scrollbar {
@@ -109,6 +110,14 @@ p{
         }
 
     }
+    &-img{
+        width: 240px;
+        object-fit: cover;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        height: 240px;
+    }
     &-box_img{
         width: 135px;
         height: 135px;
@@ -116,11 +125,29 @@ p{
         background-size: cover;
         background-repeat: no-repeat;
     }
+    &-division{
+        font-size: 20px;
+        color: #000;
+        font-weight: 800;
+        font-family: 'gotham';
+        padding-bottom: 32px;
+    }
     &-name{
         font-size: 24px;
-        font-family: sans-serif;
+        font-family: 'gotham';
     }
+    &-win{
+        font-size: 18px;
+        font-weight: 450;
+        padding-bottom: 8px;
 
+        &-number{
+            line-height: 2rem;
+            color: #540017;
+            font-weight: 800;
+            font-size: 40px;
+        }
+    }
    }
 
 

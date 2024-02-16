@@ -1506,6 +1506,17 @@ p {
   font-size: 16px;
   text-align: left;
   padding-left: 80px;
+  overflow-y: auto;
+  max-height: 350px;
+}
+.c-football .football-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #503230; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-football .football-describe::-webkit-scrollbar-thumb {
+  background-color: #E74501; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
 }
 .c-football .football-anchor {
   font-size: 14px;
@@ -1542,18 +1553,126 @@ p {
 
 .c-teams-football {
   margin-top: 27px;
-}
-.c-teams-football .teams-football-title {
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 2rem;
-  color: #fff;
-  font-family: "NostromoRegular-Heavy", sans-serif;
-  padding-top: 36px;
+  /*.teams-football{
+   &-title{
+       font-weight: 800;
+       font-size:32px;
+       line-height: 2rem;
+       color: #fff;
+       font-family: 'NostromoRegular-Heavy', sans-serif;
+       padding-top: 36px;
+
+   }
+   &-color {
+       background-color: rgba(31, 45, 62, 0.5); /* 0.5 é a opacidade 
+       border-radius: 8px;
+   }
+
+   &-box_img{
+       width: 135px;
+       height: 135px;
+       background-image: url('../../../../../imgtest/quadrado.svg');
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+   &-division{
+       font-size: 20px;
+       color: #000;
+       font-weight: 800;
+       font-family: 'gotham';
+       padding-bottom: 32px;
+   }
+   &-name{
+       font-size: 24px;
+       font-family: 'gotham';
+   }
+   &-win{
+       font-size: 18px;
+       font-weight: 300;
+       padding-bottom: 8px;
+       color: #fff;
+       font-family: 'gotham';
+
+       &-nf{
+           font-weight: 450;
+       }
+
+       &-number{
+           line-height: 2rem;
+           color: #fff;
+           font-weight: 800;
+           font-size: 40px;
+       }
+   }
+
+   &-img{
+       width: 240px;
+       object-fit: cover;
+       left: 50%;
+       position: relative;
+       transform: translateX(-50%);
+       height: 240px;
+
+   }
+   &-describe{
+       text-align: justify;
+       overflow-y: auto;
+       max-height: 200px;
+       padding-right: 16px;
+       color: #fff; /* ajuste a altura máxima conforme necessário 
+       //background-color: #FCA701;
+        /* Estilo da barra de rolagem 
+        &::-webkit-scrollbar {
+           width: 8px; /* largura da barra de rolagem 
+           background-color: #503230; /* cor de fundo da barra de rolagem 
+           border-radius: 4px;
+       }
+
+       &::-webkit-scrollbar-thumb {
+           background-color: #E74501; /* cor do polegar (a parte que você arrasta) 
+           border-radius: 4px; /* borda arredondada  
+       }
+
+   }
+   &-name{
+       font-size: 24px;
+       font-family: sans-serif;
+   }
+
+  }*/
 }
 .c-teams-football .teams-football-color {
-  background-color: rgba(31, 45, 62, 0.5); /* 0.5 é a opacidade */
+  padding: 60px 30px;
+  background-color: rgba(234, 234, 234, 0.5);
   border-radius: 8px;
+}
+.c-teams-football .teams-football-title {
+  font-size: 32px;
+  font-family: "Nostromo";
+}
+.c-teams-football .teams-football-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px;
+  /* Estilo da barra de rolagem */
+}
+.c-teams-football .teams-football-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-teams-football .teams-football-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
+}
+.c-teams-football .teams-football-img {
+  width: 200px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 200px;
 }
 .c-teams-football .teams-football-box_img {
   width: 135px;
@@ -1571,52 +1690,54 @@ p {
 }
 .c-teams-football .teams-football-name {
   font-size: 24px;
+  color: #000;
+  padding-top: 16px;
   font-family: "gotham";
 }
 .c-teams-football .teams-football-win {
   font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 8px;
-  color: #fff;
-  font-family: "gotham";
-}
-.c-teams-football .teams-football-win-nf {
   font-weight: 450;
+  padding-bottom: 8px;
 }
 .c-teams-football .teams-football-win-number {
   line-height: 2rem;
-  color: #fff;
+  color: #540017;
   font-weight: 800;
   font-size: 40px;
 }
-.c-teams-football .teams-football-img {
-  width: 240px;
-  object-fit: cover;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-  height: 240px;
+.c-teams-football .center__nav {
+  margin-top: 48px;
 }
-.c-teams-football .teams-football-describe {
-  text-align: justify;
-  overflow-y: auto;
-  max-height: 200px;
-  padding-right: 16px;
-  color: #fff; /* ajuste a altura máxima conforme necessário */
-  /* Estilo da barra de rolagem */
+.c-teams-football .center__nav .item {
+  padding: 0px 8px;
 }
-.c-teams-football .teams-football-describe::-webkit-scrollbar {
-  width: 8px; /* largura da barra de rolagem */
-  background-color: #503230; /* cor de fundo da barra de rolagem */
-  border-radius: 4px;
+.c-teams-football .center__nav .item .teams-football-box {
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
 }
-.c-teams-football .teams-football-describe::-webkit-scrollbar-thumb {
-  background-color: #E74501; /* cor do polegar (a parte que você arrasta) */
-  border-radius: 4px; /* borda arredondada  */
+.c-teams-football .center__nav .item img {
+  width: 120px;
+  height: 120px;
 }
-.c-teams-football .teams-football-name {
-  font-size: 24px;
-  font-family: sans-serif;
+.c-teams-football .center__nav .slick-current .teams-football-box {
+  border: none;
+  padding: 0px;
+}
+.c-teams-football .center__nav .slick-current .item {
+  border: 3px solid #FCA701;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.c-teams-football .center__nav .slick-current .item img {
+  width: 150px;
+  height: 150px;
 }
 
 p {
@@ -1737,18 +1858,136 @@ p {
 
 .c-teams-baisebol {
   margin-top: 27px;
+  /* .teams-baisebol{
+
+        &-title{
+            font-size: 32px;
+            font-family: 'Nostromo';
+
+        }
+        &-color {
+            padding: 60px 30px;
+            background-color: rgba(234, 234, 234, 0.5);
+            border-radius: 8px;
+        }
+        &-box_img{
+            width: 135px;
+            height: 135px;
+            background-image: url('../../../../../imgtest/quadrado.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &-division{
+            font-size: 20px;
+            color: #000;
+            font-weight: 800;
+            font-family: 'gotham';
+            padding-bottom: 32px;
+
+            &-sp{
+                padding-bottom: 16px;
+                font-family: 'gotham';
+            }
+        }
+        &-name{
+            font-size: 24px;
+            font-family: 'gotham';
+        }
+        &-win{
+            font-size: 18px;
+            font-weight: 450;
+            padding-bottom: 8px;
+
+            &-nf{
+                font-weight: 450;
+            }
+
+            &-number{
+                line-height: 2rem;
+                color: #540017;
+                font-weight: 800;
+                font-size: 40px;
+            }
+        }
+        &-img{
+            width: 200px;
+            object-fit: cover;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            height: 200px;
+        }
+        &-describe{
+            text-align: justify;
+            overflow-y: auto;
+            max-height: 200px;
+            padding-right: 16px; 
+            color: black; /* ajuste a altura máxima conforme necessário */
+  /* Estilo da barra de rolagem 
+           &::-webkit-scrollbar {
+               width: 8px; /* largura da barra de rolagem 
+               background-color: #Eac1b3; /* cor de fundo da barra de rolagem 
+               border-radius: 4px;
+           }
+
+           &::-webkit-scrollbar-thumb {
+               background-color: #e74501;; /* cor do polegar (a parte que você arrasta) 
+               border-radius: 4px; /* borda arredondada  
+           }
+       }
+       &-name{
+           font-size: 24px;
+           font-family: sans-serif;
+       }
+  }*/
 }
-.c-teams-baisebol .teams-baisebol-title {
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 2rem;
-  color: black;
-  font-family: "nostromo";
-  padding-top: 36px;
+.c-teams-baisebol .teams-baisebol-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px;
+}
+.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar {
+  width: 8px;
+  background-color: #EEDAB2;
+  border-radius: 4px;
+}
+.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701;
+  border-radius: 4px;
 }
 .c-teams-baisebol .teams-baisebol-color {
+  padding: 60px 30px;
   background-color: rgba(234, 234, 234, 0.5);
   border-radius: 8px;
+}
+.c-teams-baisebol .teams-baisebol-title {
+  font-size: 32px;
+  font-family: "Nostromo";
+}
+.c-teams-baisebol .teams-baisebol-describe {
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-right: 16px;
+  /* Estilo da barra de rolagem */
+}
+.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar {
+  width: 8px; /* largura da barra de rolagem */
+  background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+  border-radius: 4px;
+}
+.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar-thumb {
+  background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
+  border-radius: 4px; /* borda arredondada  */
+}
+.c-teams-baisebol .teams-baisebol-img {
+  width: 200px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 200px;
 }
 .c-teams-baisebol .teams-baisebol-box_img {
   width: 135px;
@@ -1762,7 +2001,6 @@ p {
   color: #000;
   font-weight: 800;
   font-family: "gotham";
-  margin-bottom: 0px;
 }
 .c-teams-baisebol .teams-baisebol-division-sp {
   padding-bottom: 16px;
@@ -1770,6 +2008,8 @@ p {
 }
 .c-teams-baisebol .teams-baisebol-name {
   font-size: 24px;
+  color: #000;
+  padding-top: 16px;
   font-family: "gotham";
 }
 .c-teams-baisebol .teams-baisebol-win {
@@ -1777,45 +2017,156 @@ p {
   font-weight: 450;
   padding-bottom: 8px;
 }
-.c-teams-baisebol .teams-baisebol-win-nf {
-  font-weight: 450;
-}
 .c-teams-baisebol .teams-baisebol-win-number {
   line-height: 2rem;
   color: #540017;
   font-weight: 800;
   font-size: 40px;
 }
-.c-teams-baisebol .teams-baisebol-img {
-  width: 240px;
-  object-fit: cover;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-  height: 240px;
+.c-teams-baisebol .center__nav {
+  margin-top: 48px;
 }
-.c-teams-baisebol .teams-baisebol-describe {
-  text-align: justify;
-  overflow-y: auto;
-  max-height: 200px;
-  padding-right: 16px;
-  color: black; /* ajuste a altura máxima conforme necessário */
-  /* Estilo da barra de rolagem */
+.c-teams-baisebol .center__nav .item {
+  padding: 0px 8px;
 }
-.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar {
-  width: 8px; /* largura da barra de rolagem */
-  background-color: #Eac1b3; /* cor de fundo da barra de rolagem */
-  border-radius: 4px;
+.c-teams-baisebol .center__nav .item .teams-baisebol-box {
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
 }
-.c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar-thumb {
-  background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
-  border-radius: 4px; /* borda arredondada  */
+.c-teams-baisebol .center__nav .item img {
+  width: 120px;
+  height: 120px;
 }
-.c-teams-baisebol .teams-baisebol-name {
-  font-size: 24px;
-  font-family: sans-serif;
+.c-teams-baisebol .center__nav .slick-current .teams-baisebol-box {
+  border: none;
+  padding: 0px;
+}
+.c-teams-baisebol .center__nav .slick-current .item {
+  border: 3px solid #FCA701;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.c-teams-baisebol .center__nav .slick-current .item img {
+  width: 150px;
+  height: 150px;
 }
 
+/*
+&-color {
+    padding: 60px 30px;
+    background-color: rgba(234, 234, 234, 0.5);
+    border-radius: 8px;
+}
+&-title{
+    font-size: 32px;
+    font-family: 'Nostromo';
+}
+&-describe{
+    text-align: justify;
+    overflow-y: auto;
+    max-height: 200px;
+    padding-right: 16px; 
+    //background-color: #FCA701;
+     /* Estilo da barra de rolagem 
+     &::-webkit-scrollbar {
+        width: 8px; /* largura da barra de rolagem 
+        background-color: #EEDAB2; /* cor de fundo da barra de rolagem 
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #FCA701; /* cor do polegar (a parte que você arrasta) 
+        border-radius: 4px; /* borda arredondada  
+    }
+
+}
+&-img{
+    width: 200px;
+    object-fit: cover;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    height: 200px;
+}
+&-box_img{
+    width: 135px;
+    height: 135px;
+    background-image: url('../../../../../imgtest/quadrado.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+&-division{
+    font-size: 20px;
+    color: #000;
+    font-weight: 800;
+    font-family: 'gotham';
+    padding-bottom: 32px;
+}
+&-name{
+    font-size: 24px;
+    color: #000;
+    padding-top: 16px;
+    font-family: 'gotham';
+}
+&-win{
+    font-size: 18px;
+    font-weight: 450;
+    padding-bottom: 8px;
+
+    &-number{
+        line-height: 2rem;
+        color: #540017;
+        font-weight: 800;
+        font-size: 40px;
+    }
+}
+}
+.center__nav{
+margin-top: 48px;
+    .item{
+        padding: 0px 8px;
+
+        .teams-basketball-box{
+            border-radius: 8px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+   .slick-current{
+    .teams-basketball-box{
+        border: none;
+        padding: 0px;
+    }
+    .item{
+        border: 3px solid #FCA701;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgba(00,00,00,0.1);
+        display: flex !important;
+        justify-content: center;
+        padding: 10px 0px;
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+   }
+}*/
 .c-shirt {
   padding: 60px 0px 60px 0px;
   background-color: #222222;

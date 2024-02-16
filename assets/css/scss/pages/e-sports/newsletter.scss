@@ -7,32 +7,46 @@ p{
 }
 .c-newsletter{
     background-image: url('../../../../../imgtest/Wallpapers.png');
-   // background-position: left top;
-   // background-size: cover;
+    padding: 60px 0px;
+    background-size: contain;
 
    .newsletter{
 
     &-toptitle{
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
     }
     &-title{
-        font-size: 22px;
+        font-size: 32px;
+        line-height: 1rem;
+        font-weight: 800;
+        color: #000;
+        text-transform: uppercase;
         margin-bottom: 32px;
     }
         &-input{
-            height: 25px;
+            height: 30px;
             background-color: transparent; border: 1px solid #2d3c4d;
             border-radius: 4px;
             width: 100%;
 
         }
+    &-img{
 
+    }
    }
 
 }
+
 .btn-form{
     background-color: #540017;
     color:white;
-    border-radius: 8px;
+    border-radius: 4px;
+
+    &:hover{
+        text-decoration: none;
+        color:white;
+    }
 }
 

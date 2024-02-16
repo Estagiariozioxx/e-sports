@@ -85,17 +85,16 @@ p{
         overflow-y: auto;
         max-height: 200px;
         padding-right: 16px; 
-        //background-color: #FCA701;
-         /* Estilo da barra de rolagem */
+
          &::-webkit-scrollbar {
-            width: 8px; /* largura da barra de rolagem */
-            background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+            width: 8px;
+            background-color: #EEDAB2;
             border-radius: 4px;
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
-            border-radius: 4px; /* borda arredondada  */
+            background-color: #FCA701;
+            border-radius: 4px;
         }
 
     }
@@ -130,12 +129,12 @@ p{
 
     }
     &-img{
-        width: 240px;
+        width: 200px;
         object-fit: cover;
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        height: 240px;
+        height: 200px;
     }
     &-box_img{
         width: 135px;
@@ -153,6 +152,8 @@ p{
     }
     &-name{
         font-size: 24px;
+        color: #000;
+        padding-top: 16px;
         font-family: 'gotham';
     }
     &-win{
@@ -168,8 +169,45 @@ p{
         }
     }
    }
+   .center__nav{
+    margin-top: 48px;
+        .item{
+            padding: 0px 8px;
 
+            .teams-basketball-box{
+                border-radius: 8px;
+                border: 1px solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0px;
+            }
 
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+       .slick-current{
+        .teams-basketball-box{
+            border: none;
+            padding: 0px;
+        }
+        .item{
+            border: 3px solid #FCA701;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px 1px rgba(00,00,00,0.1);
+            display: flex !important;
+            justify-content: center;
+            padding: 10px 0px;
+
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+       }
+   }
 
 
 

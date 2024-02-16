@@ -2118,17 +2118,29 @@
                 <div class="teams-baisebol-color">
                     <h1 class="teams-baisebol-title text-center">TIMES</h1>
                     <div class="center">
-                        <div class="item d-flex align-items-center">
-                            <div class="col-md-4 text-center">
-                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/teams-baisebol/Arizona Diamondbacks.png" class="teams-baisebol-img">
-                                <strong class="teams-baisebol-name">Arizona Diamondbacks</strong>
+                        <!--Arizona-->
+                        <div class="item d-flex flex-column flex-md-row align-items-center">
+                            <div class="d-flex d-md-block justify-content-center align-items-center content-mob">
+                                <div class="col-md-4 box-team-beisebol">
+                                    <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/teams-baisebol/Arizona Diamondbacks.png" class="teams-baisebol-img">
+                                    <strong class="teams-baisebol-name d-none d-md-block">Arizona Diamondbacks</strong>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center flex-column align-items-center d-md-none">
+                                    <strong class="teams-baisebol-name">Arizona Diamondbacks</strong>
+                                    <h2 class="teams-baisebol-division">Estádio:</h2>
+                                    <span class="teams-baisebol-division-sp">Morumbi</span>
+                                    <div class="teams-baisebol-box_img d-flex align-items-center justify-content-center flex-column">
+                                        <span class="teams-baisebol-win">Títulos</span>
+                                        <span class="teams-baisebol-win-number">50</span>
+                                    </div>  
+                                </div>
                             </div>
                             <div class="col-md-4">
                                 <p class="teams-baisebol-describe">O Arizona Diamondbacks é a única
                                     equipe da MLB a ter um campo de jogo coberto com grama sintética, localizado no
                                     Chase Field em Phoenix, Arizona.</p>
                             </div>
-                            <div class="col-md-4 d-flex justify-content-center flex-column align-items-center">
+                            <div class="col-md-4 d-md-flex justify-content-center flex-column align-items-center d-none">
                                 <h2 class="teams-baisebol-division">Estádio:</h2>
                                 <span class="teams-baisebol-division-sp">Morumbi</span>
                                 <div class="teams-baisebol-box_img d-flex align-items-center justify-content-center flex-column">
@@ -2138,7 +2150,19 @@
                             </div>
                         </div>
 
+                        <!--Atlanta-->
                         <div class="item d-flex align-items-center">
+                            <div class="d-flex d-md-block justify-content-center align-items-center content-mob">
+                                <div class="col-md-4 text-center">
+                                    <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/teams-baisebol/Atlanta Braves.png" class="img-fluid teams-baisebol-img">
+                                    <strong class="teams-baisebol-name d-none d-md-block">Atlanta Braves</strong>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center flex-column align-items-center d-md-none">
+                                    <p class="teams-baisebol-describe">Os Atlanta Braves são uma das equipes mais
+                                        antigas da MLB e são conhecidos por terem vencido a World Series em três
+                                        cidades diferentes: Boston (1914), Milwaukee (1957), e Atlanta (1995, 2021).</p>
+                                </div>
+                            </div>
                             <div class="col-md-4 text-center">
                                 <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/teams-baisebol/Atlanta Braves.png" class="img-fluid teams-baisebol-img">
                                 <strong class="teams-baisebol-name">Atlanta Braves</strong>
@@ -3029,22 +3053,22 @@
 
     
 
-    <div class="block vitrine c-vitrine position-relative">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <h2 class="vitrine-title">Camisas em destaque</h2>
-                    <div data-products="{{settings.super_craque_pele_vitrine}}" id="vitrine-fut"></div>
-                    
-                </div>
+<div class="block vitrine c-vitrine">
+    <div class="container">
+        <div class="row justify-content-center position-relative">
+            <div class="col-10">
+                <div data-products="{{settings.super_craque_marta_vitrine}}" id="vitrine-fut"></div>
+                
             </div>
         </div>
-        <div class="slick-nav_vitrine d-none d-md-flex justify-content-between">
-            <button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"></i></button>
-            <button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></i></button>
-        </div>
-    </div> 
-   
+    </div>
+    <div class="slick-nav_vitrine d-none d-md-flex justify-content-between">
+        <button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"></i></button>
+        <button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></i></button>
+    </div>
+</div> 
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"

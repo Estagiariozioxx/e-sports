@@ -177,7 +177,24 @@ p{
         }
    }*/
 
+   .box-team-beisebol{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
 
+    .teams-baisebol-img{
+        width:100%;
+        object-fit: cover;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+    @include md{
+        width: 200px;
+        height: 200px;
+    }
+   }
    .teams-baisebol-describe{
     text-align: justify;
     overflow-y: auto;
@@ -195,6 +212,14 @@ p{
         border-radius: 4px;
     }
 
+}
+.content-mob{
+    margin: 16px 0px;
+    padding: 8px 0px;
+     @include md{
+        padding: 0px;
+        margin: 0px;
+     }
 }
 
 .teams-baisebol{
@@ -226,36 +251,45 @@ p{
     }
 
 }
-&-img{
-    width: 200px;
-    object-fit: cover;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    height: 200px;
-}
+
 &-box_img{
-    width: 135px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
     background-image: url('../../../../../imgtest/quadrado.svg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include md{
+        width: 135px;
+        height: 135px;
+    }
 }
 &-division{
     font-size: 20px;
     color: #000;
+    margin-bottom: 0;
     font-weight: 800;
     font-family: 'gotham';
+
     &-sp{
-        padding-bottom: 16px;
+        padding-bottom: 8px;
         font-family: 'gotham';
+        @include md{
+            padding-top: 0;
+            padding-bottom: 16px;
+        }
     }
 }
 &-name{
-    font-size: 24px;
+    font-size: 16px;
     color: #000;
     padding-top: 16px;
+    
     font-family: 'gotham';
+
+    @include md{
+        font-size: 24px;
+    }
 }
 &-win{
     font-size: 18px;

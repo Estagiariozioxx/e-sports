@@ -1282,6 +1282,25 @@ p {
   background-position: center bottom;
   background-size: cover;
 }
+.c-teams-basketball .box-team-basketball {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .c-teams-basketball .box-team-basketball {
+    width: 200px;
+    height: 200px;
+  }
+}
+.c-teams-basketball .box-team-basketball .teams-baisebol-img {
+  width: 100%;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
 .c-teams-basketball .teams-basketball-describe {
   overflow-y: auto;
   max-height: 200px;
@@ -1320,14 +1339,6 @@ p {
   background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
-.c-teams-basketball .teams-basketball-img {
-  width: 200px;
-  object-fit: cover;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-  height: 200px;
-}
 .c-teams-basketball .teams-basketball-box_img {
   width: 135px;
   height: 135px;
@@ -1335,18 +1346,39 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  .c-teams-basketball .teams-basketball-box_img {
+    width: 135px;
+    height: 135px;
+  }
+}
 .c-teams-basketball .teams-basketball-division {
   font-size: 20px;
   color: #000;
+  margin-bottom: 0;
   font-weight: 800;
   font-family: "gotham";
-  padding-bottom: 32px;
+}
+.c-teams-basketball .teams-basketball-division-sp {
+  padding-bottom: 8px;
+  font-family: "gotham";
+}
+@media (min-width: 1200px) {
+  .c-teams-basketball .teams-basketball-division-sp {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
 }
 .c-teams-basketball .teams-basketball-name {
-  font-size: 24px;
+  font-size: 16px;
   color: #000;
   padding-top: 16px;
   font-family: "gotham";
+}
+@media (min-width: 1200px) {
+  .c-teams-basketball .teams-basketball-name {
+    font-size: 24px;
+  }
 }
 .c-teams-basketball .teams-basketball-win {
   font-size: 18px;
@@ -1804,87 +1836,6 @@ p {
 
 .c-teams-baisebol {
   margin-top: 27px;
-  /* .teams-baisebol{
-
-        &-title{
-            font-size: 32px;
-            font-family: 'Nostromo';
-
-        }
-        &-color {
-            padding: 60px 30px;
-            background-color: rgba(234, 234, 234, 0.5);
-            border-radius: 8px;
-        }
-        &-box_img{
-            width: 135px;
-            height: 135px;
-            background-image: url('../../../../../imgtest/quadrado.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        &-division{
-            font-size: 20px;
-            color: #000;
-            font-weight: 800;
-            font-family: 'gotham';
-            padding-bottom: 32px;
-
-            &-sp{
-                padding-bottom: 16px;
-                font-family: 'gotham';
-            }
-        }
-        &-name{
-            font-size: 24px;
-            font-family: 'gotham';
-        }
-        &-win{
-            font-size: 18px;
-            font-weight: 450;
-            padding-bottom: 8px;
-
-            &-nf{
-                font-weight: 450;
-            }
-
-            &-number{
-                line-height: 2rem;
-                color: #540017;
-                font-weight: 800;
-                font-size: 40px;
-            }
-        }
-        &-img{
-            width: 200px;
-            object-fit: cover;
-            left: 50%;
-            position: relative;
-            transform: translateX(-50%);
-            height: 200px;
-        }
-        &-describe{
-            overflow-y: auto;
-            max-height: 200px;
-            padding-right: 16px; 
-            color: black; /* ajuste a altura máxima conforme necessário */
-  /* Estilo da barra de rolagem 
-           &::-webkit-scrollbar {
-               width: 8px; /* largura da barra de rolagem 
-               background-color: #Eac1b3; /* cor de fundo da barra de rolagem 
-               border-radius: 4px;
-           }
-
-           &::-webkit-scrollbar-thumb {
-               background-color: #e74501;; /* cor do polegar (a parte que você arrasta) 
-               border-radius: 4px; /* borda arredondada  
-           }
-       }
-       &-name{
-           font-size: 24px;
-           font-family: sans-serif;
-       }
-  }*/
 }
 .c-teams-baisebol .box-team-beisebol {
   width: 180px;
@@ -1954,8 +1905,8 @@ p {
   border-radius: 4px; /* borda arredondada  */
 }
 .c-teams-baisebol .teams-baisebol-box_img {
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 135px;
   background-image: url("../../../../../imgtest/quadrado.svg");
   background-size: cover;
   background-repeat: no-repeat;

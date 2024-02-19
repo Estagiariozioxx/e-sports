@@ -12,6 +12,8 @@ p{
     background-size: cover;
 
 
+
+
     .basketball{
         &-title{
             font-weight: 800;
@@ -81,6 +83,25 @@ p{
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    .box-team-basketball{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+
+        @include md{
+            width: 200px;
+            height: 200px;
+        }
+        .teams-baisebol-img{
+            width:100%;
+            object-fit: cover;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+    }
+
 
     .teams-basketball-describe{
         overflow-y: auto;
@@ -128,39 +149,50 @@ p{
         }
 
     }
-    &-img{
-        width: 200px;
-        object-fit: cover;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
-        height: 200px;
-    }
     &-box_img{
         width: 135px;
         height: 135px;
         background-image: url('../../../../../imgtest/quadrado.svg');
         background-size: cover;
         background-repeat: no-repeat;
+    
+        @include md{
+            width: 135px;
+            height: 135px;
+        }
     }
     &-division{
         font-size: 20px;
         color: #000;
+        margin-bottom: 0;
         font-weight: 800;
         font-family: 'gotham';
-        padding-bottom: 32px;
+    
+        &-sp{
+            padding-bottom: 8px;
+            font-family: 'gotham';
+            @include md{
+                padding-top: 0;
+                padding-bottom: 16px;
+            }
+        }
     }
     &-name{
-        font-size: 24px;
+        font-size: 16px;
         color: #000;
         padding-top: 16px;
+        
         font-family: 'gotham';
+    
+        @include md{
+            font-size: 24px;
+        }
     }
     &-win{
         font-size: 18px;
         font-weight: 450;
         padding-bottom: 8px;
-
+    
         &-number{
             line-height: 2rem;
             color: #540017;
@@ -168,12 +200,12 @@ p{
             font-size: 40px;
         }
     }
-   }
-   .center__nav{
+    }
+    .center__nav{
     margin-top: 48px;
         .item{
             padding: 0px 8px;
-
+    
             .teams-basketball-box{
                 border-radius: 8px;
                 border: 1px solid;
@@ -182,7 +214,7 @@ p{
                 align-items: center;
                 padding: 10px 0px;
             }
-
+    
             img{
                 width: 120px;
                 height: 120px;
@@ -200,14 +232,14 @@ p{
             display: flex !important;
             justify-content: center;
             padding: 10px 0px;
-
+    
             img{
                 width: 150px;
                 height: 150px;
             }
         }
        }
-   }
+    }
 
 }
 

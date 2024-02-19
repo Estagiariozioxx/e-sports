@@ -3,6 +3,7 @@
   var containerstep = $(".slick__step");
   var containertop = $(".slick__top");
   var containerslick =$(".center");
+  var containercuriositybasketball =$(".slick_basket");
   var containerslicknav =$(".center__nav");
 
   containerslick.slick({
@@ -91,6 +92,28 @@
     }]
 }); */
 
+containercuriositybasketball.slick({
+  autoplay: false,
+  autoplaySpeed: 4000,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  arrows: true,
+  dots: false,
+  adaptiveHeight: true,
+  prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+  nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
   
   containerinstruction.slick({
@@ -400,7 +423,7 @@ function scrollToAnchor(anchorID) {
 
  
 
-  $('.newsletter-form form').on('submit', function(event) {
+  $('.c-newsletter form').on('submit', function(event) {
     event.preventDefault();
   
     var form = $(this);

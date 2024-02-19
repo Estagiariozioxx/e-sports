@@ -97,94 +97,6 @@ p{
 
 .c-teams-football{
     margin-top: 27px;
-   // background-color: #c90707;
-   /*.teams-football{
-    &-title{
-        font-weight: 800;
-        font-size:32px;
-        line-height: 2rem;
-        color: #fff;
-        font-family: 'NostromoRegular-Heavy', sans-serif;
-        padding-top: 36px;
-
-    }
-    &-color {
-        background-color: rgba(31, 45, 62, 0.5); /* 0.5 é a opacidade 
-        border-radius: 8px;
-    }
-
-    &-box_img{
-        width: 135px;
-        height: 135px;
-        background-image: url('../../../../../imgtest/quadrado.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    &-division{
-        font-size: 20px;
-        color: #000;
-        font-weight: 800;
-        font-family: 'gotham';
-        padding-bottom: 32px;
-    }
-    &-name{
-        font-size: 24px;
-        font-family: 'gotham';
-    }
-    &-win{
-        font-size: 18px;
-        font-weight: 300;
-        padding-bottom: 8px;
-        color: #fff;
-        font-family: 'gotham';
-
-        &-nf{
-            font-weight: 450;
-        }
-
-        &-number{
-            line-height: 2rem;
-            color: #fff;
-            font-weight: 800;
-            font-size: 40px;
-        }
-    }
-    
-    &-img{
-        width: 240px;
-        object-fit: cover;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
-        height: 240px;
-
-    }
-    &-describe{
-        text-align: justify;
-        overflow-y: auto;
-        max-height: 200px;
-        padding-right: 16px;
-        color: #fff; /* ajuste a altura máxima conforme necessário 
-        //background-color: #FCA701;
-         /* Estilo da barra de rolagem 
-         &::-webkit-scrollbar {
-            width: 8px; /* largura da barra de rolagem 
-            background-color: #503230; /* cor de fundo da barra de rolagem 
-            border-radius: 4px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: #E74501; /* cor do polegar (a parte que você arrasta) 
-            border-radius: 4px; /* borda arredondada  
-        }
-
-    }
-    &-name{
-        font-size: 24px;
-        font-family: sans-serif;
-    }
-
-   }*/
 
    .teams-football{
     &-color {
@@ -197,21 +109,19 @@ p{
         font-family: 'Nostromo';
     }
     &-describe{
-        text-align: justify;
         overflow-y: auto;
         max-height: 200px;
         padding-right: 16px; 
-        //background-color: #FCA701;
-         /* Estilo da barra de rolagem */
+
          &::-webkit-scrollbar {
-            width: 8px; /* largura da barra de rolagem */
-            background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
+            width: 8px; 
+            background-color: #EEDAB2; 
             border-radius: 4px;
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
-            border-radius: 4px; /* borda arredondada  */
+            background-color: #FCA701;
+            border-radius: 4px;
         }
 
     }

@@ -1960,6 +1960,25 @@ p {
        }
   }*/
 }
+.c-teams-baisebol .box-team-beisebol {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.c-teams-baisebol .box-team-beisebol .teams-baisebol-img {
+  width: 100%;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+@media (min-width: 1200px) {
+  .c-teams-baisebol .box-team-beisebol {
+    width: 200px;
+    height: 200px;
+  }
+}
 .c-teams-baisebol .teams-baisebol-describe {
   text-align: justify;
   overflow-y: auto;
@@ -1974,6 +1993,16 @@ p {
 .c-teams-baisebol .teams-baisebol-describe::-webkit-scrollbar-thumb {
   background-color: #FCA701;
   border-radius: 4px;
+}
+.c-teams-baisebol .content-mob {
+  margin: 16px 0px;
+  padding: 8px 0px;
+}
+@media (min-width: 1200px) {
+  .c-teams-baisebol .content-mob {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 .c-teams-baisebol .teams-baisebol-color {
   padding: 60px 30px;
@@ -2000,36 +2029,46 @@ p {
   background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
-.c-teams-baisebol .teams-baisebol-img {
-  width: 200px;
-  object-fit: cover;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-  height: 200px;
-}
 .c-teams-baisebol .teams-baisebol-box_img {
-  width: 135px;
-  height: 135px;
+  width: 100px;
+  height: 100px;
   background-image: url("../../../../../imgtest/quadrado.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  .c-teams-baisebol .teams-baisebol-box_img {
+    width: 135px;
+    height: 135px;
+  }
+}
 .c-teams-baisebol .teams-baisebol-division {
   font-size: 20px;
   color: #000;
+  margin-bottom: 0;
   font-weight: 800;
   font-family: "gotham";
 }
 .c-teams-baisebol .teams-baisebol-division-sp {
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   font-family: "gotham";
 }
+@media (min-width: 1200px) {
+  .c-teams-baisebol .teams-baisebol-division-sp {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
 .c-teams-baisebol .teams-baisebol-name {
-  font-size: 24px;
+  font-size: 16px;
   color: #000;
   padding-top: 16px;
   font-family: "gotham";
+}
+@media (min-width: 1200px) {
+  .c-teams-baisebol .teams-baisebol-name {
+    font-size: 24px;
+  }
 }
 .c-teams-baisebol .teams-baisebol-win {
   font-size: 18px;
@@ -2508,7 +2547,7 @@ margin-top: 48px;
 }
 
 .c-vitrine {
-  background-color: #181716;
+  background-color: #0E1D2F;
   padding: 80px 0px;
 }
 .c-vitrine .vitrine-title {
@@ -2532,9 +2571,9 @@ margin-top: 48px;
   position: absolute;
   right: 20px;
   top: 5px;
-  background-color: #DCB16D;
+  background-color: #540017;
   font-weight: 800;
-  color: #000;
+  color: #FFF;
   font-size: 12px;
   border-radius: 20px;
   padding: 3px 7px;
@@ -2557,13 +2596,13 @@ margin-top: 48px;
 }
 .c-vitrine #vitrine-fut .item .tags .lancamento {
   text-transform: uppercase;
-  font-weight: 700;
-  color: #000;
+  font-weight: 500;
+  color: white;
   font-family: "gotham";
   font-size: 11px;
   max-width: 110px;
   height: 20px;
-  background-color: #939393;
+  background-color: #540017;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -2582,12 +2621,12 @@ margin-top: 48px;
 }
 .c-vitrine #vitrine-fut .item .tags .oferta {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "gotham";
-  color: #000;
+  color: #FFF;
   height: 20px;
   max-width: 80px;
-  background-color: #DCB16D;
+  background-color: #8B9AAD;
   font-size: 11px;
   border-radius: 20px;
   justify-content: center;
@@ -2603,10 +2642,10 @@ margin-top: 48px;
   }
 }
 .c-vitrine #vitrine-fut .item .title {
-  font-size: 15px;
-  color: #747474;
+  font-size: 14px;
+  color: #FFF;
   font-family: "gotham";
-  font-weight: 400;
+  font-weight: 350;
   margin-top: 16px;
 }
 .c-vitrine #vitrine-fut .item .price {
@@ -2616,19 +2655,20 @@ margin-top: 48px;
   text-decoration: line-through;
   font-weight: 500;
   font-size: 11px;
-  color: #747474;
+  color: #540017;
   margin-bottom: -5px;
   font-family: "gotham";
 }
 .c-vitrine #vitrine-fut .item .price .current-price {
   font-size: 18px;
-  font-weight: 800;
-  color: #747474;
+  font-weight: 700;
+  color: #FFF;
   font-family: "gotham";
 }
 .c-vitrine #vitrine-fut .item .price .installments {
-  color: #747474;
-  font-size: 14px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 350;
   margin-top: 2px;
 }
 .c-vitrine #vitrine-fut .slick-dots {
@@ -2653,7 +2693,7 @@ margin-top: 48px;
 .c-vitrine #vitrine-fut .slick-dots li.slick-active button {
   opacity: 1;
   width: 40px;
-  background: #DCB16D;
+  background: #FFF;
 }
 .c-vitrine .slick-nav_vitrine {
   padding: 0px 6%;

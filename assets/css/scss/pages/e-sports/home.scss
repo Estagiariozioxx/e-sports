@@ -12,33 +12,50 @@ p{
 
     .home{
         &-top-title{
-            font-size:32px;
+            font-size:55px;
             color:#fff;
             font-family: 'nostromo-outline';
         }
         &-title{
             font-weight: 800;
-            font-size:56px;
+            font-size: 40px;
+
             line-height: 2rem;
             font-family:"Nostromo";
             color: #8f0228;
             padding-bottom:32px;
+
+            @include md{
+                font-size:75px;
+            }
         }
 
         &-describe{
             color:#fff;
             padding: 0px 8px;
-            font-weight: 450;
             font-size: 16px;
+            font-family: 'gotham';
         }
 
         &-anchor{
             font-size:14px;
             color: #fff;
             border:1px solid #fff;
+            
+            border-radius:8px;
             padding:4px 8px;
-            border-radius:8px; 
-            margin:0px 8px;
+
+            //mobile
+            margin: 0px 8px;
+
+            margin-top: 50px;
+        
+            @include md{
+                margin-top: 0px;
+                margin:0px 8px; 
+
+            }
+
         }
         &-box-img{
             background-size: cover;

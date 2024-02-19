@@ -157,6 +157,61 @@
     ],
   });
 
+
+
+    // Function to handle smooth scrolling to anchor
+  function scrollToAnchor(anchorID) {
+    const element = document.getElementById(anchorID);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  // Event listener to handle anchor clicks
+  document.addEventListener("DOMContentLoaded", function() {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(function(anchor) {
+      anchor.addEventListener("click", function(event) {
+        event.preventDefault();
+        const targetID = this.getAttribute("href").substring(1);
+        scrollToAnchor(targetID);
+      });
+    });
+  });
+
+
+  // Function to handle smooth scrolling to anchor
+function scrollToAnchor(anchorID) {
+  const element = document.getElementById(anchorID);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+  // Event listener to handle div clicks
+  document.addEventListener("DOMContentLoaded", function() {
+    const futebolDiv = document.getElementById('fut');
+    const basqueteDiv = document.getElementById('basq');
+    const baseballDiv = document.getElementById('base');
+
+    futebolDiv.addEventListener("click", function(event) {
+      event.preventDefault();
+      scrollToAnchor('futebol');
+    });
+
+    basqueteDiv.addEventListener("click", function(event) {
+      event.preventDefault();
+      scrollToAnchor('basquete');
+    });
+
+    baseballDiv.addEventListener("click", function(event) {
+      event.preventDefault();
+      scrollToAnchor('baisebol');
+    });
+  });
+
+
+
   $('.name-cupom').on('click', function () {
     var $el = $(this);
 

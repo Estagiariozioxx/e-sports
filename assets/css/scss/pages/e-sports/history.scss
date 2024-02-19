@@ -19,7 +19,7 @@
             padding-bottom: 32px;
 
             @include md{
-                font-size: 48px;
+                font-size: 65px;
             }
         }
 
@@ -29,6 +29,7 @@
             line-height: 1.5rem;
             font-weight: 450;
             margin-top: 32px;
+            font-family: 'gothan';
 
             @include md{
                 margin: 0px;

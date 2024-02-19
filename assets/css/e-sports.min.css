@@ -1065,31 +1065,43 @@ p {
   padding: 60px 0px;
 }
 .c-home .home-top-title {
-  font-size: 32px;
+  font-size: 55px;
   color: #fff;
   font-family: "nostromo-outline";
 }
 .c-home .home-title {
   font-weight: 800;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 2rem;
   font-family: "Nostromo";
   color: #8f0228;
   padding-bottom: 32px;
 }
+@media (min-width: 1200px) {
+  .c-home .home-title {
+    font-size: 75px;
+  }
+}
 .c-home .home-describe {
   color: #fff;
   padding: 0px 8px;
-  font-weight: 450;
   font-size: 16px;
+  font-family: "gotham";
 }
 .c-home .home-anchor {
   font-size: 14px;
   color: #fff;
   border: 1px solid #fff;
-  padding: 4px 8px;
   border-radius: 8px;
+  padding: 4px 8px;
   margin: 0px 8px;
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  .c-home .home-anchor {
+    margin-top: 0px;
+    margin: 0px 8px;
+  }
 }
 .c-home .home-box-img {
   background-size: cover;
@@ -1153,7 +1165,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-history .history-title {
-    font-size: 48px;
+    font-size: 65px;
   }
 }
 .c-history .history-describe {
@@ -1162,6 +1174,7 @@ p {
   line-height: 1.5rem;
   font-weight: 450;
   margin-top: 32px;
+  font-family: "gothan";
 }
 @media (min-width: 1200px) {
   .c-history .history-describe {
@@ -1215,6 +1228,7 @@ p {
   font-weight: 450;
   font-size: 16px;
   text-align: justify;
+  font-family: "gothan";
 }
 .c-basketball .basketball-anchor {
   font-size: 14px;
@@ -1383,7 +1397,7 @@ p {
 }
 .c-curiosity .curiosity-title {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 2rem;
   color: white;
   padding-top: 56px;
@@ -1400,6 +1414,7 @@ p {
   font-weight: 450;
   font-size: 16px;
   text-align: justify;
+  font-family: "gotham";
 }
 
 p {
@@ -1436,6 +1451,7 @@ p {
   line-height: 1.5rem;
   font-size: 16px;
   text-align: left;
+  font-family: "gotham";
 }
 
 p {
@@ -1487,7 +1503,7 @@ p {
   font-size: 65px;
   line-height: 2rem;
   color: #fff;
-  font-family: "NostromoRegular-Heavy", sans-serif;
+  font-family: "Nostromo";
   padding-top: 36px;
   margin-bottom: 86px;
 }
@@ -1496,7 +1512,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-football .football-box_img .football-img {
-    width: 130%;
+    width: 100%;
   }
 }
 .c-football .football-describe {
@@ -1508,14 +1524,15 @@ p {
   padding-left: 80px;
   overflow-y: auto;
   max-height: 350px;
+  font-family: "gotham";
 }
 .c-football .football-describe::-webkit-scrollbar {
   width: 8px; /* largura da barra de rolagem */
-  background-color: #503230; /* cor de fundo da barra de rolagem */
+  background-color: #485361; /* cor de fundo da barra de rolagem */
   border-radius: 4px;
 }
 .c-football .football-describe::-webkit-scrollbar-thumb {
-  background-color: #E74501; /* cor do polegar (a parte que você arrasta) */
+  background-color: #ffffff; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
 .c-football .football-anchor {
@@ -1774,6 +1791,7 @@ p {
   font-weight: 450;
   font-size: 16px;
   text-align: left;
+  font-family: "gotham";
 }
 
 p {
@@ -1800,7 +1818,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-baisebol .baisebol-box_img .baisebol-img {
-    width: 130%;
+    width: 100%;
   }
 }
 .c-baisebol .baisebol-describe {
@@ -1811,6 +1829,7 @@ p {
   line-height: 1.5rem;
   text-align: left;
   padding-left: 80px;
+  font-family: "gotham";
   overflow-y: auto;
   max-height: 400px;
 }

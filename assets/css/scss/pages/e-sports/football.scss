@@ -22,7 +22,7 @@ p{
             font-size:65px;
             line-height: 2rem;
             color: #fff;
-            font-family: 'NostromoRegular-Heavy', sans-serif;
+            font-family: 'Nostromo';
             padding-top: 36px;
             margin-bottom: 86px;
         }
@@ -30,7 +30,7 @@ p{
             .football-img{
                 width: 100%;
                 @include md{
-                    width: 130%;
+                    width: 100%;
                 }
             }
         }
@@ -46,14 +46,15 @@ p{
             padding-left: 80px;
             overflow-y: auto;
             max-height:350px;
+            font-family: 'gotham';
             &::-webkit-scrollbar {
                 width: 8px; /* largura da barra de rolagem */
-                background-color: #503230; /* cor de fundo da barra de rolagem */
+                background-color: #485361; /* cor de fundo da barra de rolagem */
                 border-radius: 4px;
             }
     
             &::-webkit-scrollbar-thumb {
-                background-color: #E74501; /* cor do polegar (a parte que você arrasta) */
+                background-color: #ffffff; /* cor do polegar (a parte que você arrasta) */
                 border-radius: 4px; /* borda arredondada  */
             }
         }

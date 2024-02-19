@@ -12,9 +12,13 @@ p{
 
     .home{
         &-top-title{
-            font-size:55px;
+            font-size:20px;
             color:#fff;
             font-family: 'nostromo-outline';
+            @include md{
+                font-size:55px;
+
+            }
         }
         &-title{
             font-weight: 800;
@@ -65,19 +69,26 @@ p{
 
             &_basquete{
                 background-image: url('../../../../../imgtest/home/basquete.png');
-                transform: translateY(66px);
+                
+                width: 125px;
+                height: 284px;
+                transform: translateY(55px);
 
                 @include md{
                     background-image: url('../../../../../imgtest/basquete-offwhite.png');
                     z-index: 1;
+                    transform: translateY(66px);
                 }
                 
                 &:hover{
                     background-image: url('../../../../../imgtest/home/basquete.png');
+                    transform: translateY(66px);
                 }
             }
             &_baseball{
                 background-image: url('../../../../../imgtest/home/baseball.png');
+                width: 103px;
+                height: 260px;
 
                 @include md{
                     background-image: url('../../../../../imgtest/baseball-offwhite.png');
@@ -92,6 +103,8 @@ p{
             }
             &_futebol{
                 background-image: url('../../../../../imgtest/home/futebol-americano.png');
+                width: 172px;
+                height: 277px;
                 
                 @include md{
                     background-image: url('../../../../../imgtest/futebol-americano-offwhite.png');

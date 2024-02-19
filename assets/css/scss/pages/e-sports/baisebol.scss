@@ -13,14 +13,28 @@ p{
 
 
     .baisebol{
+        &-img-logo{
+            width: 106px;
+            height: 106px;
+            @include md{
+                width: 100%;
+                height: 100%;
+            }
+        }
         &-title{
             font-weight: 800;
-            font-size:65px;
+            font-size:24px;
+            
             line-height: 2rem;
             color: #002d62;
             font-family: 'nostromo';
-            padding-top: 36px;
-            margin-bottom: 86px;
+
+            @include md{
+                font-size:65px;
+                padding-top: 36px;
+                margin-bottom: 86px;
+
+            }
         }
         &-box_img{
             .baisebol-img{

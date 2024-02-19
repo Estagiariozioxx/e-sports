@@ -18,21 +18,39 @@ p{
         color: #000;
     }
     &-title{
-        font-size: 32px;
+        font-size: 18px;
         line-height: 1rem;
         font-weight: 800;
         color: #000;
         text-transform: uppercase;
         margin-bottom: 32px;
+
     }
         &-input{
+
             height: 30px;
+            width:100%;
+            
             background-color: transparent; border: 1px solid #2d3c4d;
             border-radius: 4px;
-            width: 100%;
+
+            @include md{
+                height: 30px;
+                width: 100%;
+
+            }
 
         }
     &-img{
+
+        width: 100%;
+        margin-left: -49px;
+
+        @include md{
+            margin-left: 0px;
+            
+        }
+        
 
     }
    }

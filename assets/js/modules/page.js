@@ -10,6 +10,115 @@
 
   var containercuriosityfootball=$('.slick_fut');
 
+
+  //football
+  var containerslicknavfut =$(".center__navfut");
+  var containerslickfut =$(".centerfut");
+
+  containerslickfut.slick({
+    autoplay: false,
+    autoplaySpeed: 4000,
+    asNavFor:'.center__navfut',
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  })
+
+
+  containerslicknavfut.slick({
+    centerMode: true,
+    asNavFor: '.centerfut',
+    slidesToShow:5,
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            slidesToShow: 1,
+    prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
+         nextArrow: '<button class="slick-next slick-arrow" type="button"><img class="icon-arrow-right" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_direita.svg">'
+        }
+    }]
+});
+
+//---------------------------------------------//
+
+
+//baisebol
+
+
+var containerslicknavbase =$(".center__navbase");
+  var containerslickbase =$(".centerbase");
+
+  containerslickbase.slick({
+    autoplay: false,
+    autoplaySpeed: 4000,
+    asNavFor:'.center__navbase',
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  })
+
+
+  containerslicknavbase.slick({
+    centerMode: true,
+    asNavFor: '.centerbase',
+    slidesToShow:5,
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            slidesToShow: 1,
+    prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
+         nextArrow: '<button class="slick-next slick-arrow" type="button"><img class="icon-arrow-right" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_direita.svg">'
+        }
+    }]
+});
+
+
+//----------------------------//
+
+
+
+
+
   containerslick.slick({
     autoplay: false,
     autoplaySpeed: 4000,
@@ -31,6 +140,8 @@
       },
     ],
   })
+
+
   containerslicknav.slick({
       centerMode: true,
       asNavFor: '.center',

@@ -1749,13 +1749,14 @@ p {
   font-weight: 800;
   font-size: 40px;
 }
-.c-teams-football .center__nav {
+.c-teams-football .center__navfut {
   margin-top: 48px;
+  width: 100%;
 }
-.c-teams-football .center__nav .item {
+.c-teams-football .center__navfut .item {
   padding: 0px 8px;
 }
-.c-teams-football .center__nav .item .teams-football-box {
+.c-teams-football .center__navfut .item .teams-football-box {
   border-radius: 8px;
   border: 1px solid;
   display: flex;
@@ -1763,15 +1764,15 @@ p {
   align-items: center;
   padding: 10px 0px;
 }
-.c-teams-football .center__nav .item img {
+.c-teams-football .center__navfut .item img {
   width: 120px;
   height: 120px;
 }
-.c-teams-football .center__nav .slick-current .teams-football-box {
+.c-teams-football .center__navfut .slick-current .teams-football-box {
   border: none;
   padding: 0px;
 }
-.c-teams-football .center__nav .slick-current .item {
+.c-teams-football .center__navfut .slick-current .item {
   border: 3px solid #FCA701;
   border-radius: 8px;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
@@ -1779,7 +1780,7 @@ p {
   justify-content: center;
   padding: 10px 0px;
 }
-.c-teams-football .center__nav .slick-current .item img {
+.c-teams-football .center__navfut .slick-current .item img {
   width: 150px;
   height: 150px;
 }
@@ -2047,13 +2048,13 @@ p {
   font-size: 40px;
 }
 
-.center__nav {
+.center__navbase {
   margin-top: 48px;
 }
-.center__nav .item {
+.center__navbase .item {
   padding: 0px 8px;
 }
-.center__nav .item .teams-baisebol-box {
+.center__navbase .item .teams-baisebol-box {
   border-radius: 8px;
   border: 1px solid;
   display: flex;
@@ -2061,15 +2062,15 @@ p {
   align-items: center;
   padding: 10px 0px;
 }
-.center__nav .item img {
+.center__navbase .item img {
   width: 120px;
   height: 120px;
 }
-.center__nav .slick-current .teams-baisebol-box {
+.center__navbase .slick-current .teams-baisebol-box {
   border: none;
   padding: 0px;
 }
-.center__nav .slick-current .item {
+.center__navbase .slick-current .item {
   border: 3px solid #fca701;
   border-radius: 8px;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
@@ -2077,7 +2078,7 @@ p {
   justify-content: center;
   padding: 10px 0px;
 }
-.center__nav .slick-current .item img {
+.center__navbase .slick-current .item img {
   width: 150px;
   height: 150px;
 }

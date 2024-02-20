@@ -19,12 +19,17 @@ p{
     .football{
         &-title{
             font-weight: 800;
-            font-size:65px;
-            line-height: 2rem;
+            font-size:48px;
+            line-height: 2.5rem;
             color: #fff;
             font-family: 'Nostromo';
             padding-top: 36px;
             margin-bottom: 86px;
+
+            @include md{
+                font-size:65px;
+                line-height: 2rem;
+            }
         }
         &-box_img{
             .football-img{
@@ -134,19 +139,30 @@ p{
         }
     }
     &-img{
-        width: 200px;
+        width: 135px;
         object-fit: cover;
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        height: 200px;
+        height: 135px;
+
+        @include md{
+            width: 200px;
+            height: 200px;
+        }
     }
     &-box_img{
-        width: 135px;
-        height: 135px;
+        width: 100px;
+        height: 100px;
         background-image: url('../../../../../imgtest/quadrado.svg');
         background-size: cover;
         background-repeat: no-repeat;
+
+        @include md{
+            width: 135px;
+            height: 135px; 
+        }
+
     }
     &-division{
         font-size: 20px;

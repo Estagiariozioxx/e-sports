@@ -449,7 +449,7 @@ function scrollToAnchor(anchorID) {
       dots: true,
       slidesToShow: 2,
       slidesToScroll: 2,
-      //        lazyLoad: 'ondemand',
+      //lazyLoad: 'ondemand',
       prevArrow: $(".slick-nav_vitrine").find(".slick-prev"),
       nextArrow: $(".slick-nav_vitrine").find(".slick-next"),
     });

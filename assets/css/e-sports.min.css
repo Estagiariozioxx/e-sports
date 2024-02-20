@@ -1191,7 +1191,7 @@ p {
   color: #fff;
   font-size: 16px;
   line-height: 1.5rem;
-  font-weight: 450;
+  font-weight: 400;
   margin-top: 32px;
   font-family: "gothan";
 }
@@ -1398,7 +1398,7 @@ p {
 }
 .c-teams-basketball .teams-basketball-win {
   font-size: 18px;
-  font-weight: 450;
+  font-weight: 400;
   padding-bottom: 8px;
 }
 .c-teams-basketball .teams-basketball-win-number {
@@ -1465,6 +1465,11 @@ p {
 .c-curiosity .curiosity-home {
   padding-bottom: 64px;
 }
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-home {
+    padding: 0px 64px 64px 64px;
+  }
+}
 .c-curiosity .curiosity-describe {
   color: white;
   font-weight: 400;
@@ -1495,12 +1500,17 @@ p {
 .c-football-curiosity .football-curiosity-home {
   padding-bottom: 64px;
 }
+@media (min-width: 1200px) {
+  .c-football-curiosity .football-curiosity-home {
+    padding: 0px 64px 64px 64px;
+  }
+}
 .c-football-curiosity .football-curiosity-img {
   width: 100%;
 }
 .c-football-curiosity .football-curiosity-describe {
   color: #000000;
-  font-weight: 450;
+  font-weight: 400;
   line-height: 1.5rem;
   font-size: 16px;
   text-align: left;
@@ -1529,6 +1539,11 @@ p {
 }
 .c-curiosity .curiosity-home {
   padding-bottom: 64px;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-home {
+    padding: 0px 64px 64px 64px;
+  }
 }
 .c-curiosity .curiosity-describe {
   color: white;
@@ -1569,7 +1584,7 @@ p {
 .c-football .football-describe {
   color: #fff;
   padding: 0px 8px;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 16px;
   text-align: left;
   padding-left: 80px;
@@ -1690,7 +1705,7 @@ p {
 }
 .c-teams-football .teams-football-win {
   font-size: 18px;
-  font-weight: 450;
+  font-weight: 400;
   padding-bottom: 8px;
 }
 .c-teams-football .teams-football-win-number {
@@ -1757,13 +1772,18 @@ p {
 .c-baisebol-curiosity .baisebol-curiosity-home {
   padding-bottom: 64px;
 }
+@media (min-width: 1200px) {
+  .c-baisebol-curiosity .baisebol-curiosity-home {
+    padding: 0px 64px 64px 64px;
+  }
+}
 .c-baisebol-curiosity .baisebol-curiosity-img {
   width: 100%;
   background-size: cover;
 }
 .c-baisebol-curiosity .baisebol-curiosity-describe {
   color: white;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 16px;
   text-align: left;
   font-family: "gotham";
@@ -1814,7 +1834,7 @@ p {
 .c-baisebol .baisebol-describe {
   color: black;
   padding: 0px 8px;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5rem;
   text-align: left;
@@ -1980,7 +2000,7 @@ p {
 }
 .c-teams-baisebol .teams-baisebol-win {
   font-size: 18px;
-  font-weight: 450;
+  font-weight: 400;
   padding-bottom: 8px;
 }
 .c-teams-baisebol .teams-baisebol-win-number {

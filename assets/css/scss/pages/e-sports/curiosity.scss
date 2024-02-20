@@ -23,7 +23,12 @@ p{
             font-family: 'Nostromo';
         }
         &-home{
-            padding-bottom: 64px;          
+            padding-bottom: 64px;     
+            
+            @include md{
+                padding:0px 64px 64px 64px;
+            }
+
         }
 
         &-describe{

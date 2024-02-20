@@ -25,6 +25,9 @@ p{
         &-home{
             padding-bottom: 64px;
             
+            @include md{
+                padding:0px 64px 64px 64px;
+            }
 
         }
         &-img{
@@ -34,7 +37,7 @@ p{
 
         &-describe{
             color:#ffff;
-            font-weight: 450;
+            font-weight: 400;
             font-size: 16px;
             text-align: left;
             font-family: 'gotham';

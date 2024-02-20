@@ -1446,14 +1446,14 @@ p {
   margin-bottom: 0px;
 }
 
-.c-curiosity {
+.c-curiosity-b {
   padding: 60px 0px;
 }
-.c-curiosity .curiosity-color {
+.c-curiosity-b .curiosity-color {
   background-color: #540017;
   border-radius: 8px;
 }
-.c-curiosity .curiosity-title {
+.c-curiosity-b .curiosity-title {
   font-weight: 800;
   font-size: 32px;
   line-height: 2rem;
@@ -1462,19 +1462,26 @@ p {
   padding-bottom: 56px;
   font-family: "Nostromo";
 }
-.c-curiosity .curiosity-home {
+.c-curiosity-b .curiosity-home {
   padding-bottom: 64px;
 }
 @media (min-width: 1200px) {
-  .c-curiosity .curiosity-home {
+  .c-curiosity-b .curiosity-home {
     padding: 0px 64px 64px 64px;
   }
 }
-.c-curiosity .curiosity-describe {
+.c-curiosity-b .curiosity-describe {
   color: white;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 16px;
   font-family: "gotham";
+}
+.c-curiosity-b .curiosity-top-tittle {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "gotham";
+  margin-bottom: 16px;
 }
 
 p {
@@ -1487,6 +1494,9 @@ p {
 .c-football-curiosity .football-curiosity-color {
   background-color: #EAEAEA;
   border-radius: 8px;
+  padding-bottom: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .c-football-curiosity .football-curiosity-title {
   font-weight: 800;
@@ -1515,6 +1525,13 @@ p {
   font-size: 16px;
   text-align: left;
   font-family: "gotham";
+}
+.c-football-curiosity .football-curiosity-top-tittle {
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "gotham";
+  margin-bottom: 16px;
 }
 
 p {
@@ -1772,11 +1789,6 @@ p {
 .c-baisebol-curiosity .baisebol-curiosity-home {
   padding-bottom: 64px;
 }
-@media (min-width: 1200px) {
-  .c-baisebol-curiosity .baisebol-curiosity-home {
-    padding: 0px 64px 64px 64px;
-  }
-}
 .c-baisebol-curiosity .baisebol-curiosity-img {
   width: 100%;
   background-size: cover;
@@ -1787,6 +1799,13 @@ p {
   font-size: 16px;
   text-align: left;
   font-family: "gotham";
+}
+.c-baisebol-curiosity .baisebol-curiosity-top-tittle {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "gotham";
+  margin-bottom: 16px;
 }
 
 p {

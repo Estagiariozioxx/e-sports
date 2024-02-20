@@ -12,6 +12,9 @@ p{
         &-color{
             background-color: #EAEAEA;
             border-radius: 8px;
+            padding-bottom: 64px;
+            padding-left: 32px ;
+            padding-right: 32px;
         }
         &-title{
 
@@ -44,6 +47,15 @@ p{
             text-align: left;
             font-family: 'gotham';
         }
+        &-top-tittle{
+            color:#000;
+            font-weight: 500;
+            font-size:20px;
+            font-family: 'gotham';
+            margin-bottom: 16px;
+
+        }
+
 
 
     }

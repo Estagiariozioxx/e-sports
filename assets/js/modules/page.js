@@ -6,6 +6,10 @@
   var containercuriositybasketball =$(".slick_basket");
   var containerslicknav =$(".center__nav");
 
+  var containercuriositybase=$('.slick_base');
+
+  var containercuriosityfootball=$('.slick_fut');
+
   containerslick.slick({
     autoplay: false,
     autoplaySpeed: 4000,
@@ -92,7 +96,57 @@
     }]
 }); */
 
+
+containercuriositybase.slick({
+  autoplay: false,
+  autoplaySpeed: 4000,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  arrows: true,
+  dots: false,
+  adaptiveHeight: true,
+  prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+  nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 containercuriositybasketball.slick({
+  autoplay: false,
+  autoplaySpeed: 4000,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  arrows: true,
+  dots: false,
+  adaptiveHeight: true,
+  prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
+  nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
+
+
+containercuriosityfootball.slick({
   autoplay: false,
   autoplaySpeed: 4000,
   pauseOnFocus: false,

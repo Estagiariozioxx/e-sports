@@ -5,7 +5,7 @@
 p{
     margin-bottom: 0px;
 }
-.c-curiosity{
+.c-curiosity-b{
     padding: 60px 0px;
 
     .curiosity{
@@ -33,9 +33,18 @@ p{
 
         &-describe{
             color:#ffff;
-            font-weight: 400;
+            font-weight:200;
             font-size: 16px;
             font-family: 'gotham';
+        }
+
+        &-top-tittle{
+            color:#ffff;
+            font-weight: 500;
+            font-size:20px;
+            font-family: 'gotham';
+            margin-bottom: 16px;
+
         }
 
     }

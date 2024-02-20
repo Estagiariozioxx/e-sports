@@ -5,6 +5,7 @@
 p{
     margin-bottom: 0px;
 }
+
 .c-basketball{
     padding: 60px 0px;
     background-image: url('../../../../../imgtest/basketball/fundo-basketball.png');
@@ -119,6 +120,14 @@ p{
             border-radius: 4px;
         }
 
+    }
+    .content-mob{
+        margin: 16px 0px;
+        padding: 8px 0px;
+         @include md{
+            padding: 0px;
+            margin: 0px;
+         }
     }
 
    .teams-basketball{

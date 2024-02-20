@@ -1,52 +1,51 @@
-@mixin md{
-    @media (min-width: 1200px) { @content; }
+@mixin md {
+    @media (min-width: 1200px) { 
+        @content; 
+    }
 }
 
-p{
+p {
     margin-bottom: 0px;
 }
-.c-baisebol{
+
+.c-baisebol {
     padding: 60px 0px;
     background-image: url('../../../../../imgtest/baisebol/Baseball-fundo.png');
     background-position: left top;
     background-size: cover;
 
-
-    .baisebol{
-        &-img-logo{
+    .baisebol {
+        &-img-logo {
             width: 106px;
             height: 106px;
-            @include md{
+            @include md {
                 width: 100%;
                 height: 100%;
             }
         }
-        &-title{
+        &-title {
             font-weight: 800;
-            font-size:24px;
-            
+            font-size: 24px;
             line-height: 2rem;
             color: #002d62;
             font-family: 'nostromo';
 
-            @include md{
-                font-size:65px;
+            @include md {
+                font-size: 65px;
                 padding-top: 36px;
                 margin-bottom: 86px;
-
             }
         }
-        &-box_img{
-            .baisebol-img{
+        &-box_img {
+            .baisebol-img {
                 width: 100%;
-                @include md{
+                @include md {
                     width: 100%;
                 }
             }
         }
-
-        &-describe{
-            color:black;
+        &-describe {
+            color: black;
             padding: 0px 8px;
             font-weight: 450;
             font-size: 16px;
@@ -59,30 +58,29 @@ p{
             max-height: 400px;
             &::-webkit-scrollbar {
                 width: 8px; /* largura da barra de rolagem */
-                background-color: #Eac1b3; /* cor de fundo da barra de rolagem */
+                background-color: #eac1b3; /* cor de fundo da barra de rolagem */
                 border-radius: 4px;
             }
-    
             &::-webkit-scrollbar-thumb {
                 background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
                 border-radius: 4px; /* borda arredondada  */
             }
         }
-
-        &-anchor{
-            font-size:14px;
+        &-anchor {
+            font-size: 14px;
             color: #fff;
-            border:1px solid #fff;
-            padding:4px 8px;
-            border-radius:8px; 
-            margin:0px 8px;
+            border: 1px solid #fff;
+            padding: 4px 8px;
+            border-radius: 8px;
+            margin: 0px 8px;
         }
     }
-        
 }
-.slick-next,.slick-prev{
+
+.slick-next,
+.slick-prev {
     border: none;
-    width:32px;
+    width: 32px;
     height: 32px;
     padding: 0px;
     display: flex;
@@ -92,153 +90,149 @@ p{
     background-color: rgb(122, 139, 165);
     color: #fff;
 
-    i{
+    i {
         font-size: 30px;
     }
 }
-.slick-next{
+
+.slick-next {
     margin-left: 10px;
-    
 }
-.slick-prev{
+
+.slick-prev {
     margin-right: 10px;
-
 }
 
-.c-teams-baisebol{
+.c-teams-baisebol {
     margin-top: 27px;
 
-   .box-team-beisebol{
-    width: 180px;
-    height: 180px;
-    display: flex;
-    align-items: center;
+    .box-team-beisebol {
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
 
-    .teams-baisebol-img{
-        width:100%;
-        object-fit: cover;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
+        .teams-baisebol-img {
+            width: 100%;
+            object-fit: cover;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+        @include md {
+            width: 200px;
+            height: 200px;
+        }
     }
-    @include md{
-        width: 200px;
-        height: 200px;
+    .teams-baisebol-describe {
+        overflow-y: auto;
+        max-height: 200px;
+        padding-right: 16px;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            background-color: #eedab2;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #fca701;
+            border-radius: 4px;
+        }
     }
-   }
-   .teams-baisebol-describe{
-    overflow-y: auto;
-    max-height: 200px;
-    padding-right: 16px; 
-
-     &::-webkit-scrollbar {
-        width: 8px;
-        background-color: #EEDAB2;
-        border-radius: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: #FCA701;
-        border-radius: 4px;
-    }
-
-}
-.content-mob{
-    margin: 16px 0px;
-    padding: 8px 0px;
-     @include md{
-        padding: 0px;
-        margin: 0px;
-     }
-}
-
-.teams-baisebol{
-&-color {
-    padding: 60px 30px;
-    background-color: rgba(234, 234, 234, 0.5);
-    border-radius: 8px;
-}
-&-title{
-    font-size: 32px;
-    font-family: 'Nostromo';
-}
-&-describe{
-    overflow-y: auto;
-    max-height: 200px;
-    padding-right: 16px; 
-    //background-color: #FCA701;
-     /* Estilo da barra de rolagem */
-     &::-webkit-scrollbar {
-        width: 8px; /* largura da barra de rolagem */
-        background-color: #EEDAB2; /* cor de fundo da barra de rolagem */
-        border-radius: 4px;
+    .content-mob {
+        margin: 16px 0px;
+        padding: 8px 0px;
+        @include md {
+            padding: 0px;
+            margin: 0px;
+        }
     }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: #FCA701; /* cor do polegar (a parte que você arrasta) */
-        border-radius: 4px; /* borda arredondada  */
-    }
+    .teams-baisebol {
+        &-color {
+            padding: 60px 30px;
+            background-color: rgba(234, 234, 234, 0.5);
+            border-radius: 8px;
+        }
+        &-title {
+            font-size: 32px;
+            font-family: 'Nostromo';
+        }
+        &-describe {
+            overflow-y: auto;
+            max-height: 200px;
+            padding-right: 16px;
+            /* Estilo da barra de rolagem */
+            &::-webkit-scrollbar {
+                width: 8px; /* largura da barra de rolagem */
+                background-color: #eedab2; /* cor de fundo da barra de rolagem */
+                border-radius: 4px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #fca701; /* cor do polegar (a parte que você arrasta) */
+                border-radius: 4px; /* borda arredondada  */
+            }
+        }
+        &-box_img {
+            width: 135px;
+            height: 135px;
+            background-image: url('../../../../../imgtest/quadrado.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
 
-}
+            @include md {
+                width: 135px;
+                height: 135px;
+            }
+        }
+        &-division {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 800;
+            font-family: 'gotham';
 
-&-box_img{
-    width: 135px;
-    height: 135px;
-    background-image: url('../../../../../imgtest/quadrado.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+            &-sp {
+                padding-bottom: 8px;
+                font-family: 'gotham';
+                @include md {
+                    padding-top: 0;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        &-name {
+            font-size: 16px;
+            color: #000;
+            padding-top: 16px;
 
-    @include md{
-        width: 135px;
-        height: 135px;
-    }
-}
-&-division{
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 0;
-    font-weight: 800;
-    font-family: 'gotham';
+            font-family: 'gotham';
 
-    &-sp{
-        padding-bottom: 8px;
-        font-family: 'gotham';
-        @include md{
-            padding-top: 0;
-            padding-bottom: 16px;
+            @include md {
+                font-size: 24px;
+            }
+        }
+        &-win {
+            font-size: 18px;
+            font-weight: 450;
+            padding-bottom: 8px;
+
+            &-number {
+                line-height: 2rem;
+                color: #540017;
+                font-weight: 800;
+                font-size: 40px;
+            }
         }
     }
 }
-&-name{
-    font-size: 16px;
-    color: #000;
-    padding-top: 16px;
-    
-    font-family: 'gotham';
 
-    @include md{
-        font-size: 24px;
-    }
-}
-&-win{
-    font-size: 18px;
-    font-weight: 450;
-    padding-bottom: 8px;
-
-    &-number{
-        line-height: 2rem;
-        color: #540017;
-        font-weight: 800;
-        font-size: 40px;
-    }
-}
-}
-.center__nav{
-margin-top: 48px;
-    .item{
+.center__nav {
+    margin-top: 48px;
+    .item {
         padding: 0px 8px;
 
-        .teams-baisebol-box{
+        .teams-baisebol-box {
             border-radius: 8px;
             border: 1px solid;
             display: flex;
@@ -246,38 +240,31 @@ margin-top: 48px;
             align-items: center;
             padding: 10px 0px;
         }
-
-        img{
+        img {
             width: 120px;
             height: 120px;
         }
     }
-   .slick-current{
-    .teams-baisebol-box{
-        border: none;
-        padding: 0px;
-    }
-    .item{
-        border: 3px solid #FCA701;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgba(00,00,00,0.1);
-        display: flex !important;
-        justify-content: center;
-        padding: 10px 0px;
-
-        img{
-            width: 150px;
-            height: 150px;
+    .slick-current {
+        .teams-baisebol-box {
+            border: none;
+            padding: 0px;
+        }
+        .item {
+            border: 3px solid #fca701;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
+            display: flex !important;
+            justify-content: center;
+            padding: 10px 0px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
         }
     }
-   }
 }
 
-
-
-
-
-}
 
 
 

@@ -58,6 +58,7 @@ p{
                 margin-top: 0px;
                 margin:0px 8px; 
 
+
             }
 
         }
@@ -78,6 +79,8 @@ p{
                     background-image: url('../../../../../imgtest/basquete-offwhite.png');
                     z-index: 1;
                     transform: translateY(66px);
+                    width: 100%;
+                    height: 100%;
                 }
                 
                 &:hover{
@@ -94,6 +97,8 @@ p{
                     background-image: url('../../../../../imgtest/baseball-offwhite.png');
                     z-index: 2; /* Defina a profundidade desejada */
                     transform: translateY(-10px);
+                    width: 100%;
+                    height: 100%;
 
                 }
 
@@ -110,6 +115,8 @@ p{
                     background-image: url('../../../../../imgtest/futebol-americano-offwhite.png');
                     z-index: 3; /* Defina a profundidade desejada */
                     transform: translateY(20px);
+                    width: 100%;
+                    height: 100%;
                 }
 
                 &:hover{

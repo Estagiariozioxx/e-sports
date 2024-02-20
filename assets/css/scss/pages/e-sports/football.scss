@@ -125,6 +125,14 @@ p{
         }
 
     }
+    .content-mob {
+        margin: 16px 0px;
+        padding: 8px 0px;
+        @include md {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
     &-img{
         width: 200px;
         object-fit: cover;
@@ -143,9 +151,13 @@ p{
     &-division{
         font-size: 20px;
         color: #000;
+        margin-bottom: 0;
         font-weight: 800;
         font-family: 'gotham';
-        padding-bottom: 32px;
+        @include md{
+            margin-bottom: 10px;
+
+        }
     }
     &-name{
         font-size: 24px;

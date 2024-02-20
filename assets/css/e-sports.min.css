@@ -1356,8 +1356,8 @@ p {
   border-radius: 4px; /* borda arredondada  */
 }
 .c-teams-basketball .teams-basketball-box_img {
-  width: 135px;
-  height: 135px;
+  width: 100px;
+  height: 100px;
   background-image: url("../../../../../imgtest/quadrado.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1566,12 +1566,18 @@ p {
 }
 .c-football .football-title {
   font-weight: 800;
-  font-size: 65px;
-  line-height: 2rem;
+  font-size: 48px;
+  line-height: 2.5rem;
   color: #fff;
   font-family: "Nostromo";
   padding-top: 36px;
   margin-bottom: 86px;
+}
+@media (min-width: 1200px) {
+  .c-football .football-title {
+    font-size: 65px;
+    line-height: 2rem;
+  }
 }
 .c-football .football-box_img .football-img {
   width: 100%;
@@ -1671,19 +1677,31 @@ p {
   }
 }
 .c-teams-football .teams-football-img {
-  width: 200px;
+  width: 135px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 200px;
+  height: 135px;
+}
+@media (min-width: 1200px) {
+  .c-teams-football .teams-football-img {
+    width: 200px;
+    height: 200px;
+  }
 }
 .c-teams-football .teams-football-box_img {
-  width: 135px;
-  height: 135px;
+  width: 100px;
+  height: 100px;
   background-image: url("../../../../../imgtest/quadrado.svg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 1200px) {
+  .c-teams-football .teams-football-box_img {
+    width: 135px;
+    height: 135px;
+  }
 }
 .c-teams-football .teams-football-division {
   font-size: 20px;

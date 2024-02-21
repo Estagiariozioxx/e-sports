@@ -99,7 +99,12 @@
 /* Referente ao slick nav */
 .center__navbase , .center__nav , .center__navfut {
     margin-top: 48px;
+    align-items: center;
 
+    .slick-track{
+        display: flex;
+        align-items: center;
+    }
     .item {
         padding: 0px 8px;
 

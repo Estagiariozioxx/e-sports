@@ -55,7 +55,11 @@ p {
             font-family: 'gotham';
 
             overflow-y: auto;
-            max-height: 400px;
+            max-height: 200px;
+            @include md{
+                max-height: 400px;
+
+            }
             &::-webkit-scrollbar {
                 width: 8px; /* largura da barra de rolagem */
                 background-color: #eac1b3; /* cor de fundo da barra de rolagem */

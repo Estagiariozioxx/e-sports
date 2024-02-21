@@ -10,26 +10,45 @@ p{
     padding: 60px 0px;
     background-size: contain;
 
+    padding-left: 16px;
+    padding-right: 16px;
+    @include md{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
    .newsletter{
 
     &-toptitle{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
         color: #000;
+        text-align: center;
+        @include md{
+            font-size: 18px;
+            text-align:left ;
+
+        }
     }
     &-title{
         font-size: 18px;
         line-height: 1rem;
+        text-align: center;
         font-weight: 800;
         color: #000;
         text-transform: uppercase;
         margin-bottom: 32px;
+        @include md{
+            text-align:left ;
+        }
+
 
     }
         &-input{
 
             height: 30px;
-            width:100%;
+            width:50%;
             
             background-color: transparent; border: 1px solid #2d3c4d;
             border-radius: 4px;
@@ -37,6 +56,7 @@ p{
             @include md{
                 height: 30px;
                 width: 100%;
+
 
             }
 

@@ -37,8 +37,20 @@ p{
             padding: 0px 8px;
             font-weight: 400;
             font-size: 16px;
+            overflow-y: auto;
+            max-height:350px;
 
             font-family: 'gotham';
+            &::-webkit-scrollbar {
+                width: 8px; 
+                background-color: #c6cad3; 
+                border-radius: 4px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #0e1d2f; 
+                border-radius: 4px;
+            }
         }
 
         &-anchor{

@@ -50,7 +50,7 @@ nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-
     responsive: [{
         breakpoint: 768,
         settings: {
-            arrows: true,
+            arrows: false,
             centerMode: true,
             slidesToShow: 1,
     prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
@@ -103,7 +103,7 @@ nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-
     responsive: [{
         breakpoint: 768,
         settings: {
-            arrows: true,
+            arrows: false,
             centerMode: true,
             slidesToShow: 1,
     prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
@@ -154,7 +154,7 @@ nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-
       responsive: [{
           breakpoint: 768,
           settings: {
-              arrows: true,
+              arrows: false,
               centerMode: true,
               slidesToShow: 1,
       prevArrow: '<button class="slick-prev slick-arrow" type="button"><img class="icon-arrow-left" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/copa-do-mundo/seta_esquerda.svg"></button>',
@@ -214,7 +214,7 @@ containercuriositybase.slick({
   pauseOnFocus: false,
   pauseOnHover: false,
   arrows: true,
-  dots: false,
+  dots: true,
   adaptiveHeight: true,
   prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
   nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
@@ -226,6 +226,7 @@ containercuriositybase.slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
   ],
@@ -237,7 +238,7 @@ containercuriositybasketball.slick({
   pauseOnFocus: false,
   pauseOnHover: false,
   arrows: true,
-  dots: false,
+  dots: true,
   adaptiveHeight: true,
   prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
   nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
@@ -249,6 +250,7 @@ containercuriositybasketball.slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
   ],
@@ -263,7 +265,7 @@ containercuriosityfootball.slick({
   pauseOnFocus: false,
   pauseOnHover: false,
   arrows: true,
-  dots: false,
+  dots: true,
   adaptiveHeight: true,
   prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"/></button>',
   nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></button>',
@@ -275,6 +277,7 @@ containercuriosityfootball.slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
   ],
@@ -297,6 +300,7 @@ containercuriosityfootball.slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],

@@ -9,6 +9,13 @@
     background-image: url('../../../../../imgtest/historia/Frame\ 7.png');
     background-size: cover; /* Para cobrir toda a área do elemento */
     background-position: center; /* Para centralizar a imagem */
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include md{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     .history{
         &-title{
@@ -30,6 +37,24 @@
             font-weight: 400;
             margin-top: 32px;
             font-family: 'gotham';
+            overflow-y: auto;
+            
+            max-height:200px;
+            padding:16px;
+            @include md{
+                max-height:350px;
+                padding:0px;
+            }
+            &::-webkit-scrollbar {
+                width: 8px; 
+                background-color: #485361; 
+                border-radius: 4px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #ffffff; 
+                border-radius: 4px;
+            }
 
             @include md{
                 margin: 0px;
@@ -37,8 +62,8 @@
         }
 
         &-box_img{
-            width: 96px;
-            height: 96px;
+            width: 86px;
+            height: 86px;
             margin: 64px 16px;
 
             @include md{
@@ -50,6 +75,7 @@
             img{
                 width: 100%;
                 object-fit: cover;
+
             }
         }
         

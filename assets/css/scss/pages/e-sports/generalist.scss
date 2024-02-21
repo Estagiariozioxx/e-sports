@@ -18,6 +18,9 @@
                 @include md{
                     font-size: 32px;
                     margin-bottom: 0px;
+                }
+                &-mob-top{
+                    
 
                 }
             }
@@ -73,8 +76,22 @@
                 }
         
             }
+            &-box_img-f{
+                width: 63px;
+                height: 63px;
+                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/quadrado.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 8px 8px;
+        
+                @include md{
+                    width: 135px;
+                    height: 135px; 
+                }
+        
+            }
             &-division{
-                font-size: 16px;
+                font-size: 14px;
                 color: #000;
                 margin-bottom: 0;
                 font-weight: 800;
@@ -104,10 +121,10 @@
             &-win{
                 font-size: 14px;
                 font-weight: 400;
-                padding-bottom: 8px;
 
                 @include md{
                     font-size: 18px;
+                    padding-bottom: 8px;
 
                 }
         

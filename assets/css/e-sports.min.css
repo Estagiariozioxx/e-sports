@@ -2537,6 +2537,12 @@ p {
 .center__navbase .item .teams-box.atlanta-haws, .center__nav .item .teams-box.atlanta-haws, .center__navfut .item .teams-box.atlanta-haws {
   background-color: #6D6D6D;
 }
+.center__navbase .item .teams-box.new-york-knicks, .center__nav .item .teams-box.new-york-knicks, .center__navfut .item .teams-box.new-york-knicks {
+  background-color: #0b1832;
+}
+.center__navbase .item .teams-box.arizona-diamondbacks, .center__nav .item .teams-box.arizona-diamondbacks, .center__navfut .item .teams-box.arizona-diamondbacks {
+  background-color: #5e2730;
+}
 .center__navbase .item .teams-box.arizona, .center__nav .item .teams-box.arizona, .center__navfut .item .teams-box.arizona {
   background-color: #871528;
 }
@@ -2549,8 +2555,11 @@ p {
 .center__navbase .item .teams-box.brooklyn-nets, .center__nav .item .teams-box.brooklyn-nets, .center__navfut .item .teams-box.brooklyn-nets {
   background-color: #434343;
 }
-.center__navbase .item .teams-box.brooklyn-nets, .center__nav .item .teams-box.brooklyn-nets, .center__navfut .item .teams-box.brooklyn-nets {
-  background-color: #434343;
+.center__navbase .item .teams-box.philadelphia-76ers, .center__nav .item .teams-box.philadelphia-76ers, .center__navfut .item .teams-box.philadelphia-76ers {
+  background-color: #0a1b3e;
+}
+.center__navbase .item .teams-box.phoenix-suns, .center__nav .item .teams-box.phoenix-suns, .center__navfut .item .teams-box.phoenix-suns {
+  background-color: #0a1b3e;
 }
 .center__navbase .item .teams-box.detroit-piston, .center__nav .item .teams-box.detroit-piston, .center__navfut .item .teams-box.detroit-piston {
   background-color: #490813;
@@ -2641,6 +2650,99 @@ p {
 }
 .center__navbase .item .teams-box.baltimore, .center__nav .item .teams-box.baltimore, .center__navfut .item .teams-box.baltimore {
   background-color: #0D082B;
+}
+.center__navbase .item .teams-box.la-clippers, .center__nav .item .teams-box.la-clippers, .center__navfut .item .teams-box.la-clippers {
+  background-color: #5e5e5e;
+}
+.center__navbase .item .teams-box.atlanta-braves, .center__nav .item .teams-box.atlanta-braves, .center__navfut .item .teams-box.atlanta-braves {
+  background-color: #ce1141;
+}
+.center__navbase .item .teams-box.baltimore-orioles, .center__nav .item .teams-box.baltimore-orioles, .center__navfut .item .teams-box.baltimore-orioles {
+  background-color: #5c2811;
+}
+.center__navbase .item .teams-box.boston-red-sox, .center__nav .item .teams-box.boston-red-sox, .center__navfut .item .teams-box.boston-red-sox {
+  background-color: #0d2b56;
+}
+.center__navbase .item .teams-box.chicago-cubs, .center__nav .item .teams-box.chicago-cubs, .center__navfut .item .teams-box.chicago-cubs {
+  background-color: #232d44;
+}
+.center__navbase .item .teams-box.chicago-white-sox, .center__nav .item .teams-box.chicago-white-sox, .center__navfut .item .teams-box.chicago-white-sox {
+  background-color: #717171;
+}
+.center__navbase .item .teams-box.chicago-white-sox, .center__nav .item .teams-box.chicago-white-sox, .center__navfut .item .teams-box.chicago-white-sox {
+  background-color: #717171;
+}
+.center__navbase .item .teams-box.cincinnati-reds, .center__nav .item .teams-box.cincinnati-reds, .center__navfut .item .teams-box.cincinnati-reds {
+  background-color: #c6011f;
+}
+.center__navbase .item .teams-box.cleveland-guardians, .center__nav .item .teams-box.cleveland-guardians, .center__navfut .item .teams-box.cleveland-guardians {
+  background-color: #434343;
+}
+.center__navbase .item .teams-box.colorado-rockies, .center__nav .item .teams-box.colorado-rockies, .center__navfut .item .teams-box.colorado-rockies {
+  background-color: #c4ced4;
+}
+.center__navbase .item .teams-box.detroit-tigers, .center__nav .item .teams-box.detroit-tigers, .center__navfut .item .teams-box.detroit-tigers {
+  background-color: #0c2c56;
+}
+.center__navbase .item .teams-box.houston-astros, .center__nav .item .teams-box.houston-astros, .center__navfut .item .teams-box.houston-astros {
+  background-color: #a16722;
+}
+.center__navbase .item .teams-box.kansas-city-royals, .center__nav .item .teams-box.kansas-city-royals, .center__navfut .item .teams-box.kansas-city-royals {
+  background-color: #004687;
+}
+.center__navbase .item .teams-box.los-angeles-angels, .center__nav .item .teams-box.los-angeles-angels, .center__navfut .item .teams-box.los-angeles-angels {
+  background-color: #531a24;
+}
+.center__navbase .item .teams-box.los-angeles-dodgers, .center__nav .item .teams-box.los-angeles-dodgers, .center__navfut .item .teams-box.los-angeles-dodgers {
+  background-color: #005a9c;
+}
+.center__navbase .item .teams-box.miami-marlins, .center__nav .item .teams-box.miami-marlins, .center__navfut .item .teams-box.miami-marlins {
+  background-color: #686868;
+}
+.center__navbase .item .teams-box.milwaukee-brewers, .center__nav .item .teams-box.milwaukee-brewers, .center__navfut .item .teams-box.milwaukee-brewers {
+  background-color: #1b222e;
+}
+.center__navbase .item .teams-box.minnesota-twins, .center__nav .item .teams-box.minnesota-twins, .center__navfut .item .teams-box.minnesota-twins {
+  background-color: #646464;
+}
+.center__navbase .item .teams-box.new-york-mets, .center__nav .item .teams-box.new-york-mets, .center__navfut .item .teams-box.new-york-mets {
+  background-color: #ff5910;
+}
+.center__navbase .item .teams-box.new-york-yankees, .center__nav .item .teams-box.new-york-yankees, .center__navfut .item .teams-box.new-york-yankees {
+  background-color: #132448;
+}
+.center__navbase .item .teams-box.oakland-athletics, .center__nav .item .teams-box.oakland-athletics, .center__navfut .item .teams-box.oakland-athletics {
+  background-color: #003831;
+}
+.center__navbase .item .teams-box.philadelphia-phillies, .center__nav .item .teams-box.philadelphia-phillies, .center__navfut .item .teams-box.philadelphia-phillies {
+  background-color: #e81828;
+}
+.center__navbase .item .teams-box.pittisburgh-pirates, .center__nav .item .teams-box.pittisburgh-pirates, .center__navfut .item .teams-box.pittisburgh-pirates {
+  background-color: #ffce34;
+}
+.center__navbase .item .teams-box.san-diego-padres, .center__nav .item .teams-box.san-diego-padres, .center__navfut .item .teams-box.san-diego-padres {
+  background-color: #2f241c;
+}
+.center__navbase .item .teams-box.san-francisco-giants, .center__nav .item .teams-box.san-francisco-giants, .center__navfut .item .teams-box.san-francisco-giants {
+  background-color: #fd5a1e;
+}
+.center__navbase .item .teams-box.seattle-mariners, .center__nav .item .teams-box.seattle-mariners, .center__navfut .item .teams-box.seattle-mariners {
+  background-color: #434343;
+}
+.center__navbase .item .teams-box.st-louis-cardinals, .center__nav .item .teams-box.st-louis-cardinals, .center__navfut .item .teams-box.st-louis-cardinals {
+  background-color: #be0a14;
+}
+.center__navbase .item .teams-box.tampa-bay-rays, .center__nav .item .teams-box.tampa-bay-rays, .center__navfut .item .teams-box.tampa-bay-rays {
+  background-color: #400610;
+}
+.center__navbase .item .teams-box.texas-rangers, .center__nav .item .teams-box.texas-rangers, .center__navfut .item .teams-box.texas-rangers {
+  background-color: #5e5e5e;
+}
+.center__navbase .item .teams-box.toronto-blue-jays, .center__nav .item .teams-box.toronto-blue-jays, .center__navfut .item .teams-box.toronto-blue-jays {
+  background-color: #6d5a2d;
+}
+.center__navbase .item .teams-box.washington-nationals, .center__nav .item .teams-box.washington-nationals, .center__navfut .item .teams-box.washington-nationals {
+  background-color: #6d5a2d;
 }
 .center__navbase .item img, .center__nav .item img, .center__navfut .item img {
   width: 100px;

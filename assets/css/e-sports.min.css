@@ -2009,6 +2009,7 @@ p {
 .c-vitrine #vitrine-fut .item .title {
   font-size: 14px;
   color: #FFF;
+  opacity: 0.8;
   font-family: "gotham";
   font-weight: 350;
   margin-top: 16px;
@@ -2020,7 +2021,7 @@ p {
   text-decoration: line-through;
   font-weight: 500;
   font-size: 11px;
-  color: #540017;
+  color: #BF0D3E;
   margin-bottom: -5px;
   font-family: "gotham";
 }
@@ -2616,6 +2617,11 @@ p {
 /* Referente ao slick nav */
 .center__navbase, .center__nav, .center__navfut {
   margin-top: 48px;
+  align-items: center;
+}
+.center__navbase .slick-track, .center__nav .slick-track, .center__navfut .slick-track {
+  display: flex;
+  align-items: center;
 }
 .center__navbase .item, .center__nav .item, .center__navfut .item {
   padding: 0px 8px;

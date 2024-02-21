@@ -27,13 +27,11 @@ $color-secundary:#DEA95C;
     @media (min-width: 1200px) { @content; }
 }
 @import "../fonts/sporty";
+
 @import "e-sports/home";
 @import "e-sports/history";
 @import "e-sports/basketball";
-@import "e-sports/curiosity";
-@import "e-sports/football-curiosity";
 @import "e-sports/football";
-@import "e-sports/baisebol-curiosity";
 @import "e-sports/baisebol";
 @import "e-sports/shirt_year";
 @import "e-sports/top";
@@ -41,7 +39,7 @@ $color-secundary:#DEA95C;
 @import "e-sports/ranking";
 @import "e-sports/modal";
 @import "e-sports/newsletter";
-
+@import "e-sports/generalist";
 @import "../fonts/icons-font";
 
 

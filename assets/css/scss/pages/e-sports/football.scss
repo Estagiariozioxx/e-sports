@@ -6,8 +6,6 @@ p{
     margin-bottom: 0px;
 }
 .c-football{
-
-    //envolver em 3 partess
     padding: 60px 0px;
     background-color:#0e1d2f ;
     background-image: url('../../../../../imgtest/football/football-fundo.png');
@@ -41,8 +39,6 @@ p{
         }
 
         &-describe{
-
-            //colocar scroll
             color:#fff;
             padding: 0px 8px;
             font-weight: 400;
@@ -53,14 +49,14 @@ p{
             max-height:350px;
             font-family: 'gotham';
             &::-webkit-scrollbar {
-                width: 8px; /* largura da barra de rolagem */
-                background-color: #485361; /* cor de fundo da barra de rolagem */
+                width: 8px; 
+                background-color: #485361; 
                 border-radius: 4px;
             }
     
             &::-webkit-scrollbar-thumb {
-                background-color: #ffffff; /* cor do polegar (a parte que você arrasta) */
-                border-radius: 4px; /* borda arredondada  */
+                background-color: #ffffff; 
+                border-radius: 4px;
             }
         }
 
@@ -72,173 +68,7 @@ p{
             border-radius:8px; 
             margin:0px 8px;
         }
-    }
-        
-}
-.slick-next,.slick-prev{
-    border: none;
-    width:32px;
-    height: 32px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    background-color: rgb(122, 139, 165);
-    color: #fff;
-
-    i{
-        font-size: 30px;
-    }
-}
-.slick-next{
-    margin-left: 10px;
-    
-}
-.slick-prev{
-    margin-right: 10px;
-
+    } 
 }
 
-.c-teams-football{
-    margin-top: 27px;
-
-   .teams-football{
-    &-color {
-        padding: 60px 30px;
-        background-color: rgba(234, 234, 234, 0.5);
-        border-radius: 8px;
-    }
-    &-title{
-        font-size: 32px;
-        font-family: 'Nostromo';
-    }
-    &-describe{
-        overflow-y: auto;
-        max-height: 200px;
-        padding-right: 16px; 
-
-         &::-webkit-scrollbar {
-            width: 8px; 
-            background-color: #EEDAB2; 
-            border-radius: 4px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: #FCA701;
-            border-radius: 4px;
-        }
-
-    }
-    .content-mob {
-        margin: 16px 0px;
-        padding: 8px 0px;
-        @include md {
-            padding: 0px;
-            margin: 0px;
-        }
-    }
-    &-img{
-        width: 135px;
-        object-fit: cover;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
-        height: 135px;
-
-        @include md{
-            width: 200px;
-            height: 200px;
-        }
-    }
-    &-box_img{
-        width: 100px;
-        height: 100px;
-        background-image: url('../../../../../imgtest/quadrado.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        @include md{
-            width: 135px;
-            height: 135px; 
-        }
-
-    }
-    &-division{
-        font-size: 20px;
-        color: #000;
-        margin-bottom: 0;
-        font-weight: 800;
-        font-family: 'gotham';
-        @include md{
-            margin-bottom: 10px;
-
-        }
-    }
-    &-name{
-        font-size: 24px;
-        color: #000;
-        padding-top: 16px;
-        font-family: 'gotham';
-    }
-    &-win{
-        font-size: 18px;
-        font-weight: 400;
-        padding-bottom: 8px;
-
-        &-number{
-            line-height: 2rem;
-            color: #540017;
-            font-weight: 800;
-            font-size: 40px;
-        }
-    }
-   }
-   .center__navfut{
-    margin-top: 48px;
-    width: 100%;
-        .item{
-            padding: 0px 8px;
-
-            .teams-football-box{
-                border-radius: 8px;
-                border: 1px solid;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 0px;
-            }
-
-            img{
-                width: 120px;
-                height: 120px;
-            }
-        }
-       .slick-current{
-        .teams-football-box{
-            border: none;
-            padding: 0px;
-        }
-        .item{
-            border: 3px solid #FCA701;
-            border-radius: 8px;
-            box-shadow: 1px 1px 4px 1px rgba(00,00,00,0.1);
-            display: flex !important;
-            justify-content: center;
-            padding: 10px 0px;
-
-            img{
-                width: 150px;
-                height: 150px;
-            }
-        }
-       }
-   }
-
-
-
-
-
-
-}
 

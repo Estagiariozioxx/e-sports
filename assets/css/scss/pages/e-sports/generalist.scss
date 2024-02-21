@@ -1,0 +1,378 @@
+/* Referente ao slick principal */
+.c-teams{
+    padding: 60px 30px;
+    background-color: rgba(234, 234, 234, 0.5);
+    border-radius: 8px;
+    margin-top: 48px;
+
+    .teams{
+            &-title{
+                font-size: 32px;
+                font-family: 'Nostromo';
+            }
+            &-describe{
+                overflow-y: auto;
+                max-height: 200px;
+                padding-right: 16px; 
+        
+                 &::-webkit-scrollbar {
+                    width: 8px; 
+                    background-color: #EEDAB2; 
+                    border-radius: 4px;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background-color: #FCA701;
+                    border-radius: 4px;
+                }
+        
+            }
+            .content-mob {
+                margin: 16px 0px;
+                padding: 8px 0px;
+                @include md {
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+            &-img{
+                width: 135px;
+                object-fit: cover;
+                left: 50%;
+                position: relative;
+                transform: translateX(-50%);
+                height: 135px;
+        
+                @include md{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &-box_img{
+                width: 100px;
+                height: 100px;
+                background-image: url('../../../../../imgtest/quadrado.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 8px 8px;
+        
+                @include md{
+                    width: 135px;
+                    height: 135px; 
+                }
+        
+            }
+            &-division{
+                font-size: 20px;
+                color: #000;
+                margin-bottom: 0;
+                font-weight: 800;
+                font-family: 'gotham';
+                @include md{
+                    margin-bottom: 10px;
+        
+                }
+            }
+            &-name{
+                font-size: 24px;
+                color: #000;
+                padding-top: 16px;
+                font-family: 'gotham';
+            }
+            &-win{
+                font-size: 18px;
+                font-weight: 400;
+                padding-bottom: 8px;
+        
+                &-number{
+                    line-height: 2rem;
+                    color: #540017;
+                    font-weight: 800;
+                    font-size: 40px;
+                }
+            }
+    }
+
+    
+}
+
+/* Referente ao slick nav */
+.center__navbase , .center__nav , .center__navfut {
+    margin-top: 48px;
+
+    .item {
+        padding: 0px 8px;
+
+        .teams-box {
+            border-radius: 8px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+
+            &.atlanta {
+                background-color: #7B1C33;
+
+                &-haws{
+                    background-color: #6D6D6D; 
+                }
+            }
+
+            &.arizona {
+                background-color: #871528;
+            }
+
+            &.baltimore {
+                background-color: #0D082B;
+            }
+            &.boston{
+                background-color: #0C281C;
+                
+            }
+            &.brooklyn-nets{
+                background-color: #434343;
+            }
+
+            &.brooklyn-nets{
+                background-color: #434343;
+            }
+            &.detroit-piston{
+                background-color: #490813;
+            }
+            &.golden-state{
+                background-color: #614710;
+            }
+            &.clippers{
+                background-color: #5E5E5E;
+            }
+            &.new-york-knicks{
+                background-color: #0B1832;
+            }
+            &.philadelphia{
+                background-color: #0A1B3E;
+            }
+            &.phoenix{
+                background-color: #764B0C;
+            }
+            &.sacramento-kings{
+                background-color: #241334;
+            }
+            &.chicago-bulls{
+                background-color: #4E081A;
+            }
+            &.cleveland-cavaliers{
+                background-color: #7B613D;
+            }
+            &.indiana-pacers{
+                background-color: #0D1E33;
+            }
+            &.milwaukee-bucks{
+                background-color: #051C11;
+            }
+            &.toronto-raptors{
+                background-color: #450E10;
+            }
+            &.orlando-magic{
+                background-color: #264051;
+            }
+            &.washington-wizards{
+                background-color: #373737;
+            }
+            &.denver-nuggets{
+                background-color: #3F0810;
+            }
+            &.minnesota-timberwolves{
+                background-color: #2B3321;
+            }
+            &.oklahoma-city-thunder{
+                background-color: #707070;
+            }
+            &.dallas-mavericks{
+                background-color: #233441;
+            }
+            &.portland-trail-blazers{
+                background-color: #434343;
+            }
+            &.utah-jazz{
+                background-color: #434343;
+            }
+            &.new-orleans-pelicans{
+                background-color: #400610;
+            }
+            &.san-antonio-spurs{
+                background-color: #5E5E5E;
+            }
+            &.los-angeles-lakers{
+                background-color: #260E41;
+            }
+            &.charlotte-hornets{
+                background-color: #0D3A42;
+            }
+            &.miami-heat{
+                background-color: #8B6A38;
+            }
+            &.houston-rockets{
+                background-color: #421822;
+            }
+            &.memphis-grizzlies{
+                background-color: #373737;
+            }
+
+            &.buffalo {
+                background-color: #6D5A2D;
+            }
+
+            &.carolina {
+                background-color: #000B11;
+            }
+
+            &.baltimore {
+                background-color: #0D082B;
+            }
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+            @include md {
+                width: 120px;
+                height: 120px;
+
+            }
+        }
+    }
+
+    .slick-current {
+        .teams-box {
+            border: none;
+            padding: 0px;
+        }
+    
+        .item {
+            .teams-box {
+                border: 3px solid #FCA701;
+                border-radius: 8px;
+                box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
+                display: flex !important;
+                justify-content: center;
+                padding: 10px 12px;
+            }
+    
+    
+            img {
+                width: 110px;
+                height: 110px;
+    
+                @include md {
+                    width: 150px;
+                    height: 150px;
+                }
+    
+            }
+        }
+    }
+}
+
+/* Padronização arrow */
+.slick-next,
+.slick-prev {
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgb(122, 139, 165);
+    color: #fff;
+
+    i {
+        font-size: 30px;
+    }
+}
+
+.slick-next {
+    margin-left: 10px;
+
+}
+
+.slick-prev {
+    margin-right: 10px;
+
+}
+
+/* Referente ao curiosity */
+.c-curiosity{
+    padding: 60px 0px;
+    min-height: 60vh;
+
+    .curiosity{
+        &-color{
+            background-color: #540017;
+            border-radius: 8px;
+            border-radius: 20px;
+            min-height: 80vh;
+            
+
+            &-football{
+                background-color: #EAEAEA;
+            }
+        }
+        &-img{
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover;
+
+        }
+        &-title{
+            font-weight: 800;
+            font-size:32px;
+            line-height: 2rem;
+            color: #ffff;
+            padding-top: 56px;
+            padding-bottom: 56px;
+            font-family: 'Nostromo';
+
+            &-football{
+                color: black;
+            }
+        }
+        &-home{
+            padding-bottom: 64px;     
+            
+            @include md{
+                padding:0px 64px 64px 64px;
+            }
+
+        }
+
+        &-describe{
+            color:#ffff;
+            font-weight:200;
+            font-size: 16px;
+            font-family: 'gotham';
+
+            &-football{
+                color:#000000;
+            }
+        }
+
+        &-top-tittle{
+            color:#ffff;
+            font-weight: 500;
+            font-size:20px;
+            font-family: 'gotham';
+            margin-bottom: 16px;
+
+            &-football{
+                color:#000000;
+            }
+
+        }
+
+    }
+        
+}

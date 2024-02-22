@@ -1064,7 +1064,13 @@ p {
   background-color: #0E1D2F;
   padding: 60px 0px;
 }
+@media (min-width: 1200px) {
+  .c-home {
+    min-height: 100vh;
+  }
+}
 .c-home .home-top-title {
+  text-align: center;
   font-size: 20px;
   color: #fff;
   font-family: "nostromo-outline";
@@ -1126,14 +1132,13 @@ p {
   .c-home .home-box-img_basquete {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basquete-offwhite.png");
     z-index: 1;
-    transform: translateY(66px);
-    width: 100%;
-    height: 100%;
+    transform: translateY(-159px);
+    width: 200%;
+    height: 200%;
   }
 }
 .c-home .home-box-img_basquete:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/basquete.png");
-  transform: translateY(66px);
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Basquete.png");
 }
 .c-home .home-box-img_baseball {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png");
@@ -1144,13 +1149,13 @@ p {
   .c-home .home-box-img_baseball {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baseball-offwhite.png");
     z-index: 2; /* Defina a profundidade desejada */
-    transform: translateY(-10px);
-    width: 100%;
-    height: 100%;
+    transform: translateY(-209px);
+    width: 200%;
+    height: 200%;
   }
 }
 .c-home .home-box-img_baseball:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Baseball.png");
 }
 .c-home .home-box-img_futebol {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png");
@@ -1161,13 +1166,13 @@ p {
   .c-home .home-box-img_futebol {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/futebol-americano-offwhite.png");
     z-index: 3; /* Defina a profundidade desejada */
-    transform: translateY(20px);
-    width: 100%;
-    height: 100%;
+    transform: translateY(-209px);
+    width: 200%;
+    height: 200%;
   }
 }
 .c-home .home-box-img_futebol:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/futebol-americano.png");
 }
 
 .c-history {
@@ -2588,6 +2593,10 @@ p {
     margin-bottom: 0px;
   }
 }
+.c-teams .teams-title-mob {
+  margin-left: 100px;
+  text-align: center;
+}
 .c-teams .teams-describe {
   overflow-y: auto;
   max-height: 200px;
@@ -2699,6 +2708,17 @@ p {
 @media (min-width: 1200px) {
   .c-teams .teams-win-number {
     font-size: 40px;
+  }
+}
+.c-teams .teams-win-b {
+  text-align: center;
+  font-size: 12px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-win-b {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
   }
 }
 

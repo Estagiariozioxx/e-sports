@@ -19,9 +19,10 @@
                     font-size: 32px;
                     margin-bottom: 0px;
                 }
-                &-mob-top{
-                    
 
+                &-mob{
+                    margin-left: 100px;
+                    text-align: center;
                 }
             }
             &-describe{
@@ -125,8 +126,8 @@
                 @include md{
                     font-size: 18px;
                     padding-bottom: 8px;
-
                 }
+
         
                 &-number{
                     line-height: 2rem;
@@ -137,6 +138,19 @@
                         font-size: 40px;
 
                     }
+                }
+                &-b{
+                    text-align: center;
+                    font-size: 12px;
+                    @include md{
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        margin-bottom: 8px;
+
+                    }
+
+                    
                 }
             }
     }

@@ -606,18 +606,34 @@
 }
 
 /* Referente ao curiosity */
-.c-curiosity{
-    padding: 60px 0px;
+.c-curiosity{  
     min-height: 60vh;
+    background-color: #540017;
+
+    &-football{
+        background-color: #EAEAEA;
+
+        @include md{
+            background-color: transparent;
+        }
+    }
+
+    @include md{
+        padding: 60px 0px;
+        background-color: transparent;
+
+    }
+
+    .item{
+        padding: 0px 8px;
+    }
 
     .curiosity{
-
         &-color{
             background-color: #540017;
-
             min-height: 80vh;
-            padding: 32px;
-            margin:-26px;
+            
+
             @include md{
                 margin: 0px;
                 padding: 0px;
@@ -642,9 +658,10 @@
             font-size:24px;
             line-height: 2rem;
             color: #ffff;
-            padding-top: 16px;
+            padding-top: 32px;
             padding-bottom: 32px;
             font-family: 'Nostromo';
+            
             @include md{
                 font-size:32px;
                 padding-top: 56px;

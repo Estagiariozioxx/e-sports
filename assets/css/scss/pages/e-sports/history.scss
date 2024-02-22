@@ -26,23 +26,23 @@
             padding-bottom: 32px;
 
             @include md{
-                font-size: 65px;
+                font-size: 45px;
             }
         }
 
         &-describe{
             color:#fff;
-            font-size: 16px;
-            line-height: 1.5rem;
+            font-size: 15px;
+            line-height: 1.7rem;
             font-weight: 400;
             margin-top: 32px;
             font-family: 'gotham';
             overflow-y: auto;
             
-            max-height:200px;
-            padding:16px;
+            max-height:220px;
+            padding:16px 32px;
             @include md{
-                max-height:350px;
+                max-height:380px;
                 padding:0px;
             }
             &::-webkit-scrollbar {
@@ -67,8 +67,8 @@
             margin: 64px 16px;
 
             @include md{
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
                 margin: 64px 16px 0px 16px;
             }
 

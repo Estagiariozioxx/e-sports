@@ -18,9 +18,13 @@ p{
     .basketball{
         &-title{
             font-weight: 800;
-            font-size:48px;
+            font-size: 36px;
             color: #002d62;
             font-family: 'Nostromo';
+
+            @include md{
+                font-size: 45px;
+            }
         }
         &-box_img{
             .basketball-img{
@@ -35,7 +39,7 @@ p{
             color:black;
             padding: 0px 8px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             overflow-y: auto;
             max-height:350px;
 

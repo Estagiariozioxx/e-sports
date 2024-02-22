@@ -1071,7 +1071,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-home .home-top-title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 4rem;
   }
 }
@@ -1085,13 +1085,14 @@ p {
 }
 @media (min-width: 1200px) {
   .c-home .home-title {
-    font-size: 75px;
+    font-size: 60px;
+    line-height: 1.5rem;
   }
 }
 .c-home .home-describe {
   color: #fff;
   padding: 0px 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "gotham";
 }
 .c-home .home-anchor {
@@ -1193,23 +1194,23 @@ p {
 }
 @media (min-width: 1200px) {
   .c-history .history-title {
-    font-size: 65px;
+    font-size: 45px;
   }
 }
 .c-history .history-describe {
   color: #fff;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 15px;
+  line-height: 1.7rem;
   font-weight: 400;
   margin-top: 32px;
   font-family: "gotham";
   overflow-y: auto;
-  max-height: 200px;
-  padding: 16px;
+  max-height: 220px;
+  padding: 16px 32px;
 }
 @media (min-width: 1200px) {
   .c-history .history-describe {
-    max-height: 350px;
+    max-height: 380px;
     padding: 0px;
   }
 }
@@ -1234,8 +1235,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-history .history-box_img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 64px 16px 0px 16px;
   }
 }
@@ -1256,9 +1257,14 @@ p {
 }
 .c-basketball .basketball-title {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 36px;
   color: #002d62;
   font-family: "Nostromo";
+}
+@media (min-width: 1200px) {
+  .c-basketball .basketball-title {
+    font-size: 45px;
+  }
 }
 .c-basketball .basketball-box_img .basketball-img {
   width: 100%;
@@ -1272,7 +1278,7 @@ p {
   color: black;
   padding: 0px 8px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   overflow-y: auto;
   max-height: 350px;
   font-family: "gotham";
@@ -1309,7 +1315,7 @@ p {
 }
 .c-football .football-title {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 2.5rem;
   color: #fff;
   font-family: "Nostromo";
@@ -1317,7 +1323,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-football .football-title {
-    font-size: 65px;
+    font-size: 45px;
     line-height: 2rem;
     padding-top: 36px;
     margin-bottom: 86px;
@@ -1335,7 +1341,7 @@ p {
   color: #fff;
   padding: 0px 8px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   overflow-y: auto;
   max-height: 200px;
@@ -1364,6 +1370,74 @@ p {
   margin: 0px 8px;
 }
 
+.c-banners {
+  padding: 60px 0px;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Wallpapers.png");
+}
+.c-banners .banners {
+  border-radius: 10px;
+}
+.c-banners .banners-single {
+  max-height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .c-banners .banners-single {
+    width: 400px;
+  }
+}
+.c-banners .banners-single img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: ease 0.5s;
+}
+.c-banners .banners-single img:hover {
+  transform: scale(1.05);
+}
+.c-banners .banners-triple .banner-double {
+  width: 390px;
+  max-height: 400px;
+  margin: 0px 8px;
+  overflow: hidden;
+}
+.c-banners .banners-triple .banner-double-left {
+  margin-left: 0px;
+}
+.c-banners .banners-triple .banner-double-right {
+  margin-right: 0px;
+}
+.c-banners .banners-triple .banner-double img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: ease 0.5s;
+}
+.c-banners .banners-triple .banner-double img:hover {
+  transform: scale(1.05);
+}
+.c-banners .banners-triple .banner-full {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.c-banners .banners-triple .banner-full img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: ease 0.5s;
+}
+.c-banners .banners-triple .banner-full img:hover {
+  transform: scale(1.05);
+}
+.c-banners .slick_banners .item {
+  padding: 0px 8px;
+}
+.c-banners .slick_banners .slick-dots {
+  bottom: -10% !important;
+}
+
 p {
   margin-bottom: 0px;
 }
@@ -1386,14 +1460,14 @@ p {
 }
 .c-baisebol .baisebol-title {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 2rem;
   color: #002d62;
   font-family: "nostromo";
 }
 @media (min-width: 1200px) {
   .c-baisebol .baisebol-title {
-    font-size: 65px;
+    font-size: 45px;
     padding-top: 36px;
     margin-bottom: 86px;
   }
@@ -1410,7 +1484,7 @@ p {
   color: black;
   padding: 0px 8px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5rem;
   text-align: left;
   padding-left: 80px;
@@ -2422,7 +2496,7 @@ p {
 
 .c-newsletter {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Wallpapers.png");
-  padding: 60px 0px;
+  padding: 40px 0px;
   background-size: contain;
   padding-left: 16px;
   padding-right: 16px;
@@ -2460,25 +2534,25 @@ p {
   }
 }
 .c-newsletter .newsletter-input {
+  width: 100%;
   height: 30px;
-  width: 50%;
   background-color: transparent;
   border: 1px solid #2d3c4d;
   border-radius: 4px;
 }
 @media (min-width: 1200px) {
   .c-newsletter .newsletter-input {
-    height: 30px;
     width: 100%;
   }
 }
 .c-newsletter .newsletter-img {
-  width: 100%;
-  margin-left: -49px;
+  max-height: 250px;
+  width: auto;
 }
 @media (min-width: 1200px) {
   .c-newsletter .newsletter-img {
     margin-left: 0px;
+    max-height: 480px;
   }
 }
 
@@ -3047,14 +3121,29 @@ p {
 
 /* Referente ao curiosity */
 .c-curiosity {
-  padding: 60px 0px;
   min-height: 60vh;
+  background-color: #540017;
+}
+.c-curiosity-football {
+  background-color: #EAEAEA;
+}
+@media (min-width: 1200px) {
+  .c-curiosity-football {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1200px) {
+  .c-curiosity {
+    padding: 60px 0px;
+    background-color: transparent;
+  }
+}
+.c-curiosity .item {
+  padding: 0px 8px;
 }
 .c-curiosity .curiosity-color {
   background-color: #540017;
   min-height: 80vh;
-  padding: 32px;
-  margin: -26px;
 }
 @media (min-width: 1200px) {
   .c-curiosity .curiosity-color {
@@ -3077,7 +3166,7 @@ p {
   font-size: 24px;
   line-height: 2rem;
   color: white;
-  padding-top: 16px;
+  padding-top: 32px;
   padding-bottom: 32px;
   font-family: "Nostromo";
 }

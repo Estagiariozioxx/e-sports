@@ -65,7 +65,7 @@
     <div class="c-history">
         <div class="container d-flex flex-column align-items-center">
             <h1 class="history-title">História</h1>
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-md-6 col-12">
                     <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/historia/historyimg.png"
                         class="img-fluid">
@@ -3333,7 +3333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="c-curiosity">
+                <div class="c-curiosity c-curiosity-football">
                     <div class="container">
                         <div class="curiosity-color curiosity-color-football">
                             <h1 class="curiosity-title curiosity-title-football text-center">CURIOSIDADES</h1>
@@ -3421,6 +3421,87 @@
                             </div>
 
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-banners">
+        <div class="container">
+            <div class="row justify-content-center d-none d-md-flex">
+                <div class="col-md-4 d-flex justify-content-end">
+                    <div class="banners banners-single">
+                        <a href="{{ _context['settings']['banner_brao_1_link'] }}">
+                            <!-- <img class="d-none d-lg-block lazy" src="{{ asset(_context['settings']['banner_brao_1_desk_img']) }}" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt=""> -->
+                            <img class="d-none d-md-block lazy" src="img/full.png" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="banners-triple">
+                            <div class="d-flex justify-content-between">
+                                <div class=" banners banner-double banner-double-left">
+                                    <a href="{{ _context['settings']['banner_brao_' ~ 1 ~ '_trio_link'] }}">
+                                        <!-- <img class="lazy" src="{{ asset(_context['settings']['banner_brao_' ~ 1 ~ '_trio_img']) }}" alt=""> -->
+                                        <img class="lazy" src="img/double1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="banners banner-double banner-double-right">
+                                    <a href="{{ _context['settings']['banner_brao_' ~ 2 ~ '_trio_link'] }}">
+                                        <!-- <img class="lazy" src="{{ asset(_context['settings']['banner_brao_' ~ 2 ~ '_trio_img']) }}" alt=""> -->
+                                        <img class="lazy" src="img/double2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>   
+                            <div class="banners banner-full">
+                                <a href="{{ _context['settings']['banner_brao_' ~ 3 ~ '_trio_link'] }}">
+                                    <!-- <img class="lazy" src="{{ asset(_context['settings']['banner_brao_' ~ 3 ~ '_trio_img']) }}" alt=""> -->
+                                    <img class="lazy" src="img/bottom.png" alt="">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick_banners d-md-none">
+                <div class="item">
+                    <div class="banners banners-single">
+                        <a href="{{ _context['settings']['banner_brao_1_link'] }}">
+                            <!-- <img class="d-none d-lg-block lazy" src="{{ asset(_context['settings']['banner_brao_1_desk_img']) }}" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt=""> -->
+                            <img class="lazy" src="img/full.png" alt="">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banners banners-single">
+                        <a href="{{ _context['settings']['banner_brao_1_link'] }}">
+                            <!-- <img class="d-none d-lg-block lazy" src="{{ asset(_context['settings']['banner_brao_1_desk_img']) }}" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt=""> -->
+                            <img class="lazy" src="img/full.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banners banners-single">
+                        <a href="{{ _context['settings']['banner_brao_1_link'] }}">
+                            <!-- <img class="d-none d-lg-block lazy" src="{{ asset(_context['settings']['banner_brao_1_desk_img']) }}" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt=""> -->
+                            <img class="lazy" src="img/full.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banners banners-single">
+                        <a href="{{ _context['settings']['banner_brao_1_link'] }}">
+                            <!-- <img class="d-none d-lg-block lazy" src="{{ asset(_context['settings']['banner_brao_1_desk_img']) }}" alt="">
+                            <img class="d-block d-lg-none lazy" src="{{ asset(_context['settings']['banner_brao_1_mob_img']) }}" alt=""> -->
+                            <img class="lazy" src="img/full.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -5002,10 +5083,7 @@
                 </div>
             </div>
         </div>
-        <div class="slick-nav_vitrine d-none d-md-flex justify-content-between">
-            <button class="slick-prev slick-arrow" type="button"><i class="icon-arrow-left"></i></button>
-            <button class="slick-next slick-arrow" type="button"><i class="icon-arrow-right"></i></button>
-        </div>
+
     </div>
 
 

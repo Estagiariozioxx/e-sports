@@ -17,7 +17,7 @@ p{
             font-family: 'nostromo-outline';
             
             @include md{
-                font-size:35px;
+                font-size:30px;
                 line-height: 4rem;    
             }
         }
@@ -31,14 +31,15 @@ p{
             padding-bottom:32px;
 
             @include md{
-                font-size:75px;
+                font-size:60px;
+                line-height: 1.5rem;
             }
         }
 
         &-describe{
             color:#fff;
             padding: 0px 8px;
-            font-size: 16px;
+            font-size: 14px;
             font-family: 'gotham';
         }
 

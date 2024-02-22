@@ -1,0 +1,81 @@
+.c-banners{
+    padding: 60px 0px;
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Wallpapers.png');
+
+    .banners{
+        border-radius: 10px;
+
+        &-single{
+            max-height: 500px;
+            overflow: hidden;
+            width: 100%;
+
+            @include md{
+                width: 400px;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                height:100%;
+                transition: ease 0.5s;
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }   
+            }
+        }
+        &-triple{
+            .banner-double{
+                width: 390px;
+                max-height:400px;
+                margin: 0px 8px;
+                overflow: hidden;
+
+                &-left{
+                    margin-left: 0px;
+                }
+                &-right{
+                    margin-right: 0px;
+                }
+                
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height:100%;
+                    transition: ease 0.5s;
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }   
+                }
+            }
+            .banner-full{
+                width: 100%;
+                overflow: hidden;
+                margin-top: 8px;
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height:100%;
+                    transition: ease 0.5s;
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }   
+                }
+            }
+        }
+    }
+
+    .slick_banners{
+        .item{
+            padding: 0px 8px;
+        }
+        
+        .slick-dots{
+            bottom:-10% !important;
+        }
+    }
+}

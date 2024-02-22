@@ -5,11 +5,23 @@
   var containerslick =$(".center");
   var containercuriositybasketball =$(".slick_basket");
   var containerslicknav =$(".center__nav");
-
+  var containersbanner =$(".slick_banners");
   var containercuriositybase=$('.slick_base');
 
   var containercuriosityfootball=$('.slick_fut');
 
+
+  containersbanner.slick({
+    autoplay: false,
+    autoplaySpeed: 4000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false,
+    dots: true,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
 
   //football
   var containerslicknavfut =$(".center__navfut");
@@ -573,7 +585,7 @@ function scrollToAnchor(anchorID) {
       autoplay: false,
       infinite: true,
       speed: 500,
-      arrows: true,
+      arrows: false,
       dots: true,
       slidesToShow: 5,
       slidesToScroll: 2,

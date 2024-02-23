@@ -11,19 +11,23 @@ p{
     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-basketball.png');
     background-position: left top;
     background-size: cover;
+    @include md{
+        padding: 60px 0px;
 
-
-
+    }
 
     .basketball{
         &-title{
             font-weight: 800;
-            font-size: 36px;
+            font-size: 32px;
             color: #002d62;
             font-family: 'Nostromo';
+            //mob
+            margin-bottom: 64px;
 
             @include md{
                 font-size: 45px;
+                margin-bottom: 0px;
             }
         }
         &-box_img{
@@ -41,17 +45,23 @@ p{
             font-weight: 400;
             font-size: 14px;
             overflow-y: auto;
-            max-height:350px;
+            @include md{
+                max-height:350px;
+
+            }
+
+            max-height:250px;
+            
 
             font-family: 'gotham';
             &::-webkit-scrollbar {
                 width: 8px; 
-                background-color: #c6cad3; 
+                background-color: #fce8c0; 
                 border-radius: 4px;
             }
     
             &::-webkit-scrollbar-thumb {
-                background-color: #0e1d2f; 
+                background-color: #fca701; 
                 border-radius: 4px;
             }
         }

@@ -3,8 +3,9 @@
     
     background-color: rgba(234, 234, 234, 0.5);
     padding: 60px 30px;
-    margin-top: 48px;
+    
     @include md{
+        margin-top: 32px;
         
         border-radius: 8px;
 
@@ -29,6 +30,11 @@
                 overflow-y: auto;
                 max-height: 200px;
                 padding-right: 16px; 
+                padding-bottom: 32px;
+                @include md{
+                    padding-bottom: 0px;
+
+                }
         
                  &::-webkit-scrollbar {
                     width: 8px; 
@@ -59,9 +65,416 @@
                 height: 135px;
         
                 @include md{
-                    width: 200px;
+                    width: 159px;
                     height: 200px;
                 }
+
+                //basebol
+                &-ari{
+                    width: 155px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 255px;
+                        height: 200px;
+                    }
+
+                }
+                &-atl{
+                    width: 132px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 213px;
+                        height: 200px;
+                    }
+
+                }
+
+                &-belt{
+                    width: 134px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 213px;
+                        height: 200px;
+                    }
+
+                }
+                &-bost{
+                    width: 85px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 146px;
+                        height: 200px;
+                    }
+
+                }
+
+                &-chi{
+                    width: 120px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 191px;
+                        height: 200px;
+                    }
+
+                }
+
+                &-cin{
+                    width: 89px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 123px;
+
+                    @include md{
+                        width: 143px;
+                        height: 200px;
+                    }
+
+                }
+
+                &-red{
+                    width: 149px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+
+                    @include md{
+                        width: 143px;
+                        height: 97px;
+                    }
+                }
+
+                
+                &-guard{
+                    width: 87px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 138px;
+
+                    @include md{
+                        width: 109px;
+                        height: 166px;
+                    }
+                }
+
+
+                &-col{
+                    width: 127px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 137px;
+
+                    @include md{
+                        width: 148px;
+                        height: 128px;
+                    }
+                }
+
+
+                &-houst{
+                    width: 120px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 120px;
+
+                    @include md{
+                        width: 150px;
+                        height: 151px;
+                    }
+                }
+
+
+                &-kan{
+                    width: 111px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 104px;
+
+                    @include md{
+                        width: 150px;
+                        height: 139px;
+                    }
+                }
+
+                &-angels{
+
+                    width: 102px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 140px;
+
+                    @include md{
+                        width: 160px;
+                        height: 214px;
+                    }
+
+
+                }
+
+                &-mil{
+
+                    width: 121px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 133px;
+
+                    @include md{
+                        width: 190px;
+                        height: 209px;
+                    }
+
+
+                }
+
+                &-yanks{
+
+                    width: 111px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 117px;
+
+                    @include md{
+                        width: 206px;
+                        height: 214px;
+                    }
+
+
+                }
+
+                &-mine{
+
+                    width: 135px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 138px;
+
+                    @include md{
+                        width: 206px;
+                        height: 204px;
+                    }
+                }
+
+                
+                &-okl{
+
+                    width: 118px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 100px;
+
+                    @include md{
+                        width: 176px;
+                        height: 144px;
+                    }
+                }
+                &-giants{
+
+                    width: 69px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 98px;
+
+                    @include md{
+                        width: 99px;
+                        height: 145px;
+                    }
+
+
+
+                }
+
+                &-louis{
+                    width: 72px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 94px;
+
+                    @include md{
+                        width: 119px;
+                        height: 150px;
+                    }
+
+                }
+
+                &-louis{
+                    width: 72px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 94px;
+
+                    @include md{
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                }
+
+
+                &-mari{
+
+                    width: 100px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 103px;
+
+                    @include md{
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                }
+                &-rays{
+
+                    width: 113px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 100px;
+
+                    @include md{
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                }
+
+                &-rangers{
+
+                    width: 90px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 102px;
+
+                    @include md{
+                        width: 135px;
+                        height: 158px;
+                    }
+
+                }
+
+                &-detroit{
+                    width: 85px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 117px;
+
+                    @include md{
+                        width: 110px;
+                        height: 158px;
+                    }
+
+                }
+
+
+                &-dodge{
+                    width: 89px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 117px;
+
+                    @include md{
+                        width: 151px;
+                        height: 197px;
+                    }
+
+                }
+
+                &-mets{
+
+                        width: 89px;
+                        object-fit: cover;
+                        left: 50%;
+                        position: relative;
+                        transform: translateX(-50%);
+                        height: 117px;
+    
+                        @include md{
+                            width: 151px;
+                            height: 197px;
+                        }
+    
+                    
+                }
+                &-philies{
+                    width: 89px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+                    height: 117px;
+
+                    @include md{
+                        width: 151px;
+                        height: 197px;
+                    }
+                }
+
+
+
+
+
+
+
             }
             &-box_img{
                 width: 79px;

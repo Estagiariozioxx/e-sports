@@ -74,7 +74,7 @@ p{
             background-size: cover;
             width: 33%;
             height: 390px;
-            background-position: center;
+          //  background-position: center;
 
             &_basquete{
                 background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/basquete.png');
@@ -85,15 +85,18 @@ p{
 
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basquete-offwhite.png');
-                    z-index: 1;
-                    transform: translateY(-159px);
-                    width: 200%;
-                    height: 200%;
+                    transform: translateY(-21px);
+                    width: 206%;
+                    height: 142%;
+                    &:hover{
+                        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Basquete.png');
+                        transform: translateY(-21px);
+                        width: 206%;
+                        height: 142%;
+                    }
                 }
                 
-                &:hover{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Basquete.png');
-                }
+
             }
             &_baseball{
                 background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png');
@@ -102,16 +105,20 @@ p{
 
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baseball-offwhite.png');
-                    z-index: 2; /* Defina a profundidade desejada */
-                    transform: translateY(-209px);
-                    width: 200%;
-                    height: 200%;
+                    transform: translateY(-134px);
+                    width: 264%;
+                    height: 167%;
+
+                    &:hover{
+                        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Baseball.png');
+                        transform: translateY(-134px);
+                        width: 264%;
+                        height: 167%;
+                    }
 
                 }
 
-                &:hover{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Baseball.png');
-                }
+
             }
             &_futebol{
                 background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png');
@@ -120,18 +127,22 @@ p{
                 
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/futebol-americano-offwhite.png');
-                    z-index: 3; /* Defina a profundidade desejada */
-                    transform: translateY(-209px);
-                    width: 200%;
-                    height: 200%;
+                    transform: translateY(-135px);
+                    width: 398%;
+                    height: 163%;
+                    &:hover{
+                        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/futebol-americano.png');
+                        transform: translateY(-135px);
+                        width: 398%;
+                        height: 163%;
+                    }
                 }
+            }
 
-                &:hover{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/futebol-americano.png');
-                }
+
             }
         }
     }
         
-}
+
 

@@ -1120,7 +1120,6 @@ p {
   background-size: cover;
   width: 33%;
   height: 390px;
-  background-position: center;
 }
 .c-home .home-box-img_basquete {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/basquete.png");
@@ -1131,14 +1130,16 @@ p {
 @media (min-width: 1200px) {
   .c-home .home-box-img_basquete {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basquete-offwhite.png");
-    z-index: 1;
-    transform: translateY(-159px);
-    width: 200%;
-    height: 200%;
+    transform: translateY(-21px);
+    width: 206%;
+    height: 142%;
   }
-}
-.c-home .home-box-img_basquete:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Basquete.png");
+  .c-home .home-box-img_basquete:hover {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Basquete.png");
+    transform: translateY(-21px);
+    width: 206%;
+    height: 142%;
+  }
 }
 .c-home .home-box-img_baseball {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png");
@@ -1148,14 +1149,16 @@ p {
 @media (min-width: 1200px) {
   .c-home .home-box-img_baseball {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baseball-offwhite.png");
-    z-index: 2; /* Defina a profundidade desejada */
-    transform: translateY(-209px);
-    width: 200%;
-    height: 200%;
+    transform: translateY(-134px);
+    width: 264%;
+    height: 167%;
   }
-}
-.c-home .home-box-img_baseball:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Baseball.png");
+  .c-home .home-box-img_baseball:hover {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/Baseball.png");
+    transform: translateY(-134px);
+    width: 264%;
+    height: 167%;
+  }
 }
 .c-home .home-box-img_futebol {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png");
@@ -1165,14 +1168,16 @@ p {
 @media (min-width: 1200px) {
   .c-home .home-box-img_futebol {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/futebol-americano-offwhite.png");
-    z-index: 3; /* Defina a profundidade desejada */
-    transform: translateY(-209px);
-    width: 200%;
-    height: 200%;
+    transform: translateY(-135px);
+    width: 398%;
+    height: 163%;
   }
-}
-.c-home .home-box-img_futebol:hover {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/futebol-americano.png");
+  .c-home .home-box-img_futebol:hover {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/futebol-americano.png");
+    transform: translateY(-135px);
+    width: 398%;
+    height: 163%;
+  }
 }
 
 .c-history {
@@ -1260,15 +1265,22 @@ p {
   background-position: left top;
   background-size: cover;
 }
+@media (min-width: 1200px) {
+  .c-basketball {
+    padding: 60px 0px;
+  }
+}
 .c-basketball .basketball-title {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 32px;
   color: #002d62;
   font-family: "Nostromo";
+  margin-bottom: 64px;
 }
 @media (min-width: 1200px) {
   .c-basketball .basketball-title {
     font-size: 45px;
+    margin-bottom: 0px;
   }
 }
 .c-basketball .basketball-box_img .basketball-img {
@@ -1285,16 +1297,21 @@ p {
   font-weight: 400;
   font-size: 14px;
   overflow-y: auto;
-  max-height: 350px;
+  max-height: 250px;
   font-family: "gotham";
+}
+@media (min-width: 1200px) {
+  .c-basketball .basketball-describe {
+    max-height: 350px;
+  }
 }
 .c-basketball .basketball-describe::-webkit-scrollbar {
   width: 8px;
-  background-color: #c6cad3;
+  background-color: #fce8c0;
   border-radius: 4px;
 }
 .c-basketball .basketball-describe::-webkit-scrollbar-thumb {
-  background-color: #0e1d2f;
+  background-color: #fca701;
   border-radius: 4px;
 }
 .c-basketball .basketball-anchor {
@@ -1348,6 +1365,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   text-align: left;
+  margin-top: 32px;
   overflow-y: auto;
   max-height: 200px;
   font-family: "gotham";
@@ -1355,6 +1373,7 @@ p {
 @media (min-width: 1200px) {
   .c-football .football-describe {
     padding-left: 80px;
+    margin-top: 0px;
   }
 }
 .c-football .football-describe::-webkit-scrollbar {
@@ -1492,7 +1511,7 @@ p {
   font-size: 14px;
   line-height: 1.5rem;
   text-align: left;
-  padding-left: 80px;
+  margin-top: 32px;
   font-family: "gotham";
   overflow-y: auto;
   max-height: 200px;
@@ -1500,6 +1519,8 @@ p {
 @media (min-width: 1200px) {
   .c-baisebol .baisebol-describe {
     max-height: 400px;
+    padding-left: 80px;
+    margin-top: 0px;
   }
 }
 .c-baisebol .baisebol-describe::-webkit-scrollbar {
@@ -2575,10 +2596,10 @@ p {
 .c-teams {
   background-color: rgba(234, 234, 234, 0.5);
   padding: 60px 30px;
-  margin-top: 48px;
 }
 @media (min-width: 1200px) {
   .c-teams {
+    margin-top: 32px;
     border-radius: 8px;
   }
 }
@@ -2601,6 +2622,12 @@ p {
   overflow-y: auto;
   max-height: 200px;
   padding-right: 16px;
+  padding-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-describe {
+    padding-bottom: 0px;
+  }
 }
 .c-teams .teams-describe::-webkit-scrollbar {
   width: 8px;
@@ -2631,8 +2658,371 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img {
+    width: 159px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-ari {
+  width: 155px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-ari {
+    width: 255px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-atl {
+  width: 132px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-atl {
+    width: 213px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-belt {
+  width: 134px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-belt {
+    width: 213px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-bost {
+  width: 85px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-bost {
+    width: 146px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-chi {
+  width: 120px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-chi {
+    width: 191px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-cin {
+  width: 89px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 123px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-cin {
+    width: 143px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-red {
+  width: 149px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-red {
+    width: 143px;
+    height: 97px;
+  }
+}
+.c-teams .teams-img-guard {
+  width: 87px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 138px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-guard {
+    width: 109px;
+    height: 166px;
+  }
+}
+.c-teams .teams-img-col {
+  width: 127px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 137px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-col {
+    width: 148px;
+    height: 128px;
+  }
+}
+.c-teams .teams-img-houst {
+  width: 120px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 120px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-houst {
+    width: 150px;
+    height: 151px;
+  }
+}
+.c-teams .teams-img-kan {
+  width: 111px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 104px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-kan {
+    width: 150px;
+    height: 139px;
+  }
+}
+.c-teams .teams-img-angels {
+  width: 102px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 140px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-angels {
+    width: 160px;
+    height: 214px;
+  }
+}
+.c-teams .teams-img-mil {
+  width: 121px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 133px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-mil {
+    width: 190px;
+    height: 209px;
+  }
+}
+.c-teams .teams-img-yanks {
+  width: 111px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 117px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-yanks {
+    width: 206px;
+    height: 214px;
+  }
+}
+.c-teams .teams-img-mine {
+  width: 135px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 138px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-mine {
+    width: 206px;
+    height: 204px;
+  }
+}
+.c-teams .teams-img-okl {
+  width: 118px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 100px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-okl {
+    width: 176px;
+    height: 144px;
+  }
+}
+.c-teams .teams-img-giants {
+  width: 69px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 98px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-giants {
+    width: 99px;
+    height: 145px;
+  }
+}
+.c-teams .teams-img-louis {
+  width: 72px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 94px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-louis {
+    width: 119px;
+    height: 150px;
+  }
+}
+.c-teams .teams-img-louis {
+  width: 72px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 94px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-louis {
     width: 200px;
     height: 200px;
+  }
+}
+.c-teams .teams-img-mari {
+  width: 100px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 103px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-mari {
+    width: 200px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-rays {
+  width: 113px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 100px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-rays {
+    width: 200px;
+    height: 200px;
+  }
+}
+.c-teams .teams-img-rangers {
+  width: 90px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 102px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-rangers {
+    width: 135px;
+    height: 158px;
+  }
+}
+.c-teams .teams-img-detroit {
+  width: 85px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 117px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-detroit {
+    width: 110px;
+    height: 158px;
+  }
+}
+.c-teams .teams-img-dodge {
+  width: 89px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 117px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-dodge {
+    width: 151px;
+    height: 197px;
+  }
+}
+.c-teams .teams-img-mets {
+  width: 89px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 117px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-mets {
+    width: 151px;
+    height: 197px;
+  }
+}
+.c-teams .teams-img-philies {
+  width: 89px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 117px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-philies {
+    width: 151px;
+    height: 197px;
   }
 }
 .c-teams .teams-box_img {

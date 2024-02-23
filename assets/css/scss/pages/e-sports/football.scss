@@ -20,7 +20,7 @@ p{
             font-size:36px;
             line-height: 2.5rem;
             color: #fff;
-            font-family: 'Nostromo';
+            font-family: 'Nostromo';          
             
             margin-bottom: 32px;
 
@@ -46,12 +46,14 @@ p{
             font-weight: 400;
             font-size: 14px;
             text-align: left;
+            margin-top: 32px;
             
             overflow-y: auto;
             max-height:200px;
             font-family: 'gotham';
             @include md{
                 padding-left: 80px;
+                margin-top: 0px;
 
             }
             &::-webkit-scrollbar {

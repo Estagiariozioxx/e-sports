@@ -6,9 +6,15 @@ p{
     margin-bottom: 0px;
 }
 .c-newsletter{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Wallpapers.png');
+    @include md{
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Wallpapers.png');
+        background-size: contain;
+
+    }
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/fundo-mob-newsletter.png');
+
     padding: 40px 0px;
-    background-size: contain;
+    
 
     padding-left: 16px;
     padding-right: 16px;

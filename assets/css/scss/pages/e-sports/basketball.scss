@@ -7,19 +7,22 @@ p{
 }
 
 .c-basketball{
-    padding: 60px 0px;
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-basketball.png');
-    background-position: left top;
-    background-size: cover;
+    padding: 36px 0px;
     @include md{
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-basketball.png');
         padding: 60px 0px;
 
     }
 
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-mob-bask.png');
+    background-position: left top;
+    background-size: cover;
+
+
     .basketball{
         &-title{
             font-weight: 800;
-            font-size: 32px;
+            font-size: 26px;
             color: #002d62;
             font-family: 'Nostromo';
             //mob
@@ -41,12 +44,16 @@ p{
 
         &-describe{
             color:black;
-            padding: 0px 8px;
+            margin-top: 32px;
             font-weight: 400;
             font-size: 14px;
             overflow-y: auto;
+
+            padding-right: 8px;
             @include md{
                 max-height:350px;
+                padding: 0px 8px 0px 0px;
+                margin-top: 0px;
 
             }
 

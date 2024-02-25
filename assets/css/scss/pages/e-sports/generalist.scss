@@ -2,18 +2,24 @@
 .c-teams{
     
     background-color: rgba(234, 234, 234, 0.5);
-    padding: 60px 30px;
+
+    @include md{
+        padding: 60px 30px;
+
+    }
+    padding-top: 32px;
+    margin-top: 32px;
+    
     
     @include md{
         margin-top: 32px;
-        
         border-radius: 8px;
 
     }
 
     .teams{
             &-title{
-                font-size: 24px;
+                font-size:18px;
                 font-family: 'Nostromo';
                 margin-bottom: 32px;
                 @include md{

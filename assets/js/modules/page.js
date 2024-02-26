@@ -631,6 +631,32 @@ function scrollToAnchor(anchorID) {
   
     return false;
   });
+
+
+  // Acessando a classe centerfut 
+  const centerfut = document.querySelector('.centerfut');
+
+  // Acessando os elementos com a classe item dentro da classe centerfut
+  const items = centerfut.querySelectorAll('.item');
+
+  // Iterando sobre os itens
+  items.forEach(item => {
+      // Acessando os elementos dentro de cada item
+      const teamsName = item.querySelector('strong.teams-name');
+      
+      const teamsDivision = item.querySelector('.teams-division');
+      
+      // Aplicando estilos aos elementos com !important
+      teamsName.classList.add('my-teams-division-style');
+      teamsDivision.classList.add('my-teams-division-style');
+      console.log("Elemento teams-name:", teamsName); // Verificar se o elemento é selecionado corretamente
+    
+  
+      // Verificar se a classe foi adicionada
+      console.log("Elemento com a nova classe:", teamsName);
+  });
+
+
   
   
 })(jQuery);

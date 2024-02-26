@@ -1,23 +1,74 @@
 /* Referente ao slick principal */
+
+.my-teams-name-style {
+    color: #ffff !important;
+}
+
+.my-teams-division-style {
+    color: #ffff !important;
+}
+
+.box-team{
+    margin-right: 32px;
+}
+
+.football-box_text{
+    margin-top: 8px;
+    margin-top: 0px;
+}
+.teams-color-fut{
+    background-color: rgba(45, 54, 65, 0.5)!important;
+    color: #ffff !important;
+    @include md{
+        padding-bottom: 0px;
+    }
+    padding-bottom: 32px;
+
+}
+
 .c-teams{
     
     background-color: rgba(234, 234, 234, 0.5);
 
-    @include md{
-        padding: 60px 30px;
+    //arrumar
+    &-basketball{
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-mob-bask.png');
+        //background-color: rgba(234, 234, 234, 0.5);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include md{
+            background-image: none;
+            background-color: none;
+            background-position: none;
+            background-size: none;
+            background-repeat: no-repeat;
 
+        }
     }
-    padding-top: 32px;
-    margin-top: 32px;
-    
-    
+
+    &-football{
+        margin-top: 64px;
+        @include md{
+            margin-top: 0px;
+
+        }
+    }
+
     @include md{
+        padding: 60px 30px 0px 0px;
         margin-top: 32px;
         border-radius: 8px;
 
     }
+    padding-top: 32px;
 
+    margin-top: 32px;
     .teams{
+
+
+
+
             &-title{
                 font-size:18px;
                 font-family: 'Nostromo';
@@ -37,8 +88,13 @@
                 max-height: 200px;
                 padding-right: 16px; 
                 padding-bottom: 32px;
+                margin-top: 32px;
+
+                padding-left: 16px;
                 @include md{
                     padding-bottom: 0px;
+                    margin-top: 0px;
+                    padding-left: 0px;
 
                 }
         
@@ -63,12 +119,12 @@
                 }
             }
             &-img{
-                width: 135px;
+                width: 144px;
                 object-fit: cover;
                 left: 50%;
                 position: relative;
                 transform: translateX(-50%);
-                height: 135px;
+                height: 160px;
         
                 @include md{
                     width: 159px;
@@ -522,7 +578,20 @@
                     font-size: 20px;
         
                 }
-                &-sp{
+                &-fut{
+                    font-size: 14px;
+                    color: #ffff;
+                    margin-bottom: 0;
+                    font-weight: 350;
+                    
+                    margin-top: 6px;
+                    font-family: 'gotham';
+                    @include md{
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        font-weight: 800;
+            
+                    }
 
                 }
             }
@@ -536,6 +605,18 @@
                 @include md{
                     font-size: 24px;
 
+                }
+                &-fut{
+                    font-size: 16px;
+                    text-align: center;
+                    
+                    color: #ffff;
+                    padding-top: 16px;
+                    font-family: 'gotham';
+                    @include md{
+                        font-size: 24px;
+    
+                    }
                 }
             }
             &-win{
@@ -572,12 +653,70 @@
                     
                 }
             }
+
+
+
+            &-win-fut{
+                font-size: 14px;
+                font-weight: 300;
+
+                @include md{
+                    font-size: 18px;
+                    padding-bottom: 8px;
+                }
+
+        
+                &-number{
+                    line-height: 2rem;
+                    color: #ffff;
+                    font-weight: 800;
+                    font-size: 24px;
+                    @include md{
+                        font-size: 40px;
+
+                    }
+                }
+                &-b{
+                    text-align: center;
+                    font-size: 12px;
+                    @include md{
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        margin-bottom: 8px;
+
+                    }
+
+                    
+                }
+            }
     }
 
     
 }
 
 /* Referente ao slick nav */
+.center__navfut{
+
+    .slick-current {
+        .teams-box {
+            border: none;
+            padding: 0px;
+        }
+    
+        .item {
+            .teams-box {
+                border: 3px solid #8b99ad !important;
+                border-radius: 8px;
+                box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
+                display: flex !important;
+                justify-content: center;
+                padding: 10px 12px;
+            }
+        }
+
+    }
+}
 .center__navbase , .center__nav , .center__navfut {
     margin-top: 48px;
     align-items: center;
@@ -960,6 +1099,7 @@
                 justify-content: center;
                 padding: 10px 12px;
             }
+
     
     
             img {
@@ -1040,6 +1180,7 @@
 
 /* Referente ao curiosity */
 .c-curiosity{  
+    margin-top: 64px;
     min-height: 60vh;
     background-color: #540017;
 
@@ -1048,6 +1189,7 @@
 
         @include md{
             background-color: transparent;
+            margin-top: 0px;
         }
     }
 

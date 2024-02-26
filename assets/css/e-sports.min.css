@@ -1124,10 +1124,11 @@ p {
   height: 390px;
 }
 .c-home .home-box-img_basquete {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/basquete.png");
-  width: 125px;
-  height: 284px;
-  transform: translateY(55px);
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-bask.png");
+  width: 96px;
+  height: 215px;
+  transform: translateY(32px);
+  z-index: 2;
 }
 @media (min-width: 1200px) {
   .c-home .home-box-img_basquete {
@@ -1144,9 +1145,11 @@ p {
   }
 }
 .c-home .home-box-img_baseball {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png");
-  width: 103px;
-  height: 260px;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-base.png");
+  width: 118px;
+  height: 253px;
+  z-index: 3;
+  transform: translateY(-19px);
 }
 @media (min-width: 1200px) {
   .c-home .home-box-img_baseball {
@@ -1163,9 +1166,10 @@ p {
   }
 }
 .c-home .home-box-img_futebol {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png");
-  width: 172px;
-  height: 277px;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-fut.png");
+  width: 158px;
+  height: 228px;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .c-home .home-box-img_futebol {
@@ -1197,6 +1201,11 @@ p {
     padding: 80px 0px 60px 0px;
   }
 }
+@media (min-width: 1200px) {
+  .c-history .history-img {
+    margin-right: 0px;
+  }
+}
 .c-history .history-title {
   color: #fff;
   font-family: Nostromo;
@@ -1211,8 +1220,7 @@ p {
 }
 .c-history .history-describe {
   color: #fff;
-  font-size: 15px;
-  line-height: 1.7rem;
+  font-size: 13px;
   font-weight: 400;
   margin-top: 32px;
   font-family: "gotham";
@@ -1222,8 +1230,9 @@ p {
 }
 @media (min-width: 1200px) {
   .c-history .history-describe {
-    max-height: 380px;
+    max-height: 250px;
     padding: 0px;
+    margin-top: 64px;
   }
 }
 .c-history .history-describe::-webkit-scrollbar {
@@ -1234,11 +1243,6 @@ p {
 .c-history .history-describe::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 4px;
-}
-@media (min-width: 1200px) {
-  .c-history .history-describe {
-    margin: 0px;
-  }
 }
 .c-history .history-box_img {
   width: 86px;
@@ -1291,7 +1295,12 @@ p {
 }
 @media (min-width: 1200px) {
   .c-basketball .basketball-box_img .basketball-img {
-    width: 100%;
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .c-basketball .basketball-box_img .basketball-img-logo {
+    width: 60%;
   }
 }
 .c-basketball .basketball-describe {
@@ -1306,7 +1315,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-basketball .basketball-describe {
-    max-height: 350px;
+    max-height: 250px;
     padding: 0px 8px 0px 0px;
     margin-top: 0px;
   }
@@ -1475,16 +1484,27 @@ p {
 .c-banners .slick_banners .slick-dots {
   bottom: -10% !important;
 }
+.c-banners .slick_banners .slick-dots button {
+  background: white;
+}
 
 p {
   margin-bottom: 0px;
 }
 
 .c-baisebol {
-  padding: 60px 0px;
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/Baseball-fundo.png");
+  padding: 32px 0px;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/baisebol-mob.png");
   background-position: left top;
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  .c-baisebol {
+    padding: 60px 0px;
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/Baseball-fundo.png");
+    background-position: left top;
+    background-size: cover;
+  }
 }
 .c-baisebol .baisebol-img-logo {
   width: 106px;
@@ -1496,9 +1516,14 @@ p {
     height: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .c-baisebol .baisebol-img-log {
+    width: 75%;
+  }
+}
 .c-baisebol .baisebol-title {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 2rem;
   color: #002d62;
   font-family: "nostromo";
@@ -1515,7 +1540,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-baisebol .baisebol-box_img .baisebol-img {
-    width: 100%;
+    width: 90%;
   }
 }
 .c-baisebol .baisebol-describe {
@@ -1532,18 +1557,18 @@ p {
 }
 @media (min-width: 1200px) {
   .c-baisebol .baisebol-describe {
-    max-height: 400px;
+    max-height: 250px;
     padding-left: 80px;
     margin-top: 0px;
   }
 }
 .c-baisebol .baisebol-describe::-webkit-scrollbar {
   width: 8px; /* largura da barra de rolagem */
-  background-color: #eac1b3; /* cor de fundo da barra de rolagem */
+  background-color: #edc3ce; /* cor de fundo da barra de rolagem */
   border-radius: 4px;
 }
 .c-baisebol .baisebol-describe::-webkit-scrollbar-thumb {
-  background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
+  background-color: #bf0d3e; /* cor do polegar (a parte que você arrasta) */
   border-radius: 4px; /* borda arredondada  */
 }
 .c-baisebol .baisebol-anchor {
@@ -2598,6 +2623,7 @@ p {
   .c-newsletter .newsletter-img {
     margin-left: 0px;
     max-height: 480px;
+    width: 70%;
   }
 }
 
@@ -2618,6 +2644,7 @@ p {
 
 .my-teams-division-style {
   color: white !important;
+  font-weight: 300 !important;
 }
 
 .box-team {
@@ -2645,6 +2672,11 @@ p {
   padding-top: 32px;
   margin-top: 32px;
 }
+@media (min-width: 1200px) {
+  .c-teams {
+    margin: 32px 32px 32px 32px;
+  }
+}
 .c-teams-basketball {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-mob-bask.png");
   background-position: center;
@@ -2660,6 +2692,14 @@ p {
     background-repeat: no-repeat;
   }
 }
+.c-teams-baisebol {
+  margin-top: 63px;
+}
+@media (min-width: 1200px) {
+  .c-teams-baisebol {
+    margin-top: 0px;
+  }
+}
 .c-teams-football {
   margin-top: 64px;
 }
@@ -2670,7 +2710,6 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams {
-    padding: 60px 30px 0px 0px;
     margin-top: 32px;
     border-radius: 8px;
   }
@@ -2739,31 +2778,31 @@ p {
   }
 }
 .c-teams .teams-img-ari {
-  width: 155px;
+  width: 174px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 123px;
+  height: 135px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-ari {
-    width: 255px;
-    height: 200px;
+    width: 200px;
+    height: 160px;
   }
 }
 .c-teams .teams-img-atl {
-  width: 132px;
+  width: 144px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 123px;
+  height: 133px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-atl {
-    width: 213px;
-    height: 200px;
+    width: 191px;
+    height: 179px;
   }
 }
 .c-teams .teams-img-belt {
@@ -2792,6 +2831,48 @@ p {
   .c-teams .teams-img-bost {
     width: 146px;
     height: 200px;
+  }
+}
+.c-teams .teams-img-nati {
+  width: 128px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-35%);
+  height: 128px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-nati {
+    width: 179px;
+    height: 180px;
+  }
+}
+.c-teams .teams-img-pitti {
+  width: 88px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-35%);
+  height: 128px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-pitti {
+    width: 130px;
+    height: 192px;
+  }
+}
+.c-teams .teams-img-padres {
+  width: 102px;
+  object-fit: cover;
+  left: 50%;
+  position: relative;
+  transform: translateX(-35%);
+  height: 128px;
+}
+@media (min-width: 1200px) {
+  .c-teams .teams-img-padres {
+    width: 147px;
+    height: 185px;
   }
 }
 .c-teams .teams-img-chi {
@@ -2836,12 +2917,12 @@ p {
   }
 }
 .c-teams .teams-img-guard {
-  width: 87px;
+  width: 75px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 138px;
+  height: 124px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-guard {
@@ -2859,8 +2940,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-col {
-    width: 148px;
-    height: 128px;
+    width: 163px;
+    height: 149px;
   }
 }
 .c-teams .teams-img-houst {
@@ -2962,12 +3043,12 @@ p {
   }
 }
 .c-teams .teams-img-giants {
-  width: 69px;
+  width: 95px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 98px;
+  height: 131px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-giants {
@@ -2985,8 +3066,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-louis {
-    width: 119px;
-    height: 150px;
+    width: 145px;
+    height: 183px;
   }
 }
 .c-teams .teams-img-louis {
@@ -2999,8 +3080,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-louis {
-    width: 200px;
-    height: 200px;
+    width: 145px;
+    height: 183px;
   }
 }
 .c-teams .teams-img-mari {
@@ -3046,12 +3127,12 @@ p {
   }
 }
 .c-teams .teams-img-detroit {
-  width: 85px;
+  width: 101px;
   object-fit: cover;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  height: 117px;
+  height: 145px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-img-detroit {
@@ -3111,8 +3192,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-teams .teams-box_img {
-    width: 135px;
-    height: 135px;
+    width: 115px;
+    height: 115px;
   }
 }
 .c-teams .teams-box_img-f {
@@ -3205,7 +3286,7 @@ p {
 }
 .c-teams .teams-win-b {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
 }
 @media (min-width: 1200px) {
   .c-teams .teams-win-b {
@@ -3258,7 +3339,20 @@ p {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
   display: flex !important;
   justify-content: center;
-  padding: 10px 12px;
+  padding: 0px 0px;
+}
+
+.center__navbase .slick-current .teams-box {
+  border: none;
+  padding: 0px;
+}
+.center__navbase .slick-current .item .teams-box {
+  border: 3px solid #8b99ad !important;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  justify-content: center;
+  padding: 0px 0px;
 }
 
 .center__navbase, .center__nav, .center__navfut {
@@ -3278,7 +3372,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
+  padding: 0px 0px;
 }
 .center__navbase .item .teams-box.atlanta, .center__nav .item .teams-box.atlanta, .center__navfut .item .teams-box.atlanta {
   background-color: #7B1C33;
@@ -3609,7 +3703,7 @@ p {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
   display: flex !important;
   justify-content: center;
-  padding: 10px 12px;
+  padding: 0px 0px;
 }
 .center__navbase .slick-current .item img, .center__nav .slick-current .item img, .center__navfut .slick-current .item img {
   width: 110px;
@@ -3694,8 +3788,8 @@ p {
 }
 @media (min-width: 1200px) {
   .c-curiosity {
-    padding: 60px 0px;
     background-color: transparent;
+    margin-bottom: 36px;
   }
 }
 .c-curiosity .item {
@@ -3711,6 +3805,8 @@ p {
     padding: 0px;
     border-radius: 4px;
     border-radius: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 .c-curiosity .curiosity-color-football {
@@ -3721,9 +3817,14 @@ p {
   height: auto !important;
   object-fit: cover;
 }
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-img {
+    padding-right: 32px;
+  }
+}
 .c-curiosity .curiosity-title {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 2rem;
   color: white;
   padding-top: 32px;
@@ -3733,7 +3834,6 @@ p {
 @media (min-width: 1200px) {
   .c-curiosity .curiosity-title {
     font-size: 32px;
-    padding-top: 56px;
     padding-bottom: 56px;
   }
 }
@@ -3751,10 +3851,8 @@ p {
     padding-left: 0px;
   }
 }
-@media (min-width: 1200px) {
-  .c-curiosity .curiosity-home {
-    padding: 0px 64px 64px 64px;
-  }
+.c-curiosity .curiosity-home-fut {
+  padding-bottom: 64px;
 }
 .c-curiosity .curiosity-describe {
   color: white;
@@ -3771,6 +3869,8 @@ p {
     margin-top: 0px;
     padding-right: 0px;
     max-height: 350px;
+    font-size: 14px;
+    padding-left: 16px;
   }
 }
 .c-curiosity .curiosity-describe::-webkit-scrollbar {
@@ -3785,6 +3885,12 @@ p {
 .c-curiosity .curiosity-describe-football {
   color: #000000;
 }
+.c-curiosity .curiosity-describe-football::-webkit-scrollbar {
+  background-color: #b7babf;
+}
+.c-curiosity .curiosity-describe-football::-webkit-scrollbar-thumb {
+  background-color: #152435;
+}
 .c-curiosity .curiosity-top-tittle {
   color: white;
   font-weight: 500;
@@ -3796,10 +3902,30 @@ p {
 @media (min-width: 1200px) {
   .c-curiosity .curiosity-top-tittle {
     margin-top: 0px;
+    padding-left: 16px;
   }
 }
 .c-curiosity .curiosity-top-tittle-football {
   color: #000000;
+}
+.c-curiosity .slick-prev,
+.c-curiosity .slick-next {
+  font-size: 0;
+  background: #874c5d;
+  width: 30px;
+  height: 30px; /* Ajuste conforme necessário para tornar quadrado */
+  border-radius: 0; /* Para tornar os cantos quadrados */
+  border: 0;
+  margin: 0 10px;
+  opacity: 0.3;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.c-curiosity li.slick-active .slick-prev,
+.c-curiosity li.slick-active .slick-next {
+  opacity: 1;
+  width: 40px;
+  background: #Fca701;
 }
 .c-curiosity .slick-dots {
   list-style: none;

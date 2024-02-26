@@ -2,10 +2,12 @@
 
 .my-teams-name-style {
     color: #ffff !important;
+    
 }
 
 .my-teams-division-style {
     color: #ffff !important;
+    font-weight: 300 !important;
 }
 
 .box-team{
@@ -30,6 +32,10 @@
     
     background-color: rgba(234, 234, 234, 0.5);
 
+    @include md{
+        margin: 32px 32px 32px 32px;
+    }
+
     //arrumar
     &-basketball{
         background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basketball/fundo-mob-bask.png');
@@ -46,6 +52,13 @@
 
         }
     }
+    &-baisebol{
+        margin-top: 63px;
+        @include md{
+            margin-top: 0px;
+
+        }
+    }
 
     &-football{
         margin-top: 64px;
@@ -56,19 +69,14 @@
     }
 
     @include md{
-        padding: 60px 30px 0px 0px;
+        //padding: 60px 30px 0px 0px;
         margin-top: 32px;
         border-radius: 8px;
-
     }
     padding-top: 32px;
 
     margin-top: 32px;
     .teams{
-
-
-
-
             &-title{
                 font-size:18px;
                 font-family: 'Nostromo';
@@ -133,30 +141,30 @@
 
                 //basebol
                 &-ari{
-                    width: 155px;
+                    width: 174px;
                     object-fit: cover;
                     left: 50%;
                     position: relative;
                     transform: translateX(-50%);
-                    height: 123px;
+                    height: 135px;
 
                     @include md{
-                        width: 255px;
-                        height: 200px;
+                        width: 200px;
+                        height: 160px;
                     }
 
                 }
                 &-atl{
-                    width: 132px;
+                    width: 144px;
                     object-fit: cover;
                     left: 50%;
                     position: relative;
                     transform: translateX(-50%);
-                    height: 123px;
+                    height: 133px;
 
                     @include md{
-                        width: 213px;
-                        height: 200px;
+                        width: 191px;
+                        height: 179px;
                     }
 
                 }
@@ -187,6 +195,55 @@
                         width: 146px;
                         height: 200px;
                     }
+
+                }
+
+                &-nati{
+
+                    width: 128px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-35%);
+                    height: 128px;
+
+                    @include md{
+                        width: 179px;
+                        height: 180px;
+                    }
+
+                }
+
+                &-pitti{
+                    width: 88px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-35%);
+                    height: 128px;
+
+                    @include md{
+                        width: 130px;
+                        height: 192px;
+                    }
+
+
+                }
+
+                
+                &-padres{
+                    width: 102px;
+                    object-fit: cover;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-35%);
+                    height: 128px;
+
+                    @include md{
+                        width: 147px;
+                        height: 185px;
+                    }
+
 
                 }
 
@@ -235,12 +292,12 @@
 
                 
                 &-guard{
-                    width: 87px;
+                    width: 75px;
                     object-fit: cover;
                     left: 50%;
                     position: relative;
                     transform: translateX(-50%);
-                    height: 138px;
+                    height: 124px;
 
                     @include md{
                         width: 109px;
@@ -258,8 +315,8 @@
                     height: 137px;
 
                     @include md{
-                        width: 148px;
-                        height: 128px;
+                        width: 163px;
+                        height: 149px;
                     }
                 }
 
@@ -376,12 +433,12 @@
                 }
                 &-giants{
 
-                    width: 69px;
+                    width: 95px;
                     object-fit: cover;
                     left: 50%;
                     position: relative;
                     transform: translateX(-50%);
-                    height: 98px;
+                    height: 131px;
 
                     @include md{
                         width: 99px;
@@ -401,8 +458,8 @@
                     height: 94px;
 
                     @include md{
-                        width: 119px;
-                        height: 150px;
+                        width: 145px;
+                        height: 183px;
                     }
 
                 }
@@ -416,8 +473,8 @@
                     height: 94px;
 
                     @include md{
-                        width: 200px;
-                        height: 200px;
+                        width: 145px;
+                        height: 183px;
                     }
 
                 }
@@ -471,12 +528,12 @@
                 }
 
                 &-detroit{
-                    width: 85px;
+                    width: 101px;
                     object-fit: cover;
                     left: 50%;
                     position: relative;
                     transform: translateX(-50%);
-                    height: 117px;
+                    height: 145px;
 
                     @include md{
                         width: 110px;
@@ -531,12 +588,6 @@
                     }
                 }
 
-
-
-
-
-
-
             }
             &-box_img{
                 width: 79px;
@@ -547,8 +598,8 @@
                 margin: 8px 8px;
         
                 @include md{
-                    width: 135px;
-                    height: 135px; 
+                    width: 115px;
+                    height: 115px; 
                 }
         
             }
@@ -641,7 +692,7 @@
                 }
                 &-b{
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 10px;
                     @include md{
                         font-size: 16px;
                         font-weight: 400;
@@ -711,7 +762,29 @@
                 box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
                 display: flex !important;
                 justify-content: center;
-                padding: 10px 12px;
+                padding: 0px 0px;
+            }
+        }
+
+    }
+}
+
+.center__navbase{
+
+    .slick-current {
+        .teams-box {
+            border: none;
+            padding: 0px;
+        }
+    
+        .item {
+            .teams-box {
+                border: 3px solid #8b99ad !important;
+                border-radius: 8px;
+                box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
+                display: flex !important;
+                justify-content: center;
+                padding: 0px 0px;
             }
         }
 
@@ -734,7 +807,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 0px;
+            padding: 0px 0px;
             //basquete
 
             &.atlanta {
@@ -1097,7 +1170,7 @@
                 box-shadow: 1px 1px 4px 1px rgba(00, 00, 00, 0.1);
                 display: flex !important;
                 justify-content: center;
-                padding: 10px 12px;
+                padding: 0px 0px;
             }
 
     
@@ -1180,6 +1253,7 @@
 
 /* Referente ao curiosity */
 .c-curiosity{  
+    
     margin-top: 64px;
     min-height: 60vh;
     background-color: #540017;
@@ -1194,8 +1268,9 @@
     }
 
     @include md{
-        padding: 60px 0px;
+      //  padding: 60px 0px;
         background-color: transparent;
+        margin-bottom: 36px;
 
     }
 
@@ -1214,6 +1289,8 @@
                 padding: 0px;
                 border-radius: 4px;
                 border-radius: 20px;
+                margin-left: 32px;
+                margin-right: 32px;
             }
 
 
@@ -1225,12 +1302,15 @@
             width: 100% !important;
             height: auto !important;
             object-fit: cover;
+            @include md{
+                padding-right: 32px;
+            }
 
         }
 
         &-title{
             font-weight: 800;
-            font-size:24px;
+            font-size:18px;
             line-height: 2rem;
             color: #ffff;
             padding-top: 32px;
@@ -1239,7 +1319,7 @@
             
             @include md{
                 font-size:32px;
-                padding-top: 56px;
+              //  padding-top: 56px;
                 padding-bottom: 56px;
 
             }
@@ -1257,8 +1337,15 @@
             padding-right: 16px;
             padding-left: 16px;    
             
+
+        }
+
+        &-home-fut{
+            padding-bottom: 64px;
+  
+            
             @include md{
-                padding:0px 64px 64px 64px;
+               // padding:0px 64px 64px 64px;
             }
 
         }
@@ -1276,6 +1363,8 @@
                 margin-top: 0px;
                 padding-right: 0px;
                 max-height:350px;
+                font-size: 14px;
+                padding-left: 16px;
 
             }
             &::-webkit-scrollbar {
@@ -1291,6 +1380,14 @@
 
             &-football{
                 color:#000000;
+
+                &::-webkit-scrollbar {
+                    background-color: #b7babf; 
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background-color: #152435; 
+                }
             }
         }
 
@@ -1304,6 +1401,7 @@
 
             @include md{
                 margin-top: 0px;
+                padding-left: 16px;
 
             }
 
@@ -1314,6 +1412,27 @@
         }
 
     }
+    .slick-prev,
+    .slick-next {
+        font-size: 0;
+        background: #874c5d;
+        width: 30px;
+        height: 30px; /* Ajuste conforme necessário para tornar quadrado */
+        border-radius: 0; /* Para tornar os cantos quadrados */
+        border: 0;
+        margin: 0 10px;
+        opacity: .3;
+        outline: none;
+        transition: all .2s ease;
+    }
+
+    li.slick-active .slick-prev,
+    li.slick-active .slick-next {
+        opacity: 1;
+        width: 40px;
+        background: #Fca701;
+    }
+
     .slick-dots {
         list-style: none;
         padding: 0;

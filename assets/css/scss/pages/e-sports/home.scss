@@ -78,11 +78,12 @@ p{
           //  background-position: center;
 
             &_basquete{
-                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/basquete.png');
+                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-bask.png');
                 
-                width: 125px;
-                height: 284px;
-                transform: translateY(55px);
+                width: 96px;
+                height: 215px;
+                transform: translateY(32px);
+                z-index: 2;
 
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/basquete-offwhite.png');
@@ -100,10 +101,11 @@ p{
 
             }
             &_baseball{
-                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/baseball.png');
-                width: 103px;
-                height: 260px;
-
+                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-base.png');
+                width: 118px;
+                height: 253px;
+                z-index: 3;
+                transform: translateY(-19px);
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baseball-offwhite.png');
                     transform: translateY(-134px);
@@ -122,9 +124,10 @@ p{
 
             }
             &_futebol{
-                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/home/futebol-americano.png');
-                width: 172px;
-                height: 277px;
+                background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/Home/home-fut.png');
+                width: 158px;
+                height: 228px;
+                z-index: 1;
                 
                 @include md{
                     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/futebol-americano-offwhite.png');

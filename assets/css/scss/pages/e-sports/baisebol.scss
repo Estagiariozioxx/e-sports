@@ -9,10 +9,19 @@ p {
 }
 
 .c-baisebol {
-    padding: 60px 0px;
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/Baseball-fundo.png');
+    @include md{
+
+        padding: 60px 0px;
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/Baseball-fundo.png');
+        background-position: left top;
+        background-size: cover;
+
+    }
+    padding: 32px 0px;
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/e-sports/imgtest/baisebol/baisebol-mob.png');
     background-position: left top;
     background-size: cover;
+
 
     .baisebol {
         &-img-logo {
@@ -23,9 +32,14 @@ p {
                 height: 100%;
             }
         }
+        &-img-log{
+            @include md{
+                width: 75%;
+            }
+        }
         &-title {
             font-weight: 800;
-            font-size: 36px;
+            font-size: 24px;
             line-height: 2rem;
             color: #002d62;
             font-family: 'nostromo';
@@ -40,7 +54,7 @@ p {
             .baisebol-img {
                 width: 100%;
                 @include md {
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
@@ -58,18 +72,18 @@ p {
             overflow-y: auto;
             max-height: 200px;
             @include md{
-                max-height: 400px;
+                max-height: 250px;
                 padding-left: 80px;
                 margin-top: 0px;
 
             }
             &::-webkit-scrollbar {
                 width: 8px; /* largura da barra de rolagem */
-                background-color: #eac1b3; /* cor de fundo da barra de rolagem */
+                background-color: #edc3ce; /* cor de fundo da barra de rolagem */
                 border-radius: 4px;
             }
             &::-webkit-scrollbar-thumb {
-                background-color: #e74501; /* cor do polegar (a parte que você arrasta) */
+                background-color: #bf0d3e; /* cor do polegar (a parte que você arrasta) */
                 border-radius: 4px; /* borda arredondada  */
             }
         }

@@ -70,11 +70,20 @@
     }
 
     .slick_banners{
+       
         .item{
             padding: 0px 8px;
+            
         }
         
         .slick-dots{
+            button {
+                background: #ffff;
+
+            }
+            
+           
+            
             bottom:-10% !important;
         }
     }

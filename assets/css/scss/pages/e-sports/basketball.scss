@@ -37,7 +37,14 @@ p{
             .basketball-img{
                 width: 100%;
                 @include md{
-                    width: 100%;
+                    width: 75%;
+                }
+                &-logo{
+                    @include md{
+                        width: 60%;
+                        
+                    }
+
                 }
             }
         }
@@ -51,7 +58,7 @@ p{
 
             padding-right: 8px;
             @include md{
-                max-height:350px;
+                max-height:250px;
                 padding: 0px 8px 0px 0px;
                 margin-top: 0px;
 

@@ -633,30 +633,38 @@ function scrollToAnchor(anchorID) {
   });
 
 
-  // Acessando a classe centerfut 
-  const centerfut = document.querySelector('.centerfut');
 
-  // Acessando os elementos com a classe item dentro da classe centerfut
-  const items = centerfut.querySelectorAll('.item');
+    $(document).ready(function() {
+      // Acessando a classe centerfut 
+      var centerfut = $('.centerfut');
 
-  // Iterando sobre os itens
-  items.forEach(item => {
-      // Acessando os elementos dentro de cada item
-      const teamsName = item.querySelector('strong.teams-name');
-      
-      const teamsDivision = item.querySelector('.teams-division');
-      
-      // Aplicando estilos aos elementos com !important
-      teamsName.classList.add('my-teams-division-style');
-      teamsDivision.classList.add('my-teams-division-style');
-      console.log("Elemento teams-name:", teamsName); // Verificar se o elemento é selecionado corretamente
-    
-  
-      // Verificar se a classe foi adicionada
-      console.log("Elemento com a nova classe:", teamsName);
+      // Acessando os elementos com a classe item dentro da classe centerfut
+      var items = centerfut.find('.item');
+
+      // Iterando sobre os itens
+      items.each(function() {
+          // Acessando os elementos dentro de cada item
+          var teamsName = $(this).find('strong.teams-name');
+          var teamsDivision = $(this).find('.teams-division');
+          var teamsNumber = $(this).find('.teams-win-number');
+        
+          // Aplicando estilos aos elementos com !important
+          teamsNumber.addClass('my-teams-name-style');
+          teamsName.addClass('my-teams-name-style');
+          teamsDivision.addClass('my-teams-division-style');
+
+
+
+      });
   });
+
+
+
+
 
 
   
   
 })(jQuery);
+
+
